@@ -34,9 +34,7 @@
           <p>Интервал между букв</p>
           <div class="access-btn">
             <button class="space-btn" id="letter-spacing-large">А Б В</button>
-            <button class="space-btn" id="letter-spacing-medium">
-              А Б В
-            </button>
+            <button class="space-btn" id="letter-spacing-medium">А Б В</button>
             <button class="space-btn" id="letter-spacing-small">АБВ</button>
           </div>
         </div>
@@ -59,7 +57,10 @@
     <!-- Header -->
     <header class="header">
       <div class="header__content">
-        <img class="header__logo my-image" src="./images/logo.png" alt="logo" />
+        <div class="header__logo my-image">
+          <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+        </div>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -123,21 +124,69 @@
           <!-- Бургер меню -->
         </div>
       </div>
-
     </header>
+    <!-- Header -->
 
     <!-- Главная -->
     <main class="main"></main>
+    <!-- Главная -->
 
     <!-- Последние новости/Cлайдер -->
     <h1 class="title">Последние новости</h1>
-    <section class="swiper mySwiper">
+    <section class="swiper">
       <div class="swiper-wrapper"></div>
       <div class="swiper-pagination"></div>
 
       <div class="slide__button swiper-button-next"></div>
       <div class="slide__button swiper-button-prev"></div>
     </section>
+    <!-- Последние новости/Cлайдер -->
+
+    <!-- Перечень последних вакансий -->
+    <h1 class="title">Последнии вакансии</h1>
+    <div class="work">
+
+      <div class="work__item">
+          <h3>Водитель такси</h3>
+          <span class="price">15 000 сом.</span>
+          <span
+            >Оформление справок по з/плате для предъявления в налоговую
+            инспекцию, биржу труда, отдел социальной защиты населения
+          </span>
+          <button class="work__button"><span>Read More</span></button>
+        </div>
+
+        <div class="work__item">
+          <h3>Водитель такси</h3>
+          <span class="price">15 000 сом.</span>
+          <span
+            >Оформление справок по з/плате для предъявления в налоговую
+            инспекцию, биржу труда, отдел социальной защиты населения
+          </span>
+          <button class="work__button"><span>Read More</span></button>
+        </div>
+    
+        <div class="work__item">
+          <h3>Водитель такси</h3>
+          <span class="price">15 000 сом.</span>
+          <span
+            >Оформление справок по з/плате для предъявления в налоговую
+            инспекцию, биржу труда, отдел социальной защиты населения
+          </span>
+          <button class="work__button"><span>Read More</span></button>
+        </div>
+
+        <div class="work__item">
+          <h3>Водитель такси</h3>
+          <span class="price">15 000 сом.</span>
+          <span
+            >Оформление справок по з/плате для предъявления в налоговую
+            инспекцию, биржу труда, отдел социальной защиты населения
+          </span>
+          <button class="work__button"><span>Read More</span></button>
+        </div>
+    </div>
+    <!-- Перечень последних вакансий -->
 
     <!-- Ссылки на государственные сайты -->
     <h1 class="title">Сcылки на государственные сайты</h1>
@@ -168,6 +217,7 @@
           >
         </li>
       </ul>
+
       <ul class="links__item">
         <li>
           <span>&raquo;</span
@@ -194,6 +244,7 @@
           >
         </li>
       </ul>
+
       <ul class="links__item">
         <li>
           <span>&raquo;</span
@@ -221,6 +272,7 @@
         </li>
       </ul>
     </div>
+    <!-- Ссылки на государственные сайты -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -273,6 +325,7 @@
         ></iframe>
       </div>
     </footer>
+    <!-- Footer -->
 
     <!-- Главный JS -->
     <script src="./js/main.js"></script>
@@ -280,7 +333,7 @@
     <!-- Слайдер JS -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".swiper", {
         slidesPerView: 1,
         loop: true,
         autoplay: {
