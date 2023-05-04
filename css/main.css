@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+/* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,68 @@
   list-style: none;
   font-family: "Rubik", sans-serif;
 }
+
+.title {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding: 40px 5%;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+/* Общие стили */
+
+/* Версия для слабовидящих */
+.accessibility-header {
+  align-items: center;
+  background-color: gray;
+  color: #ffffff;
+  height: 80px;
+  width: 100%;
+  display: none;
+}
+
+.show-accessibility-header {
+  display: block;
+}
+
+.access-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  height: 100%;
+  line-height: 1;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1;
+}
+
+.access-btn button {
+  border-style: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 8px 30px;
+}
+/* Версия для слабовидящих */
 
 /* Header */
 .header {
@@ -94,68 +157,64 @@
 }
 /* Header */
 
-/* Версия для слабовидящих */
-.accessibility-header {
+/* Главная */
+.main {
+  height: 65vh;
+  display: flex;
   align-items: center;
-  background-color: gray;
-  color: #ffffff;
-  height: 80px;
+  justify-content: space-between;
+  background: hsl(226, 66%, 36%);
+  padding: 0 5%;
+  margin: -20px 0 0 0;
+
+}
+
+.main__title {
+  max-width: 600px;
   width: 100%;
-  display: none;
+  margin: -80px 0 0 0;
 }
 
-.show-accessibility-header {
-  display: block;
+.main__title p {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  color: #ffffff;
 }
 
-.access-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 140px;
-  height: 100%;
-  line-height: 1;
+.main__title h1 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
 }
 
-.options {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  line-height: 1;
-}
-
-.access-btn button {
-  border-style: none;
-  border-radius: 2px;
-  box-sizing: border-box;
+.main__button {
+  width: 200px;
+  height: 40px;
+  position: relative;
   background: #ffffff;
-  padding: 8px 30px;
-}
-/* Версия для слабовидящих */
-
-/* Общие стили */
-.title {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  padding: 40px 5%;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 30px 0 0 0;
 }
 
-.text {
+.main__button span {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 130%;
+  color: #1f3b99;
+  transition: 0.3s;
 }
 
-.date {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
+.main__button:hover{
+  background: #bcb7b7;
+  color: #ffffff;
+  transition: 0.3s;
 }
-/* Общие стили */
+
+/* Главная */
 
 /* Последние новости/Cлайдер */
 .slide {
@@ -215,14 +274,14 @@
 /* Последние новости/Cлайдер */
 
 /* Перечень последних вакансий */
-.work {
+.vacancy {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
 
-.work__item {
+.vacancy__item {
   max-width: 400px;
   min-width: 320px;
   min-height: 250px;
@@ -230,7 +289,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #bcb7b7;
   box-sizing: border-box;
   padding: 20px;
   font-style: normal;
@@ -238,14 +297,14 @@
   line-height: 130%;
 }
 
-.work__item .price {
+.vacancy__item .price {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
   color: #1f3b99;
 }
 
-.work__button {
+.vacancy__button {
   width: 100%;
   height: 40px;
   position: relative;
@@ -258,14 +317,14 @@
   cursor: pointer;
 }
 
-.work__button span {
+.vacancy__button span {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
   color: #ffffff;
 }
 
-.work__button:hover {
+.vacancy__button:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
@@ -278,6 +337,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0 0 40px 0;
 }
 
 .links__item {
