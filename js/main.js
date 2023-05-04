@@ -32,17 +32,17 @@ const data = [
   }
   ];
   
-  const workContainer = document.querySelector('.work');
+  const vacancyContainer = document.querySelector('.vacancy');
   data.map((item) => {
     const html = `
-      <div class="work__item">
+      <div class="vacancy__item">
         <h3>${item.title}</h3>
         <span class="price">${item.price}</span>
         <span>${item.text}</span>
-        <button class="work__button"><span>Read More</span></button>
+        <button class="vacancy__button"><span>Read More</span></button>
       </div>
     `;
-    workContainer.insertAdjacentHTML('beforeend', html);
+    vacancyContainer.insertAdjacentHTML('beforeend', html);
   });
 
 

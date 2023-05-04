@@ -78,7 +78,7 @@
   /* z-index: 10;
   top: 0;
   left: 0; */
-  background: #1f3b99;
+  background: #191970;
   padding: 10px 5%;
 }
 
@@ -104,6 +104,7 @@
   align-items: center;
   gap: 10px;
   color: #ffffff;
+  transition: 0.3s;
   cursor: pointer;
   padding: 10px;
 }
@@ -113,6 +114,7 @@
   font-weight: 400;
   line-height: 130%;
   color: #ffffff;
+  transition: 0.3s;
 }
 
 .eye__title:hover {
@@ -125,12 +127,24 @@
   float: left;
 }
 
+.select::after {
+  content: "\f078";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-left: 10px;
+}
+
+.select:focus:after{
+  content: "\f077";
+}
+
 .nav__link {
   display: block;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
   color: #ffffff;
+  transition: 0.3s;
   padding: 20px;
 }
 
@@ -144,7 +158,11 @@
   position: absolute;
   left: 0;
   display: none;
-  background: #1f3b99;
+  background: #ffffff;
+}
+
+.nav .nav__list .nav__item:hover ul {
+  display: initial;
 }
 
 .nav .nav__list .nav__item ul li {
@@ -152,8 +170,17 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav .nav__list .nav__item:hover > ul {
-  display: initial;
+.nav .nav__list .nav__item ul li a {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.nav .nav__list .nav__item ul li a:hover {
+  color: #bcb7b7;
+  transition: 0.3s;
 }
 /* Header */
 
@@ -163,10 +190,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: hsl(226, 66%, 36%);
+  background: #191970;
   padding: 0 5%;
   margin: -20px 0 0 0;
-
 }
 
 .main__title {
@@ -204,11 +230,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  color: #1f3b99;
+  color: #191970;
   transition: 0.3s;
 }
 
-.main__button:hover{
+.main__button:hover {
   background: #bcb7b7;
   color: #ffffff;
   transition: 0.3s;
@@ -248,7 +274,7 @@
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background: rgb(63, 88, 178);
+  background: #191970;
 }
 
 .slide__button:hover {
@@ -301,14 +327,14 @@
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  color: #1f3b99;
+  color: #191970;
 }
 
 .vacancy__button {
   width: 100%;
   height: 40px;
   position: relative;
-  background: #1f3b99;
+  background: #191970;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border: none;
@@ -357,25 +383,26 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: #3d49c8;
+  color: rgb(63, 88, 178);;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .links__item li:hover span {
   color: #bcb7b7;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .links__item li:hover a {
   color: #bcb7b7;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 /* Ссылки на государственные сайты */
 
 /* Footer */
 .footer {
   width: 100%;
-  background: #1f3b99;
+  background: #191970;
   padding: 20px 5%;
 }
 
@@ -393,6 +420,7 @@ a {
   font-weight: 400;
   line-height: 130%;
   color: #ffffff;
+  transition: 0.3s;
   padding: 10px;
 }
 

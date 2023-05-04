@@ -139,6 +139,12 @@
     max-width: 150px;
   }
   /* Последние новости/Cлайдер */
+  /* Главная */
+  .main__button {
+    height: 30px;
+    width: 100px;
+  }
+  /* Главная */
 }
 
 /*# sourceMappingURL=adaptive.css.map */

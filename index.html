@@ -67,23 +67,25 @@
               <a class="nav__link" href="#">Постановления</a>
             </li>
             <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
+              <a class="nav__link" href="#news">Новости</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Разделы</a>
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link select" href="#">Разделы</a>
               <ul>
-                <li><a class="nav__link" href="#">Вакансии</a></li>
+                <li><a class="nav__link" href="#vacancy">Вакансии</a></li>
                 <li><a class="nav__link" href="#">Инфографика</a></li>
                 <li><a class="nav__link" href="#">Фотогалерея</a></li>
                 <li><a class="nav__link" href="#">Сотрудники</a></li>
-                <li><a class="nav__link" href="#">Контакты</a></li>
+                <li><a class="nav__link" href="#contacts">Контакты</a></li>
                 <li><a class="nav__link" href="#">Интернет приемная</a></li>
               </ul>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">О нас</a>
+              <a class="nav__link select" href="#">О нас</a>
               <ul>
                 <li><a class="nav__link" href="#">Глава сельской управы</a></li>
                 <li><a class="nav__link" href="#">О селе</a></li>
@@ -92,37 +94,36 @@
           </ul>
         </nav>
         <div class="eye eye-burger">
-          <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
           <a class="eye__title" href="#">Версия для слабовидящих</a>
         </div>
-          <!-- Бургер меню -->
-          <div class="burger">
-            <input type="checkbox" id="menu-toggle" />
-            <label id="trigger" for="menu-toggle"></label>
-            <label id="burger" for="menu-toggle"></label>
-            <div class="burger__animated">
-              <header class="burger__header">
-                <h1 class="burger__title">Menu</h1>
-              </header>
+        <!-- Бургер меню -->
+        <div class="burger">
+          <input type="checkbox" id="menu-toggle" />
+          <label id="trigger" for="menu-toggle"></label>
+          <label id="burger" for="menu-toggle"></label>
+          <div class="burger__animated">
+            <header class="burger__header">
+              <h1 class="burger__title">Menu</h1>
+            </header>
 
-              <ul class="burger__list">
-                <li class="burger__item">
-                  <a class="burger__link" href="#">Постановления</a>
-                </li>
-                <li class="burger__item">
-                  <a class="burger__link" href="#">Главная</a>
-                </li>
-                <li class="burger__item">
-                  <a class="burger__link" href="#">Новости</a>
-                </li>
-                <li class="burger__item">
-                  <a class="burger__link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="burger__list">
+              <li class="burger__item">
+                <a class="burger__link" href="#">Постановления</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#">Главная</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="/news">Новости</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
-          <!-- Бургер меню -->
         </div>
+        <!-- Бургер меню -->
       </div>
     </header>
     <!-- Header -->
@@ -131,9 +132,7 @@
     <main class="main">
       <div class="main__title">
         <p>Кыргыз Республикасынын Министрлигине караштуу</p>
-        <h1>
-          Добро пожаловать на наш государственный сайт! ахахах
-        </h1>
+        <h1>Добро пожаловать на наш государственный сайт! ахахах</h1>
         <button class="main__button"><span>Подробнее</span></button>
       </div>
       <svg
@@ -1225,7 +1224,7 @@
     <!-- Главная -->
 
     <!-- Последние новости/Cлайдер -->
-    <h1 class="title">Последние новости</h1>
+    <h1 class="title" id="news">Последние новости</h1>
     <section class="swiper">
       <div class="swiper-wrapper"></div>
       <div class="swiper-pagination"></div>
@@ -1236,52 +1235,8 @@
     <!-- Последние новости/Cлайдер -->
 
     <!-- Перечень последних вакансий -->
-    <h1 class="title">Последнии вакансии</h1>
-<<<<<<< HEAD
-    <div class="vacancy">
-      <div class="vacancy__item">
-        <h3>Водитель такси</h3>
-        <span class="price">15 000 сом.</span>
-        <span
-          >Оформление справок по з/плате для предъявления в налоговую инспекцию,
-          биржу труда, отдел социальной защиты населения
-        </span>
-        <button class="vacancy__button"><span>Read More</span></button>
-      </div>
-
-      <div class="vacancy__item">
-        <h3>Водитель такси</h3>
-        <span class="price">15 000 сом.</span>
-        <span
-          >Оформление справок по з/плате для предъявления в налоговую инспекцию,
-          биржу труда, отдел социальной защиты населения
-        </span>
-        <button class="vacancy__button"><span>Read More</span></button>
-      </div>
-
-      <div class="vacancy__item">
-        <h3>Водитель такси</h3>
-        <span class="price">15 000 сом.</span>
-        <span
-          >Оформление справок по з/плате для предъявления в налоговую инспекцию,
-          биржу труда, отдел социальной защиты населения
-        </span>
-        <button class="vacancy__button"><span>Read More</span></button>
-      </div>
-
-      <div class="vacancy__item">
-        <h3>Водитель такси</h3>
-        <span class="price">15 000 сом.</span>
-        <span
-          >Оформление справок по з/плате для предъявления в налоговую инспекцию,
-          биржу труда, отдел социальной защиты населения
-        </span>
-        <button class="vacancy__button"><span>Read More</span></button>
-      </div>
-    </div>
-=======
-    <div class="work"></div>
->>>>>>> 942e785ae8664b505d023c27e51c44d041c5cddf
+    <h1 class="title" id="vacancy">Последнии вакансии</h1>
+    <div class="vacancy"></div>
     <!-- Перечень последних вакансий -->
 
     <!-- Ссылки на государственные сайты -->
@@ -1371,7 +1326,7 @@
     <!-- Ссылки на государственные сайты -->
 
     <!-- Footer -->
-    <footer class="footer my-image">
+    <footer class="footer my-image" id="contacts">
       <div class="footer__content">
         <ul class="footer__list">
           <li class="footer__item">

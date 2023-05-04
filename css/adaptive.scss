@@ -96,7 +96,7 @@ $maxWidth: 1440;
   .background {
     display: none;
   }
-  
+
   .main__title {
     max-width: 500px;
   }
@@ -144,4 +144,11 @@ $maxWidth: 1440;
     max-width: 150px;
   }
   /* Последние новости/Cлайдер */
+
+  /* Главная */
+  .main__button {
+    height: 30px;
+    width: 100px;
+  }
+  /* Главная */
 }
