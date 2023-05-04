@@ -11,44 +11,126 @@
 
     <!-- Адаптивный css -->
     <link rel="stylesheet" href="./css/adaptive.css" />
+
+    <!-- Бургер css -->
+    <link rel="stylesheet" href="./css/burgerMenu.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- Header -->
     <header class="header">
       <div class="header__content">
-        <img src="./images/logo.png" alt="logo" />
+        <img class="header__logo" src="./images/logo.png" alt="logo" />
         <nav class="nav">
-          <ul class="list">
-            <li class="item"><a  href="#">Постановления</a></li>
-            <li class="item"><a href="#">Главная</a></li>
-            <li class="item"><a href="#">Новости</a></li>
-            <li class="item"><a href="#">Контакты</a></li>
-            <li class="item">
-              <a href="#">Разделы</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Постановления</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Разделы</a>
               <ul>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Инфографика</a></li>
-                <li><a href="#">Фотогалерея</a></li>
-                <li><a href="#">Сотрудники</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Интернет приемная</a></li>
+                <li><a class="nav__link" href="#">Вакансии</a></li>
+                <li><a class="nav__link" href="#">Инфографика</a></li>
+                <li><a class="nav__link" href="#">Фотогалерея</a></li>
+                <li><a class="nav__link" href="#">Сотрудники</a></li>
+                <li><a class="nav__link" href="#">Контакты</a></li>
+                <li><a class="nav__link" href="#">Интернет приемная</a></li>
               </ul>
             </li>
-            <li class="item">
-              <a href="#">О нас</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
               <ul>
-                <li><a href="#">Глава сельской управы</a></li>
-                <li><a href="#">О селе</a></li>
+                <li><a class="nav__link" href="#">Глава сельской управы</a></li>
+                <li><a class="nav__link" href="#">О селе</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <div class="eye-burger">
-          <div class="eye">
-            <i class="fa-solid fa-eye"></i>
+        <div class="eye eye-burger">
+          <i class="fa-solid fa-eye"></i>
+          <a class="eye__title" href="#">Версия для слабовидящих</a>
+          <div class="burger">
+            <input type="checkbox" id="menu-toggle" />
+            <label id="trigger" for="menu-toggle"></label>
+            <label id="burger" for="menu-toggle"></label>
+            <ul class="burger__list">
+              <li class="burger__item">
+                <a class="burger__link" href="#">Постановления</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#">Главная</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#">Новости</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-solid fa-map-location-dot"></i>Bishkek, Dordoi
+              Plaza</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-solid fa-envelope"></i> test@gmail.com</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              ><i class="fa-solid fa-phone"></i>+996709333333</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#"
+              >Информация и противодействии корупции</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#">Часто задаваемые вопросы</a>
+          </li>
+        </ul>
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46785.87214849588!2d74.6029056!3d42.8703744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8ecb3f365%3A0x6551c797c5d374c7!2z0KLQoNCmIERvcmRvaSBQbGF6YSAy!5e0!3m2!1sru!2skg!4v1679641540469!5m2!1sru!2skg"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+
+    <!-- Главный JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- Font Awesome JS-->
+    <script
+      src="https://kit.fontawesome.com/1f5bacc93d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

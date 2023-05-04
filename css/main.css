@@ -9,54 +9,56 @@
   font-family: "Rubik", sans-serif;
 }
 
+/* Header */
 .header {
   width: 100%;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   background: #1f3b99;
-  z-index: 10;
-  padding: 0 5%;
+  padding: 10px 5%;
 }
 
 .header__content {
   max-width: 1440px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.header__content img {
+.header__logo {
   width: 80px;
   object-fit: cover;
 }
 
-.eye-burger {
+.eye {
   display: flex;
   align-items: center;
-  gap: 20px;
-}
-
-.eye {
+  gap: 10px;
   color: #ffffff;
   cursor: pointer;
-  padding: 10px;
 }
 
-.title {
+.eye__title {
   font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
 }
 
-.nav .list .item {
+.eye__title:hover {
+  color: #bcb7b7;
+  transition: 0.3s;
+}
+
+.nav__item {
   position: relative;
   float: left;
 }
 
-.nav .list .item a {
+.nav__link {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -65,11 +67,12 @@
   padding: 20px;
 }
 
-.nav .list .item a:hover {
+.nav__link:hover {
   color: #bcb7b7;
+  transition: 0.3s;
 }
 
-.nav .list .item ul {
+.nav .nav__list .nav__item ul {
   width: 200px;
   position: absolute;
   left: 0;
@@ -77,11 +80,50 @@
   background: #1f3b99;
 }
 
-.nav .list .item ul li {
+.nav .nav__list .nav__item ul li {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav .list .item:hover > ul {
+.nav .nav__list .nav__item:hover > ul {
   display: initial;
 }
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  background: #1f3b99;
+  padding: 20px 5%;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.footer__link_quetion:hover {
+    color: #bcb7b7;
+    transition: 0.3s;
+  }

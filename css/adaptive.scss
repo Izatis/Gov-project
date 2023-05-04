@@ -1,0 +1,60 @@
+$maxWidth: 1440;
+
+// На описании
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
+@media screen and (max-width: 1440px) {
+  // Header
+  .nav__link {
+    @include adaptiv-font(16, 5);
+  }
+
+  .eye__title {
+    @include adaptiv-font(12, 8);
+  }
+
+  // Footer
+  .footer__link {
+    @include adaptiv-font(16, 5);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    width: 60px;
+  }
+
+  .nav__link {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .eye-burger {
+    margin-right: 50px;
+  }
+
+  .footer__content {
+    display: block;
+    .location-map {
+      max-width: 400px;
+      max-height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+    .location-map {
+      max-width: 300px;
+      max-height: 200px;
+  }
+}
