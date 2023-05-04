@@ -9,6 +9,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+body {
+  margin: 100px 0 0 0;
+}
+
 /* Header */
 .header {
   width: 100%;
@@ -88,42 +92,109 @@
 .nav .nav__list .nav__item:hover > ul {
   display: initial;
 }
+/* Header */
+
+/* Общие стили */
 
 .title {
+  display: block;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
+  padding: 40px 5%;
 }
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+/* Общие стили */
+
+/* Слайдер */
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.slide__image {
+  width: 45%;
+}
+
+.slide__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slide__button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: rgb(63, 88, 178);
+}
+
+.slide__button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.slide__button::before,
+.slide__button::after {
+  font-size: 15px;
+  color: white;
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 20px;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 20px;
+}
+/* Слайдер */
 
 /* Footer */
 .footer {
   width: 100%;
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  left: 0;
   background: #1f3b99;
   padding: 20px 5%;
 }
 
-.footer__content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer__link  {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    color: #ffffff;
-    padding: 10px;
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  padding: 10px;
 }
 
 .footer__link_quetion:hover {
-    color: #bcb7b7;
-    transition: 0.3s;
-  }
+  color: #bcb7b7;
+  transition: 0.3s;
+}
+/* Footer */

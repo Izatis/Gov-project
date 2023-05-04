@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gov</title>
 
+    <!-- Слайдер css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Главный css -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -76,6 +79,82 @@
       </div>
     </header>
 
+    <!-- Главная -->
+    <main class="main"></main>
+    <!-- Последние новости/Cлайдер -->
+    <h1 class="title">Последние новости</h1>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
+          <div class="slide__image">
+            <img src="./images/random.jpg" alt="random" class="image" />
+          </div>
+          <div class="slide__info">
+            <span class="text"
+              >До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих
+              мест в Кыргызстане <br />
+              планирует <br />создать кабмин</span
+            >
+            <span class="date"></span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <div class="slide__image">
+            <img
+              src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+              alt="random"
+              class="image"
+            />
+          </div>
+          <div class="slide__info">
+            <span class="text"
+              >Выборы по Ленинскому<br />
+              округу. Сегодня<br />
+              последний день <br />выдвижения кандидатов</span
+            >
+            <span class="date"></span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <div class="slide__image">
+            <img
+              src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+              alt="random"
+              class="image"
+            />
+          </div>
+          <div class="slide__info">
+            <span class="text"
+              >Выборы по Ленинскому<br />
+              округу. Сегодня<br />
+              последний день <br />выдвижения кандидатов</span
+            >
+            <span class="date"></span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <div class="slide__image">
+            <img
+              src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+              alt="random"
+              class="image"
+            />
+          </div>
+          <div class="slide__info">
+            <span class="text"
+              >Выборы по Ленинскому<br />
+              округу. Сегодня<br />
+              последний день <br />выдвижения кандидатов</span
+            >
+            <span class="date"></span>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        <div class="slide__button swiper-button-next"></div>
+        <div class="slide__button swiper-button-prev"></div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__content">
@@ -105,10 +184,14 @@
             >
           </li>
           <li class="footer__item">
-            <a class="footer__link footer__link_quetion" href="#">Политика конфиденциальности</a>
+            <a class="footer__link footer__link_quetion" href="#"
+              >Политика конфиденциальности</a
+            >
           </li>
           <li class="footer__item">
-            <a class="footer__link footer__link_quetion" href="#">Часто задаваемые вопросы</a>
+            <a class="footer__link footer__link_quetion" href="#"
+              >Часто задаваемые вопросы</a
+            >
           </li>
         </ul>
         <iframe
@@ -127,7 +210,29 @@
     <!-- Главный JS -->
     <script src="./js/main.js"></script>
 
-    <!-- Font Awesome JS-->
+    <!-- Слайдер JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Иконка JS-->
     <script
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"
