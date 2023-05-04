@@ -22,7 +22,7 @@
     <!-- Header -->
     <header class="header">
       <div class="header__content">
-        <img class="header__logo" src="./images/logo.png" alt="logo" />
+        <img class="header__logo my-image" src="./images/logo.png" alt="logo" />
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -54,7 +54,7 @@
           </ul>
         </nav>
         <div class="eye eye-burger">
-          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-eye" aria-hidden="true"></i>
           <a class="eye__title" href="#">Версия для слабовидящих</a>
           <div class="burger">
             <input type="checkbox" id="menu-toggle" />
@@ -77,83 +77,46 @@
           </div>
         </div>
       </div>
+      <div class="accessibility-header">
+        <div class="access-wrapper">
+          <div class="options">
+            <p>Размер шрифта</p>
+            <div class="access-btn">
+              <button id="font-size-large">A+</button>
+              <button id="font-size-medium">A</button>
+              <button id="font-size-small">A-</button>
+            </div>
+          </div>
+          <div class="options">
+            <p>Интервал между букв</p>
+            <div class="access-btn">
+              <button class="space-btn" id="letter-spacing-large">А Б В</button>
+              <button class="space-btn" id="letter-spacing-medium">
+                А Б В
+              </button>
+              <button class="space-btn" id="letter-spacing-small">АБВ</button>
+            </div>
+          </div>
+          <div class="options">
+            <p>Изображения</p>
+            <div class="access-btn">
+              <button class="bw-button">Ч/Б</button>
+              <button class="color-button">Цветные</button>
+            </div>
+          </div>
+          <div class="access-btn">
+          <button class="space-btn" id="reset-styles-button">
+            Сбросить стили
+          </button>
+      </div>
+        </div>
     </header>
 
     <!-- Главная -->
     <main class="main"></main>
     <!-- Последние новости/Cлайдер -->
     <h1 class="title">Последние новости</h1>
-    <section class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="slide swiper-slide">
-          <div class="slide__image">
-            <img src="./images/random.jpg" alt="random" class="image" />
-          </div>
-          <div class="slide__info">
-            <span class="text"
-              >До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих
-              мест в Кыргызстане <br />
-              планирует <br />создать кабмин</span
-            >
-            <span class="date"></span>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-          <div class="slide__image">
-            <img
-              src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
-              alt="random"
-              class="image"
-            />
-          </div>
-          <div class="slide__info">
-            <span class="text"
-              >Выборы по Ленинскому<br />
-              округу. Сегодня<br />
-              последний день <br />выдвижения кандидатов</span
-            >
-            <span class="date"></span>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-          <div class="slide__image">
-            <img
-              src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
-              alt="random"
-              class="image"
-            />
-          </div>
-          <div class="slide__info">
-            <span class="text"
-              >Выборы по Ленинскому<br />
-              округу. Сегодня<br />
-              последний день <br />выдвижения кандидатов</span
-            >
-            <span class="date"></span>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-          <div class="slide__image">
-            <img
-              src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
-              alt="random"
-              class="image"
-            />
-          </div>
-          <div class="slide__info">
-            <span class="text"
-              >Выборы по Ленинскому<br />
-              округу. Сегодня<br />
-              последний день <br />выдвижения кандидатов</span
-            >
-            <span class="date"></span>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-        <div class="slide__button swiper-button-next"></div>
-        <div class="slide__button swiper-button-prev"></div>
-    </section>
+    <section class="swiper mySwiper"></section>
 
     <!-- Footer -->
     <footer class="footer">
