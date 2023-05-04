@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -95,12 +94,11 @@ body {
 /* Header */
 
 /* Общие стили */
-
 .title {
   display: block;
   font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
+  font-weight: 400;
+  line-height: 130%;
   padding: 40px 5%;
 }
 
@@ -117,7 +115,7 @@ body {
 }
 /* Общие стили */
 
-/* Слайдер */
+/* Последние новости/Cлайдер */
 .slide {
   display: flex;
   align-items: center;
@@ -167,7 +165,45 @@ body {
   position: absolute;
   left: 20px;
 }
-/* Слайдер */
+/* Последние новости/Cлайдер */
+
+/* Ссылки на государственные сайты */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links__item li {
+  display: flex;
+  gap: 10px;
+}
+
+.links__item li span,
+a {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #3d49c8;
+  cursor: pointer;
+}
+
+.links__item li:hover span {
+  color: #bcb7b7;
+  transition: 0.2s;
+}
+
+.links__item li:hover a {
+  color: #bcb7b7;
+  transition: 0.2s;
+}
+/* Ссылки на государственные сайты */
 
 /* Footer */
 .footer {

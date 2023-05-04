@@ -29,6 +29,13 @@
   );
   }
   /* Общие стили */
+  /* Ссылки на государственные сайты */
+  .links__item li a {
+    font-size: calc(
+    8px + 7 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Ссылки на государственные сайты */
   /* Footer */
   .footer__link {
     font-size: calc(
@@ -56,26 +63,17 @@
     margin-right: 50px;
   }
   /* Header */
-  /* Слайдер */
+  /* Последние новости/Cлайдер */
   .slide__button {
     display: none;
   }
-  /* Слайдер */
+  /* Последние новости/Cлайдер */
   /* Footer */
   .footer__content {
     display: block;
   }
   .footer__content .location-map {
-    max-width: 400px;
-    max-height: 300px;
-  }
-  /* Footer */
-}
-@media screen and (max-width: 425px) {
-  /* Footer */
-  .footer__content .location-map {
-    max-width: 300px;
-    max-height: 200px;
+    width: 100%;
   }
   /* Footer */
 }
