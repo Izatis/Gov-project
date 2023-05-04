@@ -1,3 +1,51 @@
+//Карточки вакансий
+const data = [
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  }
+  ];
+  
+  const workContainer = document.querySelector('.work');
+  data.map((item) => {
+    const html = `
+      <div class="work__item">
+        <h3>${item.title}</h3>
+        <span class="price">${item.price}</span>
+        <span>${item.text}</span>
+        <button class="work__button"><span>Read More</span></button>
+      </div>
+    `;
+    workContainer.insertAdjacentHTML('beforeend', html);
+  });
+
+
 // Карточки свайпера
 const slides = [
   {
@@ -53,16 +101,16 @@ function updateDate() {
 setInterval(updateDate, 100);
 
 // Открывает версию для слабовидящих
-const icon = document.querySelector(".eye-burger i");
-const link = document.querySelector(".eye-burger .eye__title");
-const accessibilityHeader = document.querySelector(".accessibility-header");
+const eyeBurger = document.querySelector('.eye-burger');
+const icon = eyeBurger.querySelector('i');
+const link = eyeBurger.querySelector('.eye__title');
+const accessibilityHeader = document.querySelector('.accessibility-header');
 
 const toggleAccessibilityHeader = function () {
-  accessibilityHeader.classList.toggle("show-accessibility-header");
+  accessibilityHeader.classList.toggle('show-accessibility-header');
 };
 
-icon.addEventListener("click", toggleAccessibilityHeader);
-link.addEventListener("click", toggleAccessibilityHeader);
+eyeBurger.addEventListener('click', toggleAccessibilityHeader);
 
 // Изменение кнопок
 const fontSizeLargeBtn = document.getElementById("font-size-large");
