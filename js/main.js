@@ -1,76 +1,118 @@
+//Карточки вакансий
+const data = [
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  },
+  {
+  title: 'Водитель такси',
+  price: '15 000 сом.',
+  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+  }
+  ];
+  
+  const workContainer = document.querySelector('.work');
+  data.map((item) => {
+    const html = `
+      <div class="work__item">
+        <h3>${item.title}</h3>
+        <span class="price">${item.price}</span>
+        <span>${item.text}</span>
+        <button class="work__button"><span>Read More</span></button>
+      </div>
+    `;
+    workContainer.insertAdjacentHTML('beforeend', html);
+  });
+
+
 // Карточки свайпера
 const slides = [
   {
-    image: './images/random.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    image: "./images/random.jpg",
+    description:
+      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
   },
   {
-    image: './images/42227f99ce45d942a1824c6beadbb4e4.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    image: "./images/42227f99ce45d942a1824c6beadbb4e4.jpg",
+    description:
+      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
   },
   {
-    image: './images/772604.c2d590a5b031d53cc9add60339607368.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    image: "./images/772604.c2d590a5b031d53cc9add60339607368.jpg",
+    description:
+      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
   },
   {
-    image: './images/Kyrgyzatan_Summary_tcm10-33237.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
-  }
+    image: "./images/Kyrgyzatan_Summary_tcm10-33237.jpg",
+    description:
+      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+  },
 ];
 
-const slidesHtml = slides.map((slide) => `
+const slidesHtml = slides
+  .map(
+    (slide) => `
   <div class="slide swiper-slide">
-    <div class="slide__image">
-      <img src="${slide.image}" alt="random" class="image my-image" />
+    <div class="slide__image my-image">
+      <img src="${slide.image}" alt="random"/>
     </div>
     <div class="slide__info">
-      <span class="text">${slide.description}</span>
+      <span class="text container-text">${slide.description}</span>
       <span class="date"></span>
     </div>
   </div>
-`).join('');
+`
+  )
+  .join("");
 
-const swiperHtml = `
-  <section class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      ${slidesHtml}
-      <div class="swiper-pagination my-image"></div>
-    </div>
-    <div class="slide__button swiper-button-next my-image"></div>
-    <div class="slide__button swiper-button-prev my-image"></div>
-  </section>
-`;
-
-document.querySelector('.main').innerHTML = swiperHtml;
-
+document.querySelector(".swiper-wrapper").innerHTML = slidesHtml;
 
 // Устанавливаем обновляемую дату
 function updateDate() {
-    var now = new Date();
-    var dateElements = document.querySelectorAll('.date');
-    var options = { year: 'numeric', month: 'long', day: 'numeric' };
-    dateElements.forEach(function (dateElement) {
-      dateElement.innerHTML = now.toLocaleDateString('ru-RU', options);
-    });
+  var now = new Date();
+  var dateElements = document.querySelectorAll(".date");
+  var options = { year: "numeric", month: "long", day: "numeric" };
+  dateElements.forEach(function (dateElement) {
+    dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
+  });
 }
 
 setInterval(updateDate, 100);
 
-
 // Открывает версию для слабовидящих
-const icon = document.querySelector('.eye-burger i');
-const link = document.querySelector('.eye-burger .eye__title');
+const eyeBurger = document.querySelector('.eye-burger');
+const icon = eyeBurger.querySelector('i');
+const link = eyeBurger.querySelector('.eye__title');
 const accessibilityHeader = document.querySelector('.accessibility-header');
 
-const toggleAccessibilityHeader = function() {
+const toggleAccessibilityHeader = function () {
   accessibilityHeader.classList.toggle('show-accessibility-header');
 };
 
-icon.addEventListener('click', toggleAccessibilityHeader);
-link.addEventListener('click', toggleAccessibilityHeader);
+eyeBurger.addEventListener('click', toggleAccessibilityHeader);
 
-
-  // Изменение кнопок
+// Изменение кнопок
 const fontSizeLargeBtn = document.getElementById("font-size-large");
 const fontSizeMediumBtn = document.getElementById("font-size-medium");
 const fontSizeSmallBtn = document.getElementById("font-size-small");
@@ -106,8 +148,6 @@ letterSpacingSmallBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.05em";
 });
 
-
-
 // // Обработчик клика на кнопке Изображения
 const bwButtons = document.querySelectorAll(".bw-button");
 const colorButtons = document.querySelectorAll(".color-button");
@@ -130,7 +170,6 @@ colorButtons.forEach((button) => {
     });
   });
 });
-
 
 // Cбрасывает все стили
 const resetStylesBtn = document.getElementById("reset-styles-button");

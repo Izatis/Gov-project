@@ -8,41 +8,54 @@ $maxWidth: 1440;
     #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
   );
 }
+
+/* Header */
+.nav__link {
+  @include adaptiv-font(20, 5);
+}
+
+.eye__title {
+  @include adaptiv-font(15, 8);
+}
+/* Header */
+
+/* Общие стили */
+.title {
+  @include adaptiv-font(40, 15);
+}
+
+.text {
+  @include adaptiv-font(35, 8);
+}
+
+.date {
+  @include adaptiv-font(20, 5);
+}
+/* Общие стили */
+
+/* Ссылки на государственные сайты */
+.links__item li a {
+  @include adaptiv-font(15, 8);
+}
+/* Ссылки на государственные сайты */
+
+/* Footer */
+.footer__link {
+  @include adaptiv-font(16, 5);
+}
+/* Footer */
+
 @media screen and (max-width: 1440px) {
-  /* Header */
-  .nav__link {
-    @include adaptiv-font(16, 5);
+   /* Последние новости/Cлайдер */
+   .container-text {
+    max-width: 450px;
   }
-
-  .eye__title {
-    @include adaptiv-font(12, 8);
-  }
-  /* Header */
-
-  /* Общие стили */
-  .title {
-    @include adaptiv-font(35, 15);
-  }
-
-  .text {
-    @include adaptiv-font(35, 12);
-  }
-
-  .date {
-    @include adaptiv-font(15, 12);
-  }
-  /* Общие стили */
-
-  /* Footer */
-  .footer__link {
-    @include adaptiv-font(16, 5);
-  }
-  /* Footer */
+  /* Последние новости/Cлайдер */
 }
 
 @media screen and (max-width: 1024px) {
   /* Header */
-  .header__logo {
+  .header__logo img {
     width: 60px;
   }
 
@@ -50,6 +63,12 @@ $maxWidth: 1440;
     padding: 10px;
   }
   /* Header */
+
+  /* Последние новости/Cлайдер */
+  .container-text {
+    max-width: 350px;
+  }
+  /* Последние новости/Cлайдер */
 }
 
 @media screen and (max-width: 768px) {
@@ -63,30 +82,41 @@ $maxWidth: 1440;
   }
   /* Header */
 
-  /* Слайдер */
+  /* Последние новости/Cлайдер */
+  .container-text {
+    max-width: 250px;
+  }
+
   .slide__button {
     display: none;
   }
-  /* Слайдер */
+  /* Последние новости/Cлайдер */
+
+  /* Ссылки на государственные сайты */
+  .links {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    .links__item {
+      display: block;
+    }
+  }
+  /* Ссылки на государственные сайты */
 
   /* Footer */
   .footer__content {
     display: block;
     .location-map {
-      max-width: 400px;
-      max-height: 300px;
+      width: 100%;
     }
   }
   /* Footer */
 }
 
 @media screen and (max-width: 425px) {
-  /* Footer */
-  .footer__content {
-    .location-map {
-      max-width: 300px;
-      max-height: 200px;
-    }
+   /* Последние новости/Cлайдер */
+   .container-text {
+    max-width: 150px;
   }
-  /* Footer */
+  /* Последние новости/Cлайдер */
 }

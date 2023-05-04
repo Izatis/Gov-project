@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +8,13 @@
   font-family: "Rubik", sans-serif;
 }
 
-body {
-  margin: 100px 0 0 0;
-}
-
 /* Header */
 .header {
   width: 100%;
-  position: fixed;
-  z-index: 10;
+  /* position: fixed; */
+  /* z-index: 10;
   top: 0;
-  left: 0;
+  left: 0; */
   background: #1f3b99;
   padding: 10px 5%;
 }
@@ -36,7 +31,7 @@ body {
   margin: 0 auto;
 }
 
-.header__logo {
+.header__logo img {
   width: 80px;
   object-fit: cover;
 }
@@ -47,6 +42,7 @@ body {
   gap: 10px;
   color: #ffffff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .eye__title {
@@ -98,26 +94,21 @@ body {
 }
 /* Header */
 
-/* Для слабовидящих */
+/* Версия для слабовидящих */
 .accessibility-header {
-  display: flex;
   align-items: center;
   background-color: gray;
-  color: white;
+  color: #ffffff;
   height: 80px;
   width: 100%;
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 20;
 }
 
 .show-accessibility-header {
   display: block;
 }
 
-.access-wrapper{
+.access-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -127,7 +118,7 @@ body {
   line-height: 1;
 }
 
-.options{
+.options {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -135,21 +126,21 @@ body {
   line-height: 1;
 }
 
-.access-btn button{
+.access-btn button {
   border-style: none;
   border-radius: 2px;
   box-sizing: border-box;
-  background: #fff;
+  background: #ffffff;
   padding: 8px 30px;
 }
-/* Для слабовидящих */
+/* Версия для слабовидящих */
 
 /* Общие стили */
 .title {
   display: block;
   font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
+  font-weight: 400;
+  line-height: 130%;
   padding: 40px 5%;
 }
 
@@ -166,7 +157,7 @@ body {
 }
 /* Общие стили */
 
-/* Слайдер */
+/* Последние новости/Cлайдер */
 .slide {
   display: flex;
   align-items: center;
@@ -189,6 +180,11 @@ body {
   gap: 20px;
 }
 
+.container-text {
+  max-width: 550px;
+  width: 100%;
+}
+
 .slide__button {
   height: 45px;
   width: 45px;
@@ -204,7 +200,7 @@ body {
 .slide__button::before,
 .slide__button::after {
   font-size: 15px;
-  color: white;
+  color: #ffffff;
 }
 
 .swiper-button-next {
@@ -216,7 +212,105 @@ body {
   position: absolute;
   left: 20px;
 }
-/* Слайдер */
+/* Последние новости/Cлайдер */
+
+/* Перечень последних вакансий */
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.work__item {
+  max-width: 400px;
+  min-width: 320px;
+  min-height: 250px;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  padding: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.work__item .price {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #1f3b99;
+}
+
+.work__button {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  background: #1f3b99;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.work__button span {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.work__button:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+/* Перечень последних вакансий */
+
+/* Ссылки на государственные сайты */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links__item li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links__item li span,
+a {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #3d49c8;
+  cursor: pointer;
+}
+
+.links__item li:hover span {
+  color: #bcb7b7;
+  transition: 0.2s;
+}
+
+.links__item li:hover a {
+  color: #bcb7b7;
+  transition: 0.2s;
+}
+/* Ссылки на государственные сайты */
 
 /* Footer */
 .footer {
@@ -247,4 +341,3 @@ body {
   transition: 0.3s;
 }
 /* Footer */
- 
