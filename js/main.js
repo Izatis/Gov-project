@@ -1,5 +1,4 @@
 // Карточки свайпера
-
 const slides = [
   {
     image: './images/random.jpg',
@@ -35,10 +34,10 @@ const swiperHtml = `
   <section class="swiper mySwiper">
     <div class="swiper-wrapper">
       ${slidesHtml}
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination my-image"></div>
     </div>
-    <div class="slide__button swiper-button-next"></div>
-    <div class="slide__button swiper-button-prev"></div>
+    <div class="slide__button swiper-button-next my-image"></div>
+    <div class="slide__button swiper-button-prev my-image"></div>
   </section>
 `;
 
