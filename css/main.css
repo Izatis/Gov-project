@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1f3b99;
+  z-index: 10;
+  padding: 0 5%;
+}
+
+.header__content {
+  max-width: 1440px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__content img {
+  width: 80px;
+  object-fit: cover;
+}
+
+.eye-burger {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.eye {
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.nav .list .item {
+  position: relative;
+  float: left;
+}
+
+.nav .list .item a {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.nav .list .item a:hover {
+  color: #bcb7b7;
+}
+
+.nav .list .item ul {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  display: none;
+  background: #1f3b99;
+}
+
+.nav .list .item ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav .list .item:hover > ul {
+  display: initial;
+}
