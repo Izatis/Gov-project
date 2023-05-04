@@ -8,17 +8,13 @@
   font-family: "Rubik", sans-serif;
 }
 
-body {
-  margin: 100px 0 0 0;
-}
-
 /* Header */
 .header {
   width: 100%;
-  position: fixed;
-  z-index: 10;
+  /* position: fixed; */
+  /* z-index: 10;
   top: 0;
-  left: 0;
+  left: 0; */
   background: #1f3b99;
   padding: 10px 5%;
 }
@@ -97,19 +93,14 @@ body {
 }
 /* Header */
 
-/* Для слабовидящих */
+/* Версия для слабовидящих */
 .accessibility-header {
-  display: flex;
   align-items: center;
   background-color: gray;
   color: white;
   height: 80px;
   width: 100%;
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 20;
 }
 
 .show-accessibility-header {
@@ -141,7 +132,7 @@ body {
   background: #fff;
   padding: 8px 30px;
 }
-/* Для слабовидящих */
+/* Версия для слабовидящих */
 
 /* Общие стили */
 .title {
@@ -186,6 +177,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.container-text{
+  max-width: 500px;
+  width: 100%;
 }
 
 .slide__button {

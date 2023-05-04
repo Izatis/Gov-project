@@ -1,21 +1,20 @@
 // Карточки свайпера
-
 const slides = [
   {
     image: './images/random.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    description: 'До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин'
   },
   {
     image: './images/42227f99ce45d942a1824c6beadbb4e4.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    description: 'До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин'
   },
   {
     image: './images/772604.c2d590a5b031d53cc9add60339607368.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    description: 'До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин'
   },
   {
     image: './images/Kyrgyzatan_Summary_tcm10-33237.jpg',
-    description: 'До 2026 года 300 тысяч <br />высокооплачиваемых <br />рабочих мест в Кыргызстане <br /> планирует <br />создать кабмин'
+    description: 'До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин'
   }
 ];
 
@@ -25,24 +24,13 @@ const slidesHtml = slides.map((slide) => `
       <img src="${slide.image}" alt="random" class="image my-image" />
     </div>
     <div class="slide__info">
-      <span class="text">${slide.description}</span>
+      <span class="text container-text">${slide.description}</span>
       <span class="date"></span>
     </div>
   </div>
 `).join('');
 
-const swiperHtml = `
-  <section class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      ${slidesHtml}
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="slide__button swiper-button-next"></div>
-    <div class="slide__button swiper-button-prev"></div>
-  </section>
-`;
-
-document.querySelector('.main').innerHTML = swiperHtml;
+document.querySelector('.swiper-wrapper').innerHTML = slidesHtml;
 
 
 // Устанавливаем обновляемую дату

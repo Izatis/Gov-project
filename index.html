@@ -19,6 +19,43 @@
     <link rel="stylesheet" href="./css/burgerMenu.css" />
   </head>
   <body>
+    <!-- Версия для слабовидящих -->
+    <div class="accessibility-header">
+      <div class="access-wrapper">
+        <div class="options">
+          <p>Размер шрифта</p>
+          <div class="access-btn">
+            <button id="font-size-large">A+</button>
+            <button id="font-size-medium">A</button>
+            <button id="font-size-small">A-</button>
+          </div>
+        </div>
+        <div class="options">
+          <p>Интервал между букв</p>
+          <div class="access-btn">
+            <button class="space-btn" id="letter-spacing-large">А Б В</button>
+            <button class="space-btn" id="letter-spacing-medium">
+              А Б В
+            </button>
+            <button class="space-btn" id="letter-spacing-small">АБВ</button>
+          </div>
+        </div>
+        <div class="options">
+          <p>Изображения</p>
+          <div class="access-btn">
+            <button class="bw-button">Ч/Б</button>
+            <button class="color-button">Цветные</button>
+          </div>
+        </div>
+        <div class="access-btn">
+          <button class="space-btn" id="reset-styles-button">
+            Сбросить стили
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Версия для слабовидящих -->
+
     <!-- Header -->
     <header class="header">
       <div class="header__content">
@@ -56,6 +93,8 @@
         <div class="eye eye-burger">
           <i class="fa-solid fa-eye" aria-hidden="true"></i>
           <a class="eye__title" href="#">Версия для слабовидящих</a>
+
+          <!-- Бургер меню -->
           <div class="burger">
             <input type="checkbox" id="menu-toggle" />
             <label id="trigger" for="menu-toggle"></label>
@@ -81,58 +120,10 @@
               </ul>
             </div>
           </div>
+          <!-- Бургер меню -->
         </div>
       </div>
-            <ul class="burger__list">
-              <li class="burger__item">
-                <a class="burger__link" href="#">Постановления</a>
-              </li>
-              <li class="burger__item">
-                <a class="burger__link" href="#">Главная</a>
-              </li>
-              <li class="burger__item">
-                <a class="burger__link" href="#">Новости</a>
-              </li>
-              <li class="burger__item">
-                <a class="burger__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="accessibility-header">
-        <div class="access-wrapper">
-          <div class="options">
-            <p>Размер шрифта</p>
-            <div class="access-btn">
-              <button id="font-size-large">A+</button>
-              <button id="font-size-medium">A</button>
-              <button id="font-size-small">A-</button>
-            </div>
-          </div>
-          <div class="options">
-            <p>Интервал между букв</p>
-            <div class="access-btn">
-              <button class="space-btn" id="letter-spacing-large">А Б В</button>
-              <button class="space-btn" id="letter-spacing-medium">
-                А Б В
-              </button>
-              <button class="space-btn" id="letter-spacing-small">АБВ</button>
-            </div>
-          </div>
-          <div class="options">
-            <p>Изображения</p>
-            <div class="access-btn">
-              <button class="bw-button">Ч/Б</button>
-              <button class="color-button">Цветные</button>
-            </div>
-          </div>
-          <div class="access-btn">
-          <button class="space-btn" id="reset-styles-button">
-            Сбросить стили
-          </button>
-      </div>
-        </div>
+
     </header>
 
     <!-- Главная -->
@@ -140,7 +131,13 @@
 
     <!-- Последние новости/Cлайдер -->
     <h1 class="title">Последние новости</h1>
-    <section class="swiper mySwiper"></section>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper"></div>
+      <div class="swiper-pagination"></div>
+
+      <div class="slide__button swiper-button-next"></div>
+      <div class="slide__button swiper-button-prev"></div>
+    </section>
 
     <!-- Ссылки на государственные сайты -->
     <h1 class="title">Сcылки на государственные сайты</h1>
