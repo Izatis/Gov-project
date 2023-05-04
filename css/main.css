@@ -23,6 +23,10 @@ body {
   padding: 10px 5%;
 }
 
+.header-container {
+  position: relative;
+}
+
 .header__content {
   max-width: 1440px;
   display: flex;
@@ -92,6 +96,52 @@ body {
   display: initial;
 }
 /* Header */
+
+/* Для слабовидящих */
+.accessibility-header {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+}
+
+.show-accessibility-header {
+  display: block;
+}
+
+.access-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  height: 100%;
+  line-height: 1;
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1;
+}
+
+.access-btn button{
+  border-style: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 8px 30px;
+}
+/* Для слабовидящих */
 
 /* Общие стили */
 .title {
@@ -234,3 +284,4 @@ a {
   transition: 0.3s;
 }
 /* Footer */
+ 
