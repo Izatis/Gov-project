@@ -19,12 +19,30 @@
   transition: 0.2s;
 }
 
-.burger__list,
-.burger__item,
-.burger__link {
-  display: none;
+.burger__item > ul.open {
+  display: block;
 }
 
+.burger__list {
+  background-color: #ffffff;
+}
+
+.burger__item ul {
+  display: none;
+  padding-left: 40px;
+}
+
+.burger__item ul li {
+  padding-bottom: 14px;
+}
+
+.burger__item {
+  width: 300px;
+  text-align: left;
+  padding: 10px 20px;
+  overflow: visible;
+  white-space: normal;
+}
 
 .burger__header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -40,12 +58,6 @@
   font-weight: 700;
   line-height: 1.8;
   color: #1f3b99;
-}
-
-.burger__item {
-  width: 300px;
-  text-indent: 56px;
-  padding: 20px;
 }
 
 .burger__link:focus {

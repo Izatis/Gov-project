@@ -1,18 +1,29 @@
 //Для подсписков
-const selectLinks = document.querySelectorAll('.select');
+const menuToggle = document.getElementById("menu-toggle");
+const aboutLink = document.querySelector(".select[href='#']");
+const sectionsLink = document.querySelectorAll(".select[href='#']");
+const submenus = document.querySelectorAll(".burger__item > ul");
 
-selectLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    const parent = link.parentElement;
-  
-    const children = parent.children;
-    for (let i = 0; i < children.length; i++) {
-      if (children[i].tagName === 'UL' && !parent.contains(children[i])) {
-        children[i].classList.remove('active');
-      }
-    }
-  });
-});
+// функция, которая открывает/закрывает подменю при клике на ссылку "О нас" или "Разделы"
+function toggleSubmenu(event) {
+  event.preventDefault();
+  const submenu = this.nextElementSibling;
+  submenu.classList.toggle("open");
+}
+
+// функция, которая закрывает меню при клике на любое место вне меню
+function closeMenu(event) {
+  if (!event.target.closest(".burger")) {
+    menuToggle.checked = false;
+    submenus.forEach(submenu => submenu.classList.remove("open"));
+  }
+}
+
+// назначаем обработчики событий на ссылки и на документ
+aboutLink.addEventListener("click", toggleSubmenu);
+sectionsLink.forEach(link => link.addEventListener("click", toggleSubmenu));
+document.addEventListener("click", closeMenu);
+
 
 // Тултип
 function showTooltip(event) {
