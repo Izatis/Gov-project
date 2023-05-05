@@ -423,17 +423,51 @@
 }
 /* Последние новости/Cлайдер */
 
+/* Список последних новостей/Карточки */
+.news-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.news-list__card {
+  max-width: 400px;
+  margin: 20px;
+}
+
+.news-list__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-list__text {
+  max-width: 400px;
+  margin: 10px 0 0 0;
+}
+
+.news-list__data-eye {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.news-list__text h2 {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+/* Список последних новостей/Карточки */
+
 /* Перечень последних вакансий */
 .vacancy {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .vacancy__item {
   max-width: 400px;
-  min-width: 320px;
   min-height: 250px;
   width: calc(50% - 20px);
   display: flex;
@@ -445,6 +479,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  margin: 20px;
 }
 
 .vacancy__item .price {
