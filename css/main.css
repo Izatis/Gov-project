@@ -9,6 +9,11 @@
   font-family: "Rubik", sans-serif;
 }
 
+
+
+
+
+
 .title {
   display: block;
   font-style: normal;
@@ -413,6 +418,7 @@ a {
 }
 
 .footer__link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -429,3 +435,14 @@ a {
   transition: 0.3s;
 }
 /* Footer */
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  z-index: 9999;
+}

@@ -58,7 +58,7 @@
     <header class="header my-image">
       <div class="header__content">
         <div class="header__logo my-image">
-          <a href="#"> <img src="./images/logo.png" alt="logo" /> </a>
+          <a href="#"> <img src="./images/logo.png" alt="logo" /></a>
         </div>
 
         <nav class="nav">
@@ -106,7 +106,7 @@
             <header class="burger__header">
               <h1 class="burger__title">Menu</h1>
             </header>
-
+        
             <ul class="burger__list">
               <li class="burger__item">
                 <a class="burger__link" href="#">Постановления</a>
@@ -119,6 +119,23 @@
               </li>
               <li class="burger__item">
                 <a class="burger__link" href="#">Контакты</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link select" href="#">Разделы</a>
+                <ul>
+                  <li><a class="burger__link" href="#">Вакансии</a></li>
+                  <li><a class="burger__link" href="#">Инфографика</a></li>
+                  <li><a class="burger__link" href="#">Фотогалерея</a></li>
+                  <li><a class="burger__link" href="#">Сотрудники</a></li>
+                  <li><a class="burger__link" href="#">Интернет приемная</a></li>
+                </ul>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link select" href="#">О нас</a>
+                <ul>
+                  <li><a class="burger__link" href="#">Глава сельской управы</a></li>
+                  <li><a class="burger__link" href="#">О селе</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -1330,23 +1347,22 @@
       <div class="footer__content">
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-solid fa-map-location-dot"></i>Bishkek, Dordoi
-              Plaza</a
-            >
+            <a class="footer__link" onmouseup="showTooltip(event)">
+              <i class="fa-solid fa-map-location-dot"></i>
+              Bishkek, Dordoi Plaza
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-solid fa-envelope"></i> test@gmail.com</a
-            >
+            <a class="footer__link" onmouseup="showTooltip(event)">
+              <i class="fa-solid fa-envelope"></i> test@gmail.com
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#"
-              ><i class="fa-solid fa-phone"></i>+996709333333</a
-            >
+            <a class="footer__link" onmouseup="showTooltip(event)">
+              <i class="fa-solid fa-phone"></i>+996709333333
+            </a>
           </li>
         </ul>
-
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link footer__link_quetion" href="#"
