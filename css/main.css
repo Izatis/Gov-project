@@ -35,10 +35,6 @@
   overflow: hidden;
 }
 
-.menu-checkbox {
-  opacity: 0;
-}
-
 .modal {
   position: fixed;
   top: 50%;
@@ -258,7 +254,7 @@
   margin-left: 10px;
 }
 
-.select:focus:after {
+.select:hover:after {
   content: "\f077";
 }
 
@@ -437,6 +433,7 @@
 
 .news-list__image img {
   width: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
