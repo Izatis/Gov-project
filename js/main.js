@@ -1,50 +1,70 @@
 //Карточки вакансий
 const data = [
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
   },
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
   },
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
   },
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
   },
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
   },
   {
-  title: 'Водитель такси',
-  price: '15 000 сом.',
-  text: 'Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения'
-  }
-  ];
-  
-  const vacancyContainer = document.querySelector('.vacancy');
-  data.map((item) => {
-    const html = `
+    title: "Водитель такси",
+    price: "15 000 сом.",
+    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+  },
+];
+
+const vacancyContainer = document.querySelector(".vacancy");
+data.map((item) => {
+  const html = `
+    <input type="checkbox" id="menu-state" class="menu-checkbox" />
+    <div class="overlay-background"></div>
+
+    <div class="modal">
+      <div class="modal__content">
+        <div class="modal__body">
+          <div class="modal__header">
+            <div class="modal__title"><h3>${item.title}</h3><span class="price">${item.price}</span></div>
+            <label for="menu-state">
+              <div class="modal__close">X</div>
+            </label>
+          </div>
+          <p>
+          ${item.text}
+          </p>
+        </div>
+      </div>
+    </div>
       <div class="vacancy__item">
         <h3>${item.title}</h3>
         <span class="price">${item.price}</span>
-        <span>${item.text}</span>
-        <button class="vacancy__button"><span>Read More</span></button>
+        <p>${item.text}</p>
+        <label for="menu-state">
+        <div class="vacancy__button"><span>Read More</span></div>
+        </label>
+
       </div>
     `;
-    vacancyContainer.insertAdjacentHTML('beforeend', html);
-  });
-
+  vacancyContainer.insertAdjacentHTML("beforeend", html);
+});
 
 // Карточки свайпера
 const slides = [
@@ -78,7 +98,7 @@ const slidesHtml = slides
       <img src="${slide.image}" alt="random"/>
     </div>
     <div class="slide__info">
-      <span class="text container-text">${slide.description}</span>
+      <p class="text container-text">${slide.description}</p>
       <span class="date"></span>
     </div>
   </div>
@@ -101,16 +121,16 @@ function updateDate() {
 setInterval(updateDate, 100);
 
 // Открывает версию для слабовидящих
-const eyeBurger = document.querySelector('.eye-burger');
-const icon = eyeBurger.querySelector('i');
-const link = eyeBurger.querySelector('.eye__title');
-const accessibilityHeader = document.querySelector('.accessibility-header');
+const eyeBurger = document.querySelector(".eye-burger");
+const icon = eyeBurger.querySelector("i");
+const link = eyeBurger.querySelector(".eye__title");
+const accessibilityHeader = document.querySelector(".accessibility-header");
 
 const toggleAccessibilityHeader = function () {
-  accessibilityHeader.classList.toggle('show-accessibility-header');
+  accessibilityHeader.classList.toggle("show-accessibility-header");
 };
 
-eyeBurger.addEventListener('click', toggleAccessibilityHeader);
+eyeBurger.addEventListener("click", toggleAccessibilityHeader);
 
 // Изменение кнопок
 const fontSizeLargeBtn = document.getElementById("font-size-large");
@@ -178,5 +198,17 @@ resetStylesBtn.addEventListener("click", () => {
   const allElements = document.getElementsByTagName("*");
   for (let i = 0; i < allElements.length; i++) {
     allElements[i].style.cssText = "";
+  }
+});
+
+// Для запрета прокрутки когда модалка открыто
+const menuCheckbox = document.getElementById("menu-state");
+const body = document.querySelector("body");
+
+menuCheckbox.addEventListener("change", function () {
+  if (this.checked) {
+    body.classList.add("modal-open");
+  } else {
+    body.classList.remove("modal-open");
   }
 });
