@@ -19,6 +19,26 @@
 }
 
 /* Общие стили */
+/* Модалка */
+.modal__title {
+  font-size: calc(
+    15px + 10 * ((100vw - 320px) / 1120)
+  );
+}
+
+.modal__title span {
+  font-size: calc(
+    12px + 8 * ((100vw - 320px) / 1120)
+  );
+}
+
+.modal__body p {
+  font-size: calc(
+    5px + 15 * ((100vw - 320px) / 1120)
+  );
+}
+
+/* Модалка */
 /* Header */
 .nav__link {
   font-size: calc(
@@ -94,6 +114,14 @@
     margin-right: 50px;
   }
   /* Header */
+  /* Модалка */
+  .modal {
+    width: 100%;
+  }
+  #menu-state:checked ~ .modal .modal__content {
+    height: 50vh;
+  }
+  /* Модалка */
   /* Главная */
   .background {
     display: none;
@@ -134,6 +162,11 @@
   /* Footer */
 }
 @media screen and (max-width: 425px) {
+  /* Модалка */
+  #menu-state:checked ~ .modal .modal__content {
+    height: 100vh;
+  }
+  /* Модалка */
   /* Последние новости/Cлайдер */
   .container-text {
     max-width: 150px;
