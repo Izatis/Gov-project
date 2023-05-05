@@ -1,3 +1,43 @@
+//Для подсписков
+const selectLinks = document.querySelectorAll('.select');
+
+selectLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const parent = link.parentElement;
+  
+    const children = parent.children;
+    for (let i = 0; i < children.length; i++) {
+      if (children[i].tagName === 'UL' && !parent.contains(children[i])) {
+        children[i].classList.remove('active');
+      }
+    }
+  });
+});
+
+// Тултип
+function showTooltip(event) {
+  const element = event.target;
+  const text = element.innerText.trim();
+
+  const tooltip = document.createElement('div');
+  tooltip.classList.add('tooltip');
+  tooltip.innerText = 'Скопировано!';
+
+
+  document.body.appendChild(tooltip);
+  const elementRect = element.getBoundingClientRect();
+  const elementTop = elementRect.top + window.pageYOffset - tooltip.offsetHeight - 5; // отступ сверху
+  const elementLeft = elementRect.left + window.pageXOffset;
+
+  tooltip.style.top = elementTop + 'px';
+  tooltip.style.left = elementLeft + 'px';
+  navigator.clipboard.writeText(text);
+
+  setTimeout(() => {
+    document.body.removeChild(tooltip);
+  }, 1000);
+}
+
 //Карточки вакансий
 const data = [
   {

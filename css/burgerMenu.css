@@ -2,6 +2,7 @@
   display: none;
 }
 
+
 .burger__animated {
   width: 80px;
   height: 80px;
@@ -17,6 +18,13 @@
   animation: burger__animated 0.2s both;
   transition: 0.2s;
 }
+
+.burger__list,
+.burger__item,
+.burger__link {
+  display: none;
+}
+
 
 .burger__header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
