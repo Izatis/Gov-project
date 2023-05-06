@@ -1,73 +1,99 @@
 // Открывает версию для слабовидящих
 const eyeBurger = document.querySelector(".eye-burger");
-const icon = eyeBurger.querySelector("i");
-const link = eyeBurger.querySelector(".eye__title");
-const accessibilityHeader = document.querySelector(".accessibility-header");
+const accessibilityHeader = document.querySelector(".access-header");
 
 const toggleAccessibilityHeader = function () {
-  accessibilityHeader.classList.toggle("show-accessibility-header");
+  accessibilityHeader.classList.toggle("access-header_show");
 };
 
 eyeBurger.addEventListener("click", toggleAccessibilityHeader);
+
+// Функция - для добавление активных стилей 
+const activeButton = (button) => {
+  button.style.background = "gray";
+  button.style.border = "1px solid #ffffff";
+  button.style.color = "#ffffff";
+};
+
+// Функция - для удаление активных стилей 
+const notActiveButton = (...buttons) => {
+  buttons.map((button) => {
+    button.style.background = "";
+    button.style.border = "";
+    button.style.color = "";
+  });
+};
 
 // Изменение кнопок
 const fontSizeLargeBtn = document.getElementById("font-size-large");
 const fontSizeMediumBtn = document.getElementById("font-size-medium");
 const fontSizeSmallBtn = document.getElementById("font-size-small");
-const letterSpacingLargeBtn = document.getElementById("letter-spacing-large");
-const letterSpacingMediumBtn = document.getElementById("letter-spacing-medium");
-const letterSpacingSmallBtn = document.getElementById("letter-spacing-small");
-const imageColorToggleBtn = document.getElementById("image-color-toggle");
-const exampleImage = document.getElementById("example-image");
 
 // Обработчик клика на кнопке для изменения размера шрифта
 fontSizeLargeBtn.addEventListener("click", () => {
   document.body.style.fontSize = "24px";
+  notActiveButton(fontSizeMediumBtn, fontSizeSmallBtn);
+  activeButton(fontSizeLargeBtn);
 });
 
 fontSizeMediumBtn.addEventListener("click", () => {
   document.body.style.fontSize = "18px";
+  notActiveButton(fontSizeLargeBtn, fontSizeSmallBtn)
+  activeButton(fontSizeMediumBtn);
 });
 
 fontSizeSmallBtn.addEventListener("click", () => {
   document.body.style.fontSize = "12px";
+  notActiveButton(fontSizeLargeBtn, fontSizeMediumBtn)
+  activeButton(fontSizeSmallBtn);
 });
+
+const letterSpacingLargeBtn = document.getElementById("letter-spacing-large");
+const letterSpacingMediumBtn = document.getElementById("letter-spacing-medium");
+const letterSpacingSmallBtn = document.getElementById("letter-spacing-small");
 
 // Обработчик клика на кнопке для изменения интервала между буквами
 letterSpacingLargeBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.2em";
+  notActiveButton(letterSpacingMediumBtn, letterSpacingSmallBtn)
+  activeButton(letterSpacingLargeBtn);
 });
 
 letterSpacingMediumBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.1em";
+  notActiveButton(letterSpacingLargeBtn, letterSpacingSmallBtn)
+  activeButton(letterSpacingMediumBtn);
 });
 
 letterSpacingSmallBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.05em";
+  notActiveButton(letterSpacingLargeBtn, letterSpacingMediumBtn)
+  activeButton(letterSpacingSmallBtn);
 });
 
 // Обработчик клика на кнопке Изображения
-const bwButtons = document.querySelectorAll(".bw-button");
-const colorButtons = document.querySelectorAll(".color-button");
+const bwButtons = document.getElementById("bw-button");
+const colorButtons = document.getElementById("color-button");
 const images = document.querySelectorAll(".my-image");
 
 //Черно-белое
-bwButtons.forEach((button) => {
-  button.addEventListener("click", () => {
+bwButtons.addEventListener("click", () => {
     images.forEach((image) => {
       image.style.filter = "grayscale(100%)";
     });
+    notActiveButton(colorButtons)
+    activeButton(bwButtons);
   });
-});
+
 
 //Цветные
-colorButtons.forEach((button) => {
-  button.addEventListener("click", () => {
+colorButtons.addEventListener("click", () => {
     images.forEach((image) => {
       image.style.filter = "none";
     });
+    notActiveButton(colorButtons)
+    activeButton(colorButtons);
   });
-});
 
 // Cбрасывает все стили
 const resetStylesBtn = document.getElementById("reset-styles-button");
@@ -151,7 +177,7 @@ const slides = [
 const slidesHtml = slides
   .map(
     (slide) => `
-  <div class="slide swiper-slide">
+    <div class="slide swiper-slide">
     <div class="slide__image my-image">
       <img src="${slide.image}" alt="random"/>
     </div>

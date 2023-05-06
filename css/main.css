@@ -9,6 +9,11 @@
   font-family: "Rubik", sans-serif;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .title {
   display: block;
   font-style: normal;
@@ -98,14 +103,7 @@
 }
 
 #menu-state:not(:checked) ~ .overlay-background {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
   z-index: -100;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   opacity: 0;
   transition-delay: 1000ms;
   transition: all 500ms linear;
@@ -123,6 +121,7 @@
 }
 
 #menu-state:checked ~ .modal .modal__content {
+  height: 200px;
   box-shadow: 5px 5px 10px #000;
   border: 1px solid #191970;
   transition: all 500ms linear;
@@ -150,66 +149,104 @@
 /* Модалка */
 
 /* Версия для слабовидящих */
-.accessibility-header {
-  align-items: center;
-  background-color: gray;
-  color: #ffffff;
-  height: 80px;
-  width: 100%;
+.access-header {
   display: none;
+  background-color: gray;
 }
 
-.show-accessibility-header {
+.access-header_show {
   display: block;
 }
 
-.access-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 140px;
-  height: 100%;
-  line-height: 1;
+.access-header__content {
+  max-width: 1440px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-.options {
+.access-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.access-header__item {
+  max-width: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-  line-height: 1;
 }
 
-.access-btn button {
-  border-style: none;
-  border-radius: 2px;
-  box-sizing: border-box;
-  background: #ffffff;
-  padding: 8px 30px;
+.access-header__buttons {
+  display: flex;
+  gap: 10px;
 }
+
+.access-header__buttons button {
+  max-width: 100px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
+.access-header__buttons button:hover {
+  background: gray;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.access-header__bottom {
+  width: 220px;
+  margin: 10px auto 0 auto;
+}
+
+.access-header__bottom button {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.access-header__bottom button:hover {
+  background: gray;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
 /* Версия для слабовидящих */
 
 /* Header */
 .header {
-  width: 100%;
   /* position: fixed;
   z-index: 10;
   top: 0;
   left: 0; */
   background: #191970;
-  padding: 10px 5%;
-}
-
-.header-container {
-  position: relative;
 }
 
 .header__content {
   max-width: 1440px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 40px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -305,13 +342,17 @@
 
 /* Главная */
 .main {
+  background: #191970;
+}
+
+.main__content {
+  max-width: 1440px;
   height: 65vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #191970;
   padding: 0 5%;
-  margin: -20px 0 0 0;
+  margin: -20px auto 0 auto;
 }
 
 .main__title {
@@ -362,6 +403,7 @@
 /* Главная */
 
 /* Последние новости/Cлайдер */
+
 .slide {
   display: flex;
   align-items: center;
@@ -519,7 +561,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 20px;
 }
 
 .links__item {
@@ -557,15 +599,17 @@ a {
 
 /* Footer */
 .footer {
-  width: 100%;
   background: #191970;
-  padding: 20px 5%;
 }
 
 .footer__content {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .footer__link {

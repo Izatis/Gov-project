@@ -8,73 +8,73 @@ $maxWidth: 1440;
   );
 }
 
-/* Общие стили */
-.title {
-  @include adaptiv-font(40, 20);
-}
-
-.text {
-  @include adaptiv-font(35, 10);
-}
-
-.date {
-  @include adaptiv-font(20, 8);
-}
-/* Общие стили */
-
-/* Модалка */
-.modal__title {
-  @include adaptiv-font(35, 20);
-}
-
-.modal__title .price {
-  @include adaptiv-font(30, 15);
-}
-
-.modal__body p {
-  @include adaptiv-font(25, 10);
-}
-/* Модалка */
-
-/* Header */
-.nav__link {
-  @include adaptiv-font(20, 2);
-}
-
-.eye__title {
-  @include adaptiv-font(15, 8);
-}
-/* Header */
-
-/* Главная */
-.main__title p {
-  @include adaptiv-font(20, 11);
-}
-
-.main__title h1 {
-  @include adaptiv-font(32, 22);
-}
-/* Главная */
-
-/* Список последних новостей/Карточки */
-.news-list__text p {
-  @include adaptiv-font(20, 15);
-}
-/* Список последних новостей/Карточки */
-
-/* Ссылки на государственные сайты */
-.links__item li a {
-  @include adaptiv-font(15, 10);
-}
-/* Ссылки на государственные сайты */
-
-/* Footer */
-.footer__link {
-  @include adaptiv-font(15, 10);
-}
-/* Footer */
-
 @media screen and (max-width: 1440px) {
+  /* Общие стили */
+  .title {
+    @include adaptiv-font(40, 20);
+  }
+
+  .text {
+    @include adaptiv-font(35, 10);
+  }
+
+  .date {
+    @include adaptiv-font(20, 8);
+  }
+  /* Общие стили */
+
+  /* Модалка */
+  .modal__title {
+    @include adaptiv-font(35, 20);
+  }
+
+  .modal__title .price {
+    @include adaptiv-font(30, 15);
+  }
+
+  .modal__body p {
+    @include adaptiv-font(25, 10);
+  }
+  /* Модалка */
+
+  /* Header */
+  .nav__link {
+    @include adaptiv-font(17, 5);
+  }
+
+  .eye__title {
+    @include adaptiv-font(15, 8);
+  }
+  /* Header */
+
+  /* Главная */
+  .main__title p {
+    @include adaptiv-font(20, 11);
+  }
+
+  .main__title h1 {
+    @include adaptiv-font(32, 22);
+  }
+  /* Главная */
+
+  /* Список последних новостей/Карточки */
+  .news-list__text p {
+    @include adaptiv-font(20, 15);
+  }
+  /* Список последних новостей/Карточки */
+
+  /* Ссылки на государственные сайты */
+  .links__item li a {
+    @include adaptiv-font(15, 10);
+  }
+  /* Ссылки на государственные сайты */
+
+  /* Footer */
+  .footer__link {
+    @include adaptiv-font(15, 10);
+  }
+  /* Footer */
+
   /* Последние новости/Cлайдер */
   .slide__info h2 {
     max-width: 450px;
@@ -115,6 +115,12 @@ $maxWidth: 1440;
 }
 
 @media screen and (max-width: 768px) {
+  /* Версия для слабовидящих */
+  .access-header__buttons {
+    flex-direction: column;
+  }
+  /* Версия для слабовидящих */
+
   /* Header */
   .nav {
     display: none;
