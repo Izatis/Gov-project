@@ -156,7 +156,7 @@ const slidesHtml = slides
       <img src="${slide.image}" alt="random"/>
     </div>
     <div class="slide__info">
-      <p class="text container-text">${slide.description}</p>
+      <h2 class="text">${slide.description}</h2>
       <span class="date"></span>
     </div>
   </div>
@@ -209,9 +209,9 @@ const newsHtml = news
     <img src="${item.image}" alt="card-image" />
   </div>
   <div class="news-list__text">
-    <h2>
+    <p>
     ${item.title}
-    </h2>
+    </p>
   </div>
   <div class="news-list__data-eye">
     <i class="fa-solid fa-clock" style="color: #1f3b99"></i
