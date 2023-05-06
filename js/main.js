@@ -8,14 +8,14 @@ const toggleAccessibilityHeader = function () {
 
 eyeBurger.addEventListener("click", toggleAccessibilityHeader);
 
-// Функция - для добавление активных стилей 
+// Функция - для добавление активных стилей
 const activeButton = (button) => {
   button.style.background = "gray";
   button.style.border = "1px solid #ffffff";
   button.style.color = "#ffffff";
 };
 
-// Функция - для удаление активных стилей 
+// Функция - для удаление активных стилей
 const notActiveButton = (...buttons) => {
   buttons.map((button) => {
     button.style.background = "";
@@ -38,13 +38,13 @@ fontSizeLargeBtn.addEventListener("click", () => {
 
 fontSizeMediumBtn.addEventListener("click", () => {
   document.body.style.fontSize = "18px";
-  notActiveButton(fontSizeLargeBtn, fontSizeSmallBtn)
+  notActiveButton(fontSizeLargeBtn, fontSizeSmallBtn);
   activeButton(fontSizeMediumBtn);
 });
 
 fontSizeSmallBtn.addEventListener("click", () => {
   document.body.style.fontSize = "12px";
-  notActiveButton(fontSizeLargeBtn, fontSizeMediumBtn)
+  notActiveButton(fontSizeLargeBtn, fontSizeMediumBtn);
   activeButton(fontSizeSmallBtn);
 });
 
@@ -55,19 +55,19 @@ const letterSpacingSmallBtn = document.getElementById("letter-spacing-small");
 // Обработчик клика на кнопке для изменения интервала между буквами
 letterSpacingLargeBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.2em";
-  notActiveButton(letterSpacingMediumBtn, letterSpacingSmallBtn)
+  notActiveButton(letterSpacingMediumBtn, letterSpacingSmallBtn);
   activeButton(letterSpacingLargeBtn);
 });
 
 letterSpacingMediumBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.1em";
-  notActiveButton(letterSpacingLargeBtn, letterSpacingSmallBtn)
+  notActiveButton(letterSpacingLargeBtn, letterSpacingSmallBtn);
   activeButton(letterSpacingMediumBtn);
 });
 
 letterSpacingSmallBtn.addEventListener("click", () => {
   document.body.style.letterSpacing = "0.05em";
-  notActiveButton(letterSpacingLargeBtn, letterSpacingMediumBtn)
+  notActiveButton(letterSpacingLargeBtn, letterSpacingMediumBtn);
   activeButton(letterSpacingSmallBtn);
 });
 
@@ -78,22 +78,21 @@ const images = document.querySelectorAll(".my-image");
 
 //Черно-белое
 bwButtons.addEventListener("click", () => {
-    images.forEach((image) => {
-      image.style.filter = "grayscale(100%)";
-    });
-    notActiveButton(colorButtons)
-    activeButton(bwButtons);
+  images.forEach((image) => {
+    image.style.filter = "grayscale(100%)";
   });
-
+  notActiveButton(colorButtons);
+  activeButton(bwButtons);
+});
 
 //Цветные
 colorButtons.addEventListener("click", () => {
-    images.forEach((image) => {
-      image.style.filter = "none";
-    });
-    notActiveButton(colorButtons)
-    activeButton(colorButtons);
+  images.forEach((image) => {
+    image.style.filter = "none";
   });
+  notActiveButton(colorButtons);
+  activeButton(colorButtons);
+});
 
 // Cбрасывает все стили
 const resetStylesBtn = document.getElementById("reset-styles-button");
@@ -194,64 +193,63 @@ setInterval(updateDate, 100);
 // Карточки свайпера
 
 // Каточки новостей
-const news = [
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp",
-  },
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/42227f99ce45d942a1824c6beadbb4e4.jpg",
-  },
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/772604.c2d590a5b031d53cc9add60339607368.jpg",
-  },
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/Kyrgyzatan_Summary_tcm10-33237.jpg",
-  },
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/flagFirst.jpg",
-  },
-  {
-    title:
-      "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
-    image: "./images/flagSecond.jpg",
-  },
-];
+// const news = [
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp",
+//   },
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/42227f99ce45d942a1824c6beadbb4e4.jpg",
+//   },
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/772604.c2d590a5b031d53cc9add60339607368.jpg",
+//   },
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/Kyrgyzatan_Summary_tcm10-33237.jpg",
+//   },
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/flagFirst.jpg",
+//   },
+//   {
+//     title:
+//       "Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на экспорт",
+//     image: "./images/flagSecond.jpg",
+//   },
+// ];
 
-const newsHtml = news
-  .map(
-    (item) => `
-  <div class="news-list__card">
-  <div class="news-list__image">
-    <img src="${item.image}" alt="card-image" />
-  </div>
-  <div class="news-list__text">
-    <p>
-    ${item.title}
-    </p>
-  </div>
-  <div class="news-list__data-eye">
-    <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-    ><span class="date"></span>
-    <i id="views-icon" class="fas fa-eye"></i>
-    <span class="views">0</span>
-  </div>
-</div>
-`
-  )
-  .join("");
+// const newsHtml = news
+//   .map(
+//     (item) => `
+//   <div class="news-list__card">
+//   <div class="news-list__image">
+//     <img src="${item.image}" alt="card-image" />
+//   </div>
+//   <div class="news-list__text">
+//     <p>
+//     ${item.title}
+//     </p>
+//   </div>
+//   <div class="news-list__data-eye">
+//     <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+//     ><span class="date"></span>
+//     <i id="views-icon" class="fas fa-eye"></i>
+//     <span class="views">0</span>
+//   </div>
+// </div>
+// `
+//   )
+//   .join("");
 
-document.querySelector(".news-list").innerHTML = newsHtml;
-
+// document.querySelector(".news-list").innerHTML = newsHtml;
 // Каточки новостей
 
 //Карточки вакансий

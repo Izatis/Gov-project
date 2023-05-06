@@ -66,16 +66,16 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Постановления</a>
+              <a class="nav__link" href="./index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Главная</a>
+              <a class="nav__link" href="./news_more.html">Список</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./news.html">Новости</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#contacts">Контакты</a>
+              <a class="nav__link" href="./map.html">Контакты</a>
             </li>
             <li class="nav__item">
               <span class="nav__link select">Разделы</span>
@@ -101,6 +101,7 @@
           <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
           <a class="eye__title" href="#">Версия для слабовидящих</a>
         </div>
+
         <!-- Бургер меню -->
         <div class="burger">
           <input type="checkbox" id="menu-toggle" />
@@ -113,16 +114,16 @@
 
             <ul class="burger__list">
               <li class="burger__item">
-                <a class="burger__link" href="#">Постановления</a>
+                <a class="burger__link" href="./index.html">Главная</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="./index.html">Главная</a>
+                <a class="burger__link" href="./news_more.html">Список</a>
               </li>
               <li class="burger__item">
                 <a class="burger__link" href="./news.html">Новости</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="#">Контакты</a>
+                <a class="burger__link" href="./map.html">Контакты</a>
               </li>
               <li class="burger__item">
                 <span class="burger__link select">Разделы</span>
@@ -154,7 +155,7 @@
     <!-- Header -->
 
     <!-- Главная -->
-    <main class="main">
+    <main class="main my-image">
       <div class="main__content">
         <div class="main__title">
           <p>Кыргыз Республикасынын Министрлигине караштуу</p>
@@ -1251,19 +1252,14 @@
     <!-- Главная -->
 
     <div class="container">
-      <!-- Список последних новостей/Карточки -->
-      <h1 class="title">Список последних новостей</h1>
-      <div class="news-list"></div>
-      <!-- Список последних новостей/Карточки -->
-
       <!-- Перечень последних вакансий -->
       <h1 class="title" id="vacancy">Последнии вакансии</h1>
-      <div class="vacancy"></div>
+      <div class="vacancy my-image"></div>
       <!-- Перечень последних вакансий -->
 
       <!-- Ссылки на государственные сайты -->
       <h1 class="title">Сcылки на государственные сайты</h1>
-      <div class="links">
+      <div class="links my-image">
         <ul class="links__item">
           <li>
             <span>&raquo;</span
@@ -1351,7 +1347,6 @@
     <!-- Footer -->
     <footer class="footer my-image" id="contacts">
       <div class="footer__content">
-
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" onmouseup="showTooltip(event)">
@@ -1389,24 +1384,16 @@
           </li>
         </ul>
 
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link footer__link_quetion" href="#"
-              >Информация</a
-            >
-          </li>
-          <li class="footer__item">
-            <a class="footer__link footer__link_quetion" href="#"
-              >Информация</a
-            >
-          </li>
-          <li class="footer__item">
-            <a class="footer__link footer__link_quetion" href="#"
-              >Информация</a
-            >
-          </li>
-        </ul>
-
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46785.87214849588!2d74.6029056!3d42.8703744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8ecb3f365%3A0x6551c797c5d374c7!2z0KLQoNCmIERvcmRvaSBQbGF6YSAy!5e0!3m2!1sru!2skg!4v1679641540469!5m2!1sru!2skg"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </footer>
     <!-- Footer -->

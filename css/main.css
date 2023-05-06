@@ -561,7 +561,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0 0 40px 20px;
+  margin: 0 0 0 20px;
 }
 
 .links__item {
@@ -609,7 +609,7 @@ a {
   align-items: center;
   padding: 20px 5%;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
 }
 
 .footer__link {
@@ -641,3 +641,9 @@ a {
   border-radius: 4px;
   z-index: 9999;
 }
+
+/* Карта */
+.map{
+margin: 0 0 -105px 0;
+}
+/* Карта */

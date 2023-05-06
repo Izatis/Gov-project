@@ -180,6 +180,9 @@ $maxWidth: 1440;
   /* Footer */
   .footer__content {
     display: block;
+    .location-map {
+      width: 100%;
+    }
   }
   /* Footer */
 }
