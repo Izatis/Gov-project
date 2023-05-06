@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- Слайдер css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Главный css -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Адаптивный css -->
+    <link rel="stylesheet" href="./css/adaptive.css" />
+
+    <!-- Бургер css -->
+    <link rel="stylesheet" href="./css/burgerMenu.css" />
+
+  </head>
+  <body>
+
+    <!-- Последние новости/Cлайдер -->
+    <section class="swiper">
+      <h1 class="title">Последние новости</h1>
+
+      <div class="swiper-wrapper">
+        <div class="slide swiper-slide">
+          <div class="slide__image my-image">
+            <img
+              src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="slide__image my-image">
+            <img src="./images/random.jpg" alt="random" />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="slide__image my-image">
+            <img
+              src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="slide__image my-image">
+            <img
+              src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <div class="slide__image my-image">
+            <img
+              src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="slide__button swiper-button-next"></div>
+      <div class="slide__button swiper-button-prev"></div>
+    </section>
+    <!-- Последние новости/Cлайдер -->
+
+      <!-- Главный JS -->
+      <script src="./js/main.js"></script>
+
+    <!-- Слайдер JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

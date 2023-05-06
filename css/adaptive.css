@@ -168,9 +168,6 @@
   .footer__content {
     display: block;
   }
-  .footer__content .location-map {
-    width: 100%;
-  }
   /* Footer */
 }
 @media screen and (max-width: 425px) {

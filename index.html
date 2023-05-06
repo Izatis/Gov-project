@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gov</title>
 
-    <!-- Слайдер css -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
     <!-- Главный css -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -22,39 +19,39 @@
     <!-- Версия для слабовидящих -->
     <div class="access-header">
       <div class="access-header__content">
-       <div class="access-header__top">
-        <div class="access-header__item">
-          <p>Размер шрифта</p>
+        <div class="access-header__top">
+          <div class="access-header__item">
+            <p>Размер шрифта</p>
 
-          <div class="access-header__buttons">
-            <button id="font-size-large">A+</button>
-            <button id="font-size-medium">A</button>
-            <button id="font-size-small">A-</button>
+            <div class="access-header__buttons">
+              <button id="font-size-large">A+</button>
+              <button id="font-size-medium">A</button>
+              <button id="font-size-small">A-</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Интервал между букв</p>
+
+            <div class="access-header__buttons">
+              <button id="letter-spacing-large">А Б В</button>
+              <button id="letter-spacing-medium">А Б В</button>
+              <button id="letter-spacing-small">АБВ</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Изображения</p>
+
+            <div class="access-header__buttons">
+              <button id="bw-button">Ч/Б</button>
+              <button id="color-button">Цветные</button>
+            </div>
           </div>
         </div>
 
-        <div class="access-header__item">
-          <p>Интервал между букв</p>
-
-          <div class="access-header__buttons">
-            <button id="letter-spacing-large">А Б В</button>
-            <button id="letter-spacing-medium">А Б В</button>
-            <button id="letter-spacing-small">АБВ</button>
-          </div>
-        </div>
-
-        <div class="access-header__item">
-          <p>Изображения</p>
-
-          <div class="access-header__buttons">
-            <button id="bw-button">Ч/Б</button>
-            <button id="color-button">Цветные</button>
-          </div>
-        </div>
-       </div>
-       
-       <div class="access-header__bottom">
-         <button id="reset-styles-button">Сбросить стили</button>
+        <div class="access-header__bottom">
+          <button id="reset-styles-button">Сбросить стили</button>
         </div>
       </div>
     </div>
@@ -64,16 +61,18 @@
     <header class="header my-image">
       <div class="header__content">
         <div class="header__logo my-image">
-          <a href="#"> <img src="./images/logo.png" alt="logo" /></a>
+          <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
         </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Постановления</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#news">Новости</a>
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./news.html">Новости</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#contacts">Контакты</a>
@@ -117,10 +116,10 @@
                 <a class="burger__link" href="#">Постановления</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="#">Главная</a>
+                <a class="burger__link" href="./index.html">Главная</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="/news">Новости</a>
+                <a class="burger__link" href="./news.html">Новости</a>
               </li>
               <li class="burger__item">
                 <a class="burger__link" href="#">Контакты</a>
@@ -1252,17 +1251,6 @@
     <!-- Главная -->
 
     <div class="container">
-      <!-- Последние новости/Cлайдер -->
-      <section class="swiper">
-        <h1 class="title" id="news">Последние новости</h1>
-        <div class="swiper-wrapper"></div>
-        <div class="swiper-pagination"></div>
-
-        <div class="slide__button swiper-button-next"></div>
-        <div class="slide__button swiper-button-prev"></div>
-      </section>
-      <!-- Последние новости/Cлайдер -->
-
       <!-- Список последних новостей/Карточки -->
       <h1 class="title">Список последних новостей</h1>
       <div class="news-list"></div>
@@ -1363,6 +1351,7 @@
     <!-- Footer -->
     <footer class="footer my-image" id="contacts">
       <div class="footer__content">
+
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" onmouseup="showTooltip(event)">
@@ -1381,6 +1370,7 @@
             </a>
           </li>
         </ul>
+
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link footer__link_quetion" href="#"
@@ -1398,43 +1388,31 @@
             >
           </li>
         </ul>
-        <iframe
-          class="location-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46785.87214849588!2d74.6029056!3d42.8703744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8ecb3f365%3A0x6551c797c5d374c7!2z0KLQoNCmIERvcmRvaSBQbGF6YSAy!5e0!3m2!1sru!2skg!4v1679641540469!5m2!1sru!2skg"
-          width="500"
-          height="400"
-          style="border: 0"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#"
+              >Информация</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#"
+              >Информация</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="#"
+              >Информация</a
+            >
+          </li>
+        </ul>
+
       </div>
     </footer>
     <!-- Footer -->
 
     <!-- Главный JS -->
     <script src="./js/main.js"></script>
-
-    <!-- Слайдер JS -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper", {
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        speed: 1000,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 
     <!-- Иконка JS-->
     <script

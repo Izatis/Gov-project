@@ -146,51 +146,51 @@ setInterval(updateDate, 100);
 // Устанавливаем обновляемую дату
 
 // Карточки свайпера
-const slides = [
-  {
-    image: "./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp",
-    description:
-      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
-  },
-  {
-    image: "./images/random.jpg",
-    description:
-      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
-  },
-  {
-    image: "./images/42227f99ce45d942a1824c6beadbb4e4.jpg",
-    description:
-      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
-  },
-  {
-    image: "./images/772604.c2d590a5b031d53cc9add60339607368.jpg",
-    description:
-      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
-  },
-  {
-    image: "./images/Kyrgyzatan_Summary_tcm10-33237.jpg",
-    description:
-      "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
-  },
-];
+// const slides = [
+//   {
+//     image: "./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp",
+//     description:
+//       "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+//   },
+//   {
+//     image: "./images/random.jpg",
+//     description:
+//       "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+//   },
+//   {
+//     image: "./images/42227f99ce45d942a1824c6beadbb4e4.jpg",
+//     description:
+//       "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+//   },
+//   {
+//     image: "./images/772604.c2d590a5b031d53cc9add60339607368.jpg",
+//     description:
+//       "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+//   },
+//   {
+//     image: "./images/Kyrgyzatan_Summary_tcm10-33237.jpg",
+//     description:
+//       "До 2026 года 300 тысяч высокооплачиваемых рабочих мест в Кыргызстане  планирует создать кабмин",
+//   },
+// ];
 
-const slidesHtml = slides
-  .map(
-    (slide) => `
-    <div class="slide swiper-slide">
-    <div class="slide__image my-image">
-      <img src="${slide.image}" alt="random"/>
-    </div>
-    <div class="slide__info">
-      <h2 class="text">${slide.description}</h2>
-      <span class="date"></span>
-    </div>
-  </div>
-`
-  )
-  .join("");
+// const slidesHtml = slides
+//   .map(
+//     (slide) => `
+//     <div class="slide swiper-slide">
+//     <div class="slide__image my-image">
+//       <img src="${slide.image}" alt="random"/>
+//     </div>
+//     <div class="slide__info">
+//       <h2 class="text">${slide.description}</h2>
+//       <span class="date"></span>
+//     </div>
+//   </div>
+// `
+//   )
+//   .join("");
 
-document.querySelector(".swiper-wrapper").innerHTML = slidesHtml;
+// document.querySelector(".swiper-wrapper").innerHTML = slidesHtml;
 // Карточки свайпера
 
 // Каточки новостей
