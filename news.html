@@ -7,7 +7,7 @@
     <title>News</title>
 
     <!-- Иконка для владки -->
-    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="shortcut icon" href="./images/logo.png" />
 
     <!-- Слайдер css -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -21,7 +21,7 @@
     <!-- Бургер css -->
     <link rel="stylesheet" href="./css/burgerMenu.css" />
   </head>
-  <body>
+  <body class="my-image container">
     <!-- Версия для слабовидящих -->
     <div class="access-header">
       <div class="access-header__content">
@@ -64,12 +64,12 @@
     <!-- Версия для слабовидящих -->
 
     <!-- Последние новости/Cлайдер -->
-    <section class="swiper my-image">
-      <h1 class="title">Последние новости</h1>
+    <h1 class="title">Последние новости</h1>
+    <section class="swiper">
 
       <div class="swiper-wrapper">
-        <div class="slide swiper-slide">
-          <div class="slide__image my-image">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
             <img
               src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
               alt="random"
@@ -80,12 +80,12 @@
               До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
               Кыргызстане планирует создать кабмин
             </h2>
-            <span class="date"></span>
+            <span class="date">3141254</span>
           </div>
-        </div>
+        </a>
 
-        <div class="slide swiper-slide">
-          <div class="slide__image my-image">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
             <img src="./images/random.jpg" alt="random" />
           </div>
           <div class="slide__info">
@@ -95,10 +95,10 @@
             </h2>
             <span class="date"></span>
           </div>
-        </div>
+        </a>
 
-        <div class="slide swiper-slide">
-          <div class="slide__image my-image">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
             <img
               src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
               alt="random"
@@ -111,10 +111,10 @@
             </h2>
             <span class="date"></span>
           </div>
-        </div>
+        </a>
 
-        <div class="slide swiper-slide">
-          <div class="slide__image my-image">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
             <img
               src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
               alt="random"
@@ -127,10 +127,10 @@
             </h2>
             <span class="date"></span>
           </div>
-        </div>
+        </a>
 
-        <div class="slide swiper-slide">
-          <div class="slide__image my-image">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
             <img
               src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
               alt="random"
@@ -143,7 +143,7 @@
             </h2>
             <span class="date"></span>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="swiper-pagination"></div>
@@ -152,6 +152,131 @@
       <div class="slide__button swiper-button-prev"></div>
     </section>
     <!-- Последние новости/Cлайдер -->
+
+    <!-- Список последних новостей/Карточки -->
+    <h1 class="title">Список последних новостей</h1>
+    <section class="news-list">
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img
+            src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+            alt="card-image"
+          />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img
+            src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+            alt="card-image"
+          />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img
+            src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+            alt="card-image"
+          />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img
+            src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+            alt="card-image"
+          />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img src="./images/flagFirst.jpg" alt="card-image" />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+
+      <a class="news-list__card" href="./news-more.html">
+        <div class="news-list__image">
+          <img src="./images/flagSecond.jpg" alt="card-image" />
+        </div>
+        <div class="news-list__text">
+          <p>
+            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+            экспорт
+          </p>
+        </div>
+        <div class="news-list__data-eye">
+          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+          ><span class="date"></span>
+          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+          <span class="views">0</span>
+        </div>
+      </a>
+    </section>
+    <!-- Список последних новостей/Карточки -->
 
     <!-- Слайдер JS -->
     <script src="./js/swiper-bundle.min.js"></script>

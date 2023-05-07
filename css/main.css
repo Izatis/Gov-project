@@ -17,21 +17,40 @@
 .title {
   display: block;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 130%;
+  color: #191970;
   padding: 40px 5%;
+}
+
+.page-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #191970;
+  margin: 40px 0 20px 0;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #191970;
 }
 
 .text {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  color: #000000;
 }
 
 .date {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  color: #000000;
 }
 /* Общие стили */
 
@@ -403,7 +422,6 @@
 /* Главная */
 
 /* Последние новости/Cлайдер */
-
 .slide {
   display: flex;
   align-items: center;
@@ -494,6 +512,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  color: #000000;
 }
 /* Список последних новостей/Карточки */
 
@@ -506,17 +525,15 @@
 
 .vacancy__item {
   max-width: 400px;
-  min-height: 250px;
-  width: calc(50% - 20px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 15px;
   border: 1px solid #bcb7b7;
-  box-sizing: border-box;
-  padding: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  box-sizing: border-box;
+  padding: 20px;
   margin: 20px;
 }
 
@@ -560,8 +577,9 @@
 .links {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 0 0 0 20px;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .links__item {
@@ -570,25 +588,13 @@
   gap: 20px;
 }
 
-.links__item li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.links__item li span,
-a {
+.links__item li a {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
   color: rgb(63, 88, 178);
   transition: 0.3s;
   cursor: pointer;
-}
-
-.links__item li:hover span {
-  color: #bcb7b7;
-  transition: 0.3s;
 }
 
 .links__item li:hover a {
@@ -612,22 +618,29 @@ a {
   margin: 100px auto 0 auto;
 }
 
-.footer__link {
-  position: relative;
+.footer__list {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  cursor: default;
+}
+
+.footer__link_quetion {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
   color: #ffffff;
   transition: 0.3s;
-  padding: 10px;
 }
 
 .footer__link_quetion:hover {
   color: #bcb7b7;
   transition: 0.3s;
+  cursor: pointer;
 }
 /* Footer */
 
@@ -641,3 +654,131 @@ a {
   border-radius: 4px;
   z-index: 9999;
 }
+/* Tooltip */
+
+/* Новости поднобнее */
+.news-more-data-eye {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more__image img {
+  width: 100%;
+  object-fit: cover;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more__text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+/* Новости поднобнее */
+
+/* Контакты */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__list li {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+}
+
+.contacts__list li strong {
+  color: #191970;
+}
+/* Контакты */
+
+/* Сотрудники */
+.employees {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employees__item {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #bcb7b7;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px;
+}
+
+.avatar-fullName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.employees__item .job-title {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  color: #191970;
+}
+/* Сотрудники */
+
+/* Карта сайта */
+.site-map {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.site-map__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-map__list li a {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.site-map__list li:hover a {
+  color: #bcb7b7;
+  transition: 0.3s;
+}
+/* Карта сайта */

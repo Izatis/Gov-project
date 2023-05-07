@@ -8,14 +8,14 @@ const toggleAccessibilityHeader = function () {
 
 eyeBurger.addEventListener("click", toggleAccessibilityHeader);
 
-// Функция - для добавление активных стилей
+// Функция - для добавление кнопки активных стилей
 const activeButton = (button) => {
   button.style.background = "gray";
   button.style.border = "1px solid #ffffff";
   button.style.color = "#ffffff";
 };
 
-// Функция - для удаление активных стилей
+// Функция - для удаление активных стилей кнопки
 const notActiveButton = (...buttons) => {
   buttons.map((button) => {
     button.style.background = "";
@@ -90,7 +90,7 @@ colorButtons.addEventListener("click", () => {
   images.forEach((image) => {
     image.style.filter = "none";
   });
-  notActiveButton(colorButtons);
+  notActiveButton(bwButtons);
   activeButton(colorButtons);
 });
 
@@ -177,7 +177,7 @@ setInterval(updateDate, 100);
 //   .map(
 //     (slide) => `
 //     <div class="slide swiper-slide">
-//     <div class="slide__image my-image">
+//     <div class="slide__image">
 //       <img src="${slide.image}" alt="random"/>
 //     </div>
 //     <div class="slide__info">
@@ -253,72 +253,72 @@ setInterval(updateDate, 100);
 // Каточки новостей
 
 //Карточки вакансий
-const data = [
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-  {
-    title: "Водитель такси",
-    price: "15 000 сом.",
-    text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
-  },
-];
+// const data = [
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+//   {
+//     title: "Водитель такси",
+//     price: "15 000 сом.",
+//     text: "Оформление справок по з/плате для предъявления в налоговую инспекцию, биржу труда, отдел социальной защиты населения",
+//   },
+// ];
 
-const vacancyContainer = document.querySelector(".vacancy");
-data.map((item) => {
-  const html = `
-    <input type="checkbox" id="menu-state"/>
-    <div class="overlay-background"></div>
+// const vacancyContainer = document.querySelector(".vacancy");
+// data.map((item) => {
+//   const html = `
+//     <input type="checkbox" id="menu-state"/>
+//     <div class="overlay-background"></div>
     
-    <div class="modal">
-      <div class="modal__content">
-        <div class="modal__body">
-          <div class="modal__header">
-            <div class="modal__title"><h3>${item.title}</h3><span class="price">${item.price}</span></div>
-            <label for="menu-state">
-              <div class="modal__close">X</div>
-            </label>
-          </div>
-          <p>
-          ${item.text}
-          </p>
-        </div>
-      </div>
-    </div>
-      <div class="vacancy__item">
-        <h3>${item.title}</h3>
-        <span class="price">${item.price}</span>
-        <p>${item.text}</p>
-        <label for="menu-state">
-        <div class="vacancy__button"><span>Read More</span></div>
-        </label>
+//     <div class="modal">
+//       <div class="modal__content">
+//         <div class="modal__body">
+//           <div class="modal__header">
+//             <div class="modal__title"><h2>${item.title}</h2><span class="price">${item.price}</span></div>
+//             <label for="menu-state">
+//               <div class="modal__close">X</div>
+//             </label>
+//           </div>
+//           <p>
+//           ${item.text}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//       <div class="vacancy__item">
+//         <h2>${item.title}</h2>
+//         <span class="price">${item.price}</span>
+//         <p>${item.text}</p>
+//         <label for="menu-state">
+//         <div class="vacancy__button"><span>Read More</span></div>
+//         </label>
 
-      </div>
-    `;
-  vacancyContainer.insertAdjacentHTML("beforeend", html);
-});
+//       </div>
+//     `;
+//   vacancyContainer.insertAdjacentHTML("beforeend", html);
+// });
 //Карточки вакансий
 
 // Footer/Туултип

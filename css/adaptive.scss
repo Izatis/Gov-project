@@ -14,6 +14,14 @@ $maxWidth: 1440;
     @include adaptiv-font(40, 20);
   }
 
+  .page-title {
+    @include adaptiv-font(40, 20);
+  }
+
+  .subtitle {
+    @include adaptiv-font(25, 10);
+  }
+
   .text {
     @include adaptiv-font(35, 10);
   }
@@ -80,6 +88,12 @@ $maxWidth: 1440;
     max-width: 450px;
   }
   /* Последние новости/Cлайдер */
+
+  /* Сотрудники */
+  .employees__item .job-title {
+    @include adaptiv-font(20, 15);
+  }
+  /* Сотрудники */
 }
 
 @media screen and (max-width: 1024px) {
@@ -98,20 +112,6 @@ $maxWidth: 1440;
     max-width: 350px;
   }
   /* Последние новости/Cлайдер */
-
-  /* Список последних новостей/Карточки */
-  .news-list__card {
-    max-width: 1440px;
-    width: 100%;
-  }
-  /* Список последних новостей/Карточки */
-
-  /* Перечень последних вакансий */
-  .vacancy__item {
-    max-width: 1440px;
-    width: 100%;
-  }
-  /* Перечень последних вакансий */
 }
 
 @media screen and (max-width: 768px) {
