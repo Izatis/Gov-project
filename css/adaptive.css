@@ -78,7 +78,7 @@
   /* Footer */
   .footer__link {
     font-size: calc(
-    10px + 5 * ((100vw - 320px) / 1120)
+    8px + 7 * ((100vw - 320px) / 1120)
   );
   }
   /* Footer */
@@ -118,12 +118,12 @@
   /* Часто задаваемые вопросы */
   .faq__content_question {
     font-size: calc(
-    15px + 5 * ((100vw - 320px) / 1120)
+    10px + 10 * ((100vw - 320px) / 1120)
   );
   }
   .faq__answer {
     font-size: calc(
-    12px + 6 * ((100vw - 320px) / 1120)
+    8px + 10 * ((100vw - 320px) / 1120)
   );
   }
   /* Часто задаваемые вопросы */
@@ -139,7 +139,8 @@
   /* Header */
   /* Footer */
   .footer__content {
-    display: block;
+    align-items: flex-start;
+    flex-direction: column;
   }
   .footer__content .location-map {
     width: 100%;
@@ -150,6 +151,15 @@
     max-width: 350px;
   }
   /* Последние новости/Cлайдер */
+  /* Часто задаваемые вопросы */
+  .faq__content_question {
+    padding: 25px 30px 25px 0;
+  }
+  .faq__content_question::after {
+    right: 20px;
+    font-size: 4rem;
+  }
+  /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 768px) {
   /* Модалка */
@@ -203,6 +213,11 @@
     display: none;
   }
   /* Последние новости/Cлайдер */
+  /* Часто задаваемые вопросы */
+  .faq__content_question::after {
+    font-size: 3rem;
+  }
+  /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 425px) {
   /* Модалка */
