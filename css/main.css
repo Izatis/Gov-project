@@ -712,6 +712,15 @@
 }
 /* Контакты */
 
+/* Галерея */
+.gallery img{
+  width: 100%;
+  object-fit: cover;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+/* Галерея */
+
 /* Сотрудники */
 .employees {
   display: flex;
