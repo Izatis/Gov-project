@@ -94,6 +94,16 @@ $maxWidth: 1440;
     @include adaptiv-font(20, 15);
   }
   /* Сотрудники */
+
+  /* Часто задаваемые вопросы */
+  .faq__content_question {
+    @include adaptiv-font(20, 10);
+  }
+
+  .faq__answer {
+    @include adaptiv-font(18, 8);
+  }
+  /* Часто задаваемые вопросы */
 }
 
 @media screen and (max-width: 1024px) {

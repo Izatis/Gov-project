@@ -713,7 +713,7 @@
 /* Контакты */
 
 /* Галерея */
-.gallery img{
+.gallery img {
   width: 100%;
   object-fit: cover;
   padding: 0 5%;
@@ -749,7 +749,7 @@
   gap: 10px;
 }
 
-.avatar img{
+.avatar img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -791,3 +791,62 @@
   transition: 0.3s;
 }
 /* Карта сайта */
+
+/* Часто задаваемые вопросы */
+.faq {
+  position: relative;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.faq__content_question {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+
+.faq__content_question::after {
+  content: "+";
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 5rem;
+  font-weight: 300;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease 0s;
+}
+
+.faq-show::after {
+  content: "−";
+  transform: rotate(0deg);
+}
+
+.faq__line {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+  margin: 11.5px;
+}
+
+.faq__answer {
+  max-height: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #000000;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq-show .faq__answer {
+  max-height: 1000px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  padding: 25px;
+  box-sizing: border-box;
+  transition: max-height 0.5s ease-in-out;
+}
+/* Часто задаваемые вопросы */

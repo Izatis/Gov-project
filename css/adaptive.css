@@ -101,6 +101,18 @@
   );
   }
   /* Сотрудники */
+  /* Часто задаваемые вопросы */
+  .faq__content_question {
+    font-size: calc(
+    10px + 10 * ((100vw - 320px) / 1120)
+  );
+  }
+  .faq__answer {
+    font-size: calc(
+    8px + 10 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 1024px) {
   /* Header */
