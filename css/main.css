@@ -56,10 +56,6 @@
 /* Общие стили */
 
 /* Модалка */
-.modal-open {
-  overflow: hidden;
-}
-
 .modal {
   position: fixed;
   top: 50%;
@@ -384,14 +380,14 @@
 .main__title p {
   font-style: normal;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 145%;
   color: #ffffff;
 }
 
 .main__title h1 {
   font-style: normal;
   font-weight: 500;
-  line-height: 130%;
+  line-height: 145%;
   color: #ffffff;
 }
 
@@ -574,10 +570,33 @@
   margin: 20px;
 }
 
+.news-list__image {
+  position: relative;
+  height: 250px;
+}
+
 .news-list__image img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+}
+
+.news-list__blackout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  color: #ffffff;
+  transition: 0.7s;
+}
+
+.news-list__image:hover .news-list__blackout {
+  opacity: 1;
+  transition: 1s;
 }
 
 .news-list__text {
@@ -717,11 +736,67 @@
 /* Перечень последних вакансий */
 
 /* Фото Галерея */
-.gallery img {
-  width: 100%;
-  object-fit: cover;
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0 5%;
   box-sizing: border-box;
+}
+
+.gallery__image {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__blackout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  color: #ffffff;
+  transition: 0.7s;
+}
+
+.gallery__image:hover .gallery__blackout {
+  opacity: 1;
+  transition: 1s;
+}
+
+.full-gallery {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.7s;
+}
+
+.full-gallery__button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 112px;
+  min-width: 60px;
+  width: 6vw;
+  background: transparent;
+  border: 1px solid rgb(63, 88, 178);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
 }
 /* Фото Галерея */
 

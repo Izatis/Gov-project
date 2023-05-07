@@ -9,6 +9,9 @@
     <!-- Иконка для владки -->
     <link rel="shortcut icon" href="./images/logo.png" />
 
+    <!-- Слайдер css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Главный css -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -85,7 +88,9 @@
               <ul>
                 <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
                 <li><a class="nav__link" href="#">Инфографика</a></li>
-                <li><a class="nav__link" href="./gallery.html">Фотогалерея</a></li>
+                <li>
+                  <a class="nav__link" href="./gallery.html">Фотогалерея</a>
+                </li>
                 <li>
                   <a class="nav__link" href="./sotrudniki.html">Сотрудники</a>
                 </li>
@@ -141,7 +146,9 @@
                     <a class="nav__link" href="./vacancy.html">Вакансии</a>
                   </li>
                   <li><a class="nav__link" href="#">Инфографика</a></li>
-                  <li><a class="nav__link" href="./gallery.html">Фотогалерея</a></li>
+                  <li>
+                    <a class="nav__link" href="./gallery.html">Фотогалерея</a>
+                  </li>
                   <li>
                     <a class="nav__link" href="./sotrudniki.html">Сотрудники</a>
                   </li>
@@ -1267,6 +1274,95 @@
     </main>
     <!-- Главная -->
 
+    <!-- Последние новости/Cлайдер -->
+    <h1 class="title">Последние новости</h1>
+    <section class="swiper">
+      <div class="swiper-wrapper">
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
+            <img
+              src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </a>
+
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
+            <img src="./images/random.jpg" alt="random" />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </a>
+
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
+            <img
+              src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </a>
+
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
+            <img
+              src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </a>
+
+        <a class="slide swiper-slide" href="./news-more.html">
+          <div class="slide__image">
+            <img
+              src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+              alt="random"
+            />
+          </div>
+          <div class="slide__info">
+            <h2 class="text">
+              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+              Кыргызстане планирует создать кабмин
+            </h2>
+            <span class="date"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="slide__button swiper-button-next"></div>
+      <div class="slide__button swiper-button-prev"></div>
+    </section>
+    <!-- Последние новости/Cлайдер -->
+
     <div class="container">
       <!-- Ссылки на государственные сайты -->
       <h1 class="title">Сcылки на государственные сайты</h1>
@@ -1348,7 +1444,6 @@
     <!-- Footer -->
     <footer class="footer" id="contacts">
       <div class="footer__content">
-
         <ul class="footer__list">
           <li onmouseup="showTooltip(event)">
             <i class="fa-solid fa-map-location-dot"></i> Bishkek, Dordoi Plaza
@@ -1406,5 +1501,41 @@
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Слайдер JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <script>
+      // Устанавливаем обновляемую дату
+      function updateDate() {
+        const now = new Date();
+        const dateElements = document.querySelectorAll(".date");
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        dateElements.forEach(function (dateElement) {
+          dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
+        });
+      }
+      setInterval(updateDate, 100);
+      // Устанавливаем обновляемую дату
+
+      // Для добавление точек
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // Для добавление точек
+    </script>
   </body>
 </html>

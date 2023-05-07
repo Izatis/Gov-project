@@ -331,13 +331,12 @@
     <script>
       // Для запрета прокрутки когда модалка открыто
       const menuCheckbox = document.getElementById("menu-state");
-      const body = document.querySelector("body");
 
       menuCheckbox.addEventListener("change", function () {
         if (this.checked) {
-          body.classList.add("modal-open");
+          document.body.style.overflow = "hidden";
         } else {
-          body.classList.remove("modal-open");
+          document.body.style.overflow = null;
         }
       });
       // Для запрета прокрутки когда модалка открыто
