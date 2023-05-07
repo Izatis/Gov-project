@@ -9,6 +9,7 @@
   font-family: "Rubik", sans-serif;
 }
 
+/* Общие стили */
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -81,18 +82,18 @@
   flex-direction: row;
 }
 
-.modal__title {
-  width: 100%;
+.modal__title h1 {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 130%;
+  color: #191970;
 }
 
 .modal__title span {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  color: #191970;
+  color: rgb(63, 88, 178);
 }
 
 .modal__header label {
@@ -366,7 +367,7 @@
 
 .main__content {
   max-width: 1440px;
-  height: 65vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -418,8 +419,91 @@
   color: #ffffff;
   transition: 0.3s;
 }
-
 /* Главная */
+
+/* Ссылки на государственные сайты */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.links__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links__item li a {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.links__item li:hover a {
+  color: #bcb7b7;
+  transition: 0.3s;
+}
+/* Ссылки на государственные сайты */
+
+/* Footer */
+.footer {
+  background: #191970;
+}
+
+.footer__content {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  margin: 100px auto 0 auto;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  cursor: default;
+}
+
+.footer__link_quetion {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.footer__link_quetion:hover {
+  color: #bcb7b7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* Footer */
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  z-index: 9999;
+}
+/* Tooltip */
 
 /* Последние новости/Cлайдер */
 .slide {
@@ -516,6 +600,65 @@
 }
 /* Список последних новостей/Карточки */
 
+/* Новости поднобнее */
+.news-more-data-eye {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 5% 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more__image img {
+  width: 100%;
+  object-fit: cover;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.news-more__text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+/* Новости поднобнее */
+
+/* Контакты */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__list li {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+}
+
+.contacts__list li strong {
+  color: #191970;
+}
+/* Контакты */
+
 /* Перечень последних вакансий */
 .vacancy {
   display: flex;
@@ -573,153 +716,14 @@
 }
 /* Перечень последних вакансий */
 
-/* Ссылки на государственные сайты */
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-
-.links__item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.links__item li a {
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  color: rgb(63, 88, 178);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.links__item li:hover a {
-  color: #bcb7b7;
-  transition: 0.3s;
-}
-/* Ссылки на государственные сайты */
-
-/* Footer */
-.footer {
-  background: #191970;
-}
-
-.footer__content {
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  box-sizing: border-box;
-  margin: 100px auto 0 auto;
-}
-
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: #ffffff;
-  cursor: default;
-}
-
-.footer__link_quetion {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: #ffffff;
-  transition: 0.3s;
-}
-
-.footer__link_quetion:hover {
-  color: #bcb7b7;
-  transition: 0.3s;
-  cursor: pointer;
-}
-/* Footer */
-
-/* Tooltip */
-.tooltip {
-  position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 14px;
-  border-radius: 4px;
-  z-index: 9999;
-}
-/* Tooltip */
-
-/* Новости поднобнее */
-.news-more-data-eye {
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-
-.news-more {
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-
-.news-more__image img {
-  width: 100%;
-  object-fit: cover;
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-
-.news-more__text {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  padding: 0 5%;
-  box-sizing: border-box;
-  margin: 20px 0;
-}
-
-/* Новости поднобнее */
-
-/* Контакты */
-.contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contacts__list li {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: rgb(63, 88, 178);
-}
-
-.contacts__list li strong {
-  color: #191970;
-}
-/* Контакты */
-
-/* Галерея */
+/* Фото Галерея */
 .gallery img {
   width: 100%;
   object-fit: cover;
   padding: 0 5%;
   box-sizing: border-box;
 }
-/* Галерея */
+/* Фото Галерея */
 
 /* Сотрудники */
 .employees {

@@ -19,7 +19,7 @@ $maxWidth: 1440;
   }
 
   .subtitle {
-    @include adaptiv-font(25, 10);
+    @include adaptiv-font(25, 15);
   }
 
   .text {
@@ -32,7 +32,7 @@ $maxWidth: 1440;
   /* Общие стили */
 
   /* Модалка */
-  .modal__title {
+  .modal__title h1 {
     @include adaptiv-font(35, 20);
   }
 
@@ -65,12 +65,6 @@ $maxWidth: 1440;
   }
   /* Главная */
 
-  /* Список последних новостей/Карточки */
-  .news-list__text p {
-    @include adaptiv-font(20, 15);
-  }
-  /* Список последних новостей/Карточки */
-
   /* Ссылки на государственные сайты */
   .links__item li a {
     @include adaptiv-font(15, 10);
@@ -89,6 +83,24 @@ $maxWidth: 1440;
   }
   /* Последние новости/Cлайдер */
 
+  /* Список последних новостей/Карточки */
+  .news-list__text p {
+    @include adaptiv-font(20, 15);
+  }
+  /* Список последних новостей/Карточки */
+
+  /* Новости поднобнее */
+  .news-more__text {
+    @include adaptiv-font(18, 12);
+  }
+  /* Новости поднобнее */
+
+  /* Контакты */
+  .contacts__list li {
+    @include adaptiv-font(18, 12);
+  }
+  /* Контакты */
+
   /* Сотрудники */
   .employees__item .job-title {
     @include adaptiv-font(20, 15);
@@ -97,11 +109,11 @@ $maxWidth: 1440;
 
   /* Часто задаваемые вопросы */
   .faq__content_question {
-    @include adaptiv-font(20, 10);
+    @include adaptiv-font(20, 15);
   }
 
   .faq__answer {
-    @include adaptiv-font(18, 8);
+    @include adaptiv-font(18, 12);
   }
   /* Часто задаваемые вопросы */
 }
@@ -117,6 +129,15 @@ $maxWidth: 1440;
   }
   /* Header */
 
+  /* Footer */
+  .footer__content {
+    display: block;
+    .location-map {
+      width: 100%;
+    }
+  }
+  /* Footer */
+
   /* Последние новости/Cлайдер */
   .slide__info h2 {
     max-width: 350px;
@@ -125,6 +146,16 @@ $maxWidth: 1440;
 }
 
 @media screen and (max-width: 768px) {
+  /* Модалка */
+  .modal {
+    width: 100%;
+  }
+
+  #menu-state:checked ~ .modal .modal__content {
+    height: 50vh;
+  }
+  /* Модалка */
+
   /* Версия для слабовидящих */
   .access-header__buttons {
     flex-direction: column;
@@ -141,16 +172,6 @@ $maxWidth: 1440;
   }
   /* Header */
 
-  /* Модалка */
-  .modal {
-    width: 100%;
-  }
-
-  #menu-state:checked ~ .modal .modal__content {
-    height: 50vh;
-  }
-  /* Модалка */
-
   /* Главная */
   .background {
     display: none;
@@ -166,16 +187,6 @@ $maxWidth: 1440;
   }
   /* Главная */
 
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 250px;
-  }
-
-  .slide__button {
-    display: none;
-  }
-  /* Последние новости/Cлайдер */
-
   /* Ссылки на государственные сайты */
   .links {
     align-items: flex-start;
@@ -187,14 +198,15 @@ $maxWidth: 1440;
   }
   /* Ссылки на государственные сайты */
 
-  /* Footer */
-  .footer__content {
-    display: block;
-    .location-map {
-      width: 100%;
-    }
+  /* Последние новости/Cлайдер */
+  .slide__info h2 {
+    max-width: 250px;
   }
-  /* Footer */
+
+  .slide__button {
+    display: none;
+  }
+  /* Последние новости/Cлайдер */
 }
 
 @media screen and (max-width: 425px) {
@@ -204,16 +216,16 @@ $maxWidth: 1440;
   }
   /* Модалка */
 
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 150px;
-  }
-  /* Последние новости/Cлайдер */
-
   /* Главная */
   .main__button {
     height: 30px;
     width: 100px;
   }
   /* Главная */
+
+  /* Последние новости/Cлайдер */
+  .slide__info h2 {
+    max-width: 150px;
+  }
+  /* Последние новости/Cлайдер */
 }

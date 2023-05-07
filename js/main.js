@@ -131,19 +131,6 @@ aboutLink.addEventListener("click", toggleSubmenu);
 sectionsLink.forEach((link) => link.addEventListener("click", toggleSubmenu));
 document.addEventListener("click", closeMenu);
 
-// Устанавливаем обновляемую дату
-function updateDate() {
-  var now = new Date();
-  var dateElements = document.querySelectorAll(".date");
-  var options = { year: "numeric", month: "long", day: "numeric" };
-  dateElements.forEach(function (dateElement) {
-    dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
-  });
-}
-
-setInterval(updateDate, 100);
-// Устанавливаем обновляемую дату
-
 // Карточки свайпера
 // const slides = [
 //   {
@@ -345,16 +332,3 @@ function showTooltip(event) {
   }, 1000);
 }
 // Footer/Туултип
-
-// Для запрета прокрутки когда модалка открыто
-const menuCheckbox = document.getElementById("menu-state");
-const body = document.querySelector("body");
-
-menuCheckbox.addEventListener("change", function () {
-  if (this.checked) {
-    body.classList.add("modal-open");
-  } else {
-    body.classList.remove("modal-open");
-  }
-});
-// Для запрета прокрутки когда модалка открыто

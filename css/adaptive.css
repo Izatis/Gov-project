@@ -13,7 +13,7 @@
   }
   .subtitle {
     font-size: calc(
-    10px + 15 * ((100vw - 320px) / 1120)
+    15px + 10 * ((100vw - 320px) / 1120)
   );
   }
   .text {
@@ -28,7 +28,7 @@
   }
   /* Общие стили */
   /* Модалка */
-  .modal__title {
+  .modal__title h1 {
     font-size: calc(
     20px + 15 * ((100vw - 320px) / 1120)
   );
@@ -68,13 +68,6 @@
   );
   }
   /* Главная */
-  /* Список последних новостей/Карточки */
-  .news-list__text p {
-    font-size: calc(
-    15px + 5 * ((100vw - 320px) / 1120)
-  );
-  }
-  /* Список последних новостей/Карточки */
   /* Ссылки на государственные сайты */
   .links__item li a {
     font-size: calc(
@@ -94,6 +87,27 @@
     max-width: 450px;
   }
   /* Последние новости/Cлайдер */
+  /* Список последних новостей/Карточки */
+  .news-list__text p {
+    font-size: calc(
+    15px + 5 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Список последних новостей/Карточки */
+  /* Новости поднобнее */
+  .news-more__text {
+    font-size: calc(
+    12px + 6 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Новости поднобнее */
+  /* Контакты */
+  .contacts__list li {
+    font-size: calc(
+    12px + 6 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Контакты */
   /* Сотрудники */
   .employees__item .job-title {
     font-size: calc(
@@ -104,12 +118,12 @@
   /* Часто задаваемые вопросы */
   .faq__content_question {
     font-size: calc(
-    10px + 10 * ((100vw - 320px) / 1120)
+    15px + 5 * ((100vw - 320px) / 1120)
   );
   }
   .faq__answer {
     font-size: calc(
-    8px + 10 * ((100vw - 320px) / 1120)
+    12px + 6 * ((100vw - 320px) / 1120)
   );
   }
   /* Часто задаваемые вопросы */
@@ -123,6 +137,14 @@
     padding: 10px;
   }
   /* Header */
+  /* Footer */
+  .footer__content {
+    display: block;
+  }
+  .footer__content .location-map {
+    width: 100%;
+  }
+  /* Footer */
   /* Последние новости/Cлайдер */
   .slide__info h2 {
     max-width: 350px;
@@ -130,6 +152,14 @@
   /* Последние новости/Cлайдер */
 }
 @media screen and (max-width: 768px) {
+  /* Модалка */
+  .modal {
+    width: 100%;
+  }
+  #menu-state:checked ~ .modal .modal__content {
+    height: 50vh;
+  }
+  /* Модалка */
   /* Версия для слабовидящих */
   .access-header__buttons {
     flex-direction: column;
@@ -143,14 +173,6 @@
     margin-right: 50px;
   }
   /* Header */
-  /* Модалка */
-  .modal {
-    width: 100%;
-  }
-  #menu-state:checked ~ .modal .modal__content {
-    height: 50vh;
-  }
-  /* Модалка */
   /* Главная */
   .background {
     display: none;
@@ -163,14 +185,6 @@
     width: 150px;
   }
   /* Главная */
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 250px;
-  }
-  .slide__button {
-    display: none;
-  }
-  /* Последние новости/Cлайдер */
   /* Ссылки на государственные сайты */
   .links {
     align-items: flex-start;
@@ -181,14 +195,14 @@
     display: block;
   }
   /* Ссылки на государственные сайты */
-  /* Footer */
-  .footer__content {
-    display: block;
+  /* Последние новости/Cлайдер */
+  .slide__info h2 {
+    max-width: 250px;
   }
-  .footer__content .location-map {
-    width: 100%;
+  .slide__button {
+    display: none;
   }
-  /* Footer */
+  /* Последние новости/Cлайдер */
 }
 @media screen and (max-width: 425px) {
   /* Модалка */
@@ -196,17 +210,17 @@
     height: 100vh;
   }
   /* Модалка */
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 150px;
-  }
-  /* Последние новости/Cлайдер */
   /* Главная */
   .main__button {
     height: 30px;
     width: 100px;
   }
   /* Главная */
+  /* Последние новости/Cлайдер */
+  .slide__info h2 {
+    max-width: 150px;
+  }
+  /* Последние новости/Cлайдер */
 }
 
 /*# sourceMappingURL=adaptive.css.map */
