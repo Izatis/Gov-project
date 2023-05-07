@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gov</title>
 
+    <!-- Иконка для владки -->
+    <link rel="shortcut icon" href="./images/logo.png">
+
     <!-- Главный css -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -69,23 +72,23 @@
               <a class="nav__link" href="./index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./news_more.html">Список</a>
-            </li>
-            <li class="nav__item">
               <a class="nav__link" href="./news.html">Новости</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./map.html">Контакты</a>
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Постановления</a>
             </li>
             <li class="nav__item">
               <span class="nav__link select">Разделы</span>
               <ul>
-                <li><a class="nav__link" href="#vacancy">Вакансии</a></li>
+                <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
                 <li><a class="nav__link" href="#">Инфографика</a></li>
                 <li><a class="nav__link" href="#">Фотогалерея</a></li>
                 <li><a class="nav__link" href="#">Сотрудники</a></li>
-                <li><a class="nav__link" href="#contacts">Контакты</a></li>
                 <li><a class="nav__link" href="#">Интернет приемная</a></li>
+                <li><a class="nav__link" href="#">Перечень реализуемых проектов</a></li>
               </ul>
             </li>
             <li class="nav__item">
@@ -117,33 +120,36 @@
                 <a class="burger__link" href="./index.html">Главная</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="./news_more.html">Список</a>
-              </li>
-              <li class="burger__item">
                 <a class="burger__link" href="./news.html">Новости</a>
               </li>
               <li class="burger__item">
-                <a class="burger__link" href="./map.html">Контакты</a>
+                <a class="burger__link" href="#">Контакты</a>
+              </li>
+              <li class="burger__item">
+                <a class="burger__link" href="#"
+                  >Постановления</a
+                >
               </li>
               <li class="burger__item">
                 <span class="burger__link select">Разделы</span>
                 <ul>
-                  <li><a class="burger__link" href="#">Вакансии</a></li>
-                  <li><a class="burger__link" href="#">Инфографика</a></li>
-                  <li><a class="burger__link" href="#">Фотогалерея</a></li>
-                  <li><a class="burger__link" href="#">Сотрудники</a></li>
                   <li>
-                    <a class="burger__link" href="#">Интернет приемная</a>
+                    <a class="nav__link" href="./vacancy.html">Вакансии</a>
                   </li>
+                  <li><a class="nav__link" href="#">Инфографика</a></li>
+                  <li><a class="nav__link" href="#">Фотогалерея</a></li>
+                  <li><a class="nav__link" href="#">Сотрудники</a></li>
+                  <li><a class="nav__link" href="#">Интернет приемная</a></li>
+                  <li><a class="nav__link" href="#">Перечень реализуемых проектов</a></li>
                 </ul>
               </li>
               <li class="burger__item">
                 <a class="burger__link select" href="#">О нас</a>
                 <ul>
                   <li>
-                    <a class="burger__link" href="#">Глава сельской управы</a>
+                    <a class="nav__link" href="#">Глава сельской управы</a>
                   </li>
-                  <li><a class="burger__link" href="#">О селе</a></li>
+                  <li><a class="nav__link" href="#">О селе</a></li>
                 </ul>
               </li>
             </ul>
@@ -1252,11 +1258,6 @@
     <!-- Главная -->
 
     <div class="container">
-      <!-- Перечень последних вакансий -->
-      <h1 class="title" id="vacancy">Последнии вакансии</h1>
-      <div class="vacancy my-image"></div>
-      <!-- Перечень последних вакансий -->
-
       <!-- Ссылки на государственные сайты -->
       <h1 class="title">Сcылки на государственные сайты</h1>
       <div class="links my-image">
@@ -1365,8 +1366,12 @@
             </a>
           </li>
         </ul>
-
         <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link footer__link_quetion" href="./site-map.html"
+              >Карта сайта</a
+            >
+          </li>
           <li class="footer__item">
             <a class="footer__link footer__link_quetion" href="#"
               >Информация и противодействии корупции</a

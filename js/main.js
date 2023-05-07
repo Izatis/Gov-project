@@ -291,7 +291,7 @@ data.map((item) => {
   const html = `
     <input type="checkbox" id="menu-state"/>
     <div class="overlay-background"></div>
-
+    
     <div class="modal">
       <div class="modal__content">
         <div class="modal__body">
