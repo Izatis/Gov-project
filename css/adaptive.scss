@@ -72,7 +72,7 @@ $maxWidth: 1440;
   /* Ссылки на государственные сайты */
 
   /* Footer */
-  .footer__link {
+  .footer__list li {
     @include adaptiv-font(15, 8);
   }
   /* Footer */
@@ -158,6 +158,12 @@ $maxWidth: 1440;
 }
 
 @media screen and (max-width: 768px) {
+  /* Общие стили */
+  .page-title {
+    margin: 50px 0 20px 0;
+  }
+  /* Общие стили */
+
   /* Модалка */
   .modal {
     width: 100%;
@@ -198,6 +204,12 @@ $maxWidth: 1440;
     width: 150px;
   }
   /* Главная */
+
+  /* Footer */
+  .footer__content {
+    margin: 40px auto 0;
+  }
+  /* Footer */
 
   /* Ссылки на государственные сайты */
   .links {

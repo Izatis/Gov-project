@@ -76,7 +76,7 @@
   }
   /* Ссылки на государственные сайты */
   /* Footer */
-  .footer__link {
+  .footer__list li {
     font-size: calc(
     8px + 7 * ((100vw - 320px) / 1120)
   );
@@ -162,6 +162,11 @@
   /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 768px) {
+  /* Общие стили */
+  .page-title {
+    margin: 50px 0 20px 0;
+  }
+  /* Общие стили */
   /* Модалка */
   .modal {
     width: 100%;
@@ -195,6 +200,11 @@
     width: 150px;
   }
   /* Главная */
+  /* Footer */
+  .footer__content {
+    margin: 40px auto 0;
+  }
+  /* Footer */
   /* Ссылки на государственные сайты */
   .links {
     align-items: flex-start;

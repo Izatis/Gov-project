@@ -30,7 +30,7 @@
   font-weight: 500;
   line-height: 130%;
   color: #191970;
-  margin: 40px 0 20px 0;
+  margin: 80px 0 20px 0;
 }
 
 .subtitle {
@@ -464,7 +464,7 @@
   gap: 20px;
   padding: 20px 5%;
   box-sizing: border-box;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0;
 }
 
 .footer__list {
