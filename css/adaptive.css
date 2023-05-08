@@ -129,6 +129,23 @@
   /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 1024px) {
+  /* Общие стили */
+  /* Cлайдер */
+  .slide__info h2 {
+    max-width: 350px;
+  }
+  /* Cлайдер */
+  /* Слайдер подолбнее*/
+  .сlue-image__link {
+    width: 100px;
+    height: 70px;
+  }
+  .сlue-image__blackout {
+    width: 100px;
+    height: 70px;
+  }
+  /* Слайдер подолбнее*/
+  /* Общие стили */
   /* Header */
   .header__logo img {
     width: 60px;
@@ -146,11 +163,11 @@
     width: 100%;
   }
   /* Footer */
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 350px;
+  /* Фото Галерея */
+  .full-gallery__image {
+    height: 50vh;
   }
-  /* Последние новости/Cлайдер */
+  /* Фото Галерея */
   /* Часто задаваемые вопросы */
   .faq__content_question {
     padding: 25px 30px 25px 0;
@@ -166,6 +183,24 @@
   .page-title {
     margin: 50px 0 20px 0;
   }
+  /* Cлайдер */
+  .slide__info h2 {
+    max-width: 250px;
+  }
+  .slide__button {
+    display: none;
+  }
+  /* Cлайдер */
+  /* Слайдер подолбнее*/
+  .сlue-image__link {
+    width: 80px;
+    height: 50px;
+  }
+  .сlue-image__blackout {
+    width: 80px;
+    height: 50px;
+  }
+  /* Слайдер подолбнее*/
   /* Общие стили */
   /* Модалка */
   .modal {
@@ -215,14 +250,6 @@
     display: block;
   }
   /* Ссылки на государственные сайты */
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 250px;
-  }
-  .slide__button {
-    display: none;
-  }
-  /* Последние новости/Cлайдер */
   /* Часто задаваемые вопросы */
   .faq__content_question::after {
     font-size: 3rem;
@@ -230,6 +257,23 @@
   /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 425px) {
+  /* Общие стили */
+  /* Cлайдер */
+  .slide__info h2 {
+    max-width: 150px;
+  }
+  /* Cлайдер */
+  /* Слайдер подолбнее*/
+  .сlue-image__link {
+    width: 50px;
+    height: 30px;
+  }
+  .сlue-image__blackout {
+    width: 50px;
+    height: 30px;
+  }
+  /* Слайдер подолбнее*/
+  /* Общие стили */
   /* Модалка */
   #menu-state:checked ~ .modal .modal__content {
     height: 100vh;
@@ -241,11 +285,11 @@
     width: 100px;
   }
   /* Главная */
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 150px;
+  /* Фото Галерея */
+  .full-gallery__image {
+    height: 40vh;
   }
-  /* Последние новости/Cлайдер */
+  /* Фото Галерея */
 }
 
 /*# sourceMappingURL=adaptive.css.map */
