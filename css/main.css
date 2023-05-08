@@ -38,6 +38,7 @@
   font-weight: 700;
   line-height: 130%;
   color: #191970;
+  margin: 20px 0;
 }
 
 .text {
@@ -841,6 +842,23 @@
   color: #191970;
 }
 /* Сотрудники */
+
+/* О нас */
+.about {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__list li {
+  list-style: number;
+}
+/* О нас */
 
 /* Карта сайта */
 .site-map {
