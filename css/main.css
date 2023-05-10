@@ -311,6 +311,108 @@
   object-fit: cover;
 }
 
+.nav__list li {
+  position: relative;
+  float: left;
+}
+
+.nav__link {
+  display: block;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #ffffff;
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.nav__link:hover {
+  color: #a7b0c2;
+  transition: 0.3s;
+}
+
+.nav .nav__list li ul {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  display: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.nav .nav__list li:hover ul {
+  display: initial;
+  z-index: 100;
+}
+
+.nav .nav__list li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav .nav__list li ul li a {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.nav .nav__list li ul li a:hover {
+  color: #a7b0c2;
+  transition: 0.3s;
+}
+
+.select::after {
+  content: "\f078";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin: 0 0 0 10px;
+}
+
+.select:hover:after {
+  content: "\f077";
+}
+
+.language {
+  position: relative;
+}
+
+.language ul {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  display: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.language:hover ul {
+  display: initial;
+  z-index: 100;
+}
+
+.language ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.language ul li a {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.language ul li a:hover {
+  color: #a7b0c2;
+  transition: 0.3s;
+}
+
 .eye {
   display: flex;
   align-items: center;
@@ -330,70 +432,6 @@
 }
 
 .eye__title:hover {
-  color: #a7b0c2;
-  transition: 0.3s;
-}
-
-.nav__item {
-  position: relative;
-  float: left;
-}
-
-.select::after {
-  content: "\f078";
-  display: inline-block;
-  font-family: "FontAwesome";
-  margin-left: 10px;
-}
-
-.select:hover:after {
-  content: "\f077";
-}
-
-.nav__link {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: #ffffff;
-  transition: 0.3s;
-  padding: 20px;
-}
-
-.nav__link:hover {
-  color: #a7b0c2;
-  transition: 0.3s;
-}
-
-.nav .nav__list .nav__item ul {
-  width: 200px;
-  position: absolute;
-  left: 0;
-  display: none;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-}
-
-.nav .nav__list .nav__item:hover ul {
-  display: initial;
-  z-index: 100;
-}
-
-.nav .nav__list .nav__item ul li {
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.nav .nav__list .nav__item ul li a {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: #000000;
-  transition: 0.3s;
-}
-
-.nav .nav__list .nav__item ul li a:hover {
   color: #a7b0c2;
   transition: 0.3s;
 }
@@ -460,6 +498,28 @@
 }
 /* Главная */
 
+/* Последние документы */
+.documentation {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.documentation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.documentation__list li {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: rgb(63, 88, 178);
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* Последние документы */
+
 /* Ссылки на государственные сайты */
 .links {
   display: flex;
@@ -469,13 +529,13 @@
   box-sizing: border-box;
 }
 
-.links__item {
+.links__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.links__item li a {
+.links__list li a {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -484,7 +544,7 @@
   cursor: pointer;
 }
 
-.links__item li:hover a {
+.links__list li:hover a {
   color: #a7b0c2;
   transition: 0.3s;
 }
@@ -745,6 +805,7 @@
   border-radius: 4px;
   padding: 20px;
   box-sizing: border-box;
+  margin: 0 0 20px;
 }
 
 .vacancy-more__list li {
@@ -754,6 +815,11 @@
   font-weight: 400;
   line-height: 130%;
   margin: 0 20px;
+}
+
+.vacancy-more__email {
+  display: block;
+  color: rgb(63, 88, 178);
 }
 /* Вакансии подробнее */
 

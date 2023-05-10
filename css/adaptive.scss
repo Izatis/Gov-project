@@ -11,7 +11,7 @@ $maxWidth: 1440;
 @media screen and (max-width: 1440px) {
   /* Общие стили */
   .title {
-    @include adaptiv-font(40, 20);
+    @include adaptiv-font(40, 15);
   }
 
   .page-title {
@@ -47,7 +47,15 @@ $maxWidth: 1440;
 
   /* Header */
   .nav__link {
-    @include adaptiv-font(17, 5);
+    @include adaptiv-font(17, 2);
+  }
+
+  .language span {
+    @include adaptiv-font(15, 8);
+  }
+
+  .language ul li a {
+    @include adaptiv-font(15, 8);
   }
 
   .eye__title {
@@ -65,11 +73,23 @@ $maxWidth: 1440;
   }
   /* Главная */
 
+  /* Последние документы */
+  .documentation__list li {
+    @include adaptiv-font(15, 12);
+  }
+  /* Последние документы */
+
   /* Ссылки на государственные сайты */
-  .links__item li a {
+  .links__list li a {
     @include adaptiv-font(15, 10);
   }
   /* Ссылки на государственные сайты */
+
+  /* Пагинация */
+  .pagination > li > a {
+    @include adaptiv-font(15, 10);
+  }
+  /* Пагинация */
 
   /* Footer */
   .footer__list li {
@@ -241,8 +261,12 @@ $maxWidth: 1440;
     display: none;
   }
 
-  .eye-burger {
-    margin-right: 50px;
+  .language ul {
+    width: 80px;
+  }
+
+  .eye {
+    margin: 0 5px 0 0;
   }
   /* Header */
 
@@ -261,6 +285,13 @@ $maxWidth: 1440;
   }
   /* Главная */
 
+  /* Пагинация */
+  .pagination > li > a {
+    padding: 4px 8px;
+  }
+
+  /* Пагинация */
+
   /* Footer */
   .footer__content {
     margin: 40px auto 0;
@@ -272,7 +303,7 @@ $maxWidth: 1440;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    .links__item {
+    .links__list {
       display: block;
     }
   }
@@ -313,6 +344,17 @@ $maxWidth: 1440;
     height: 100vh;
   }
   /* Модалка */
+
+  /* Header */
+  .header__logo img {
+    width: 50px;
+  }
+
+  .eye {
+    width: 100px;
+    margin: 0 17px 0 0;
+  }
+  /* Header */
 
   /* Главная */
   .main__button {

@@ -69,21 +69,22 @@
         <div class="header__logo">
           <a href="./main.html"> <img src="./images/logo.png" alt="logo" /></a>
         </div>
+
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="./main.html">Главная</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="./news.html">Новости</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="./contacts.html">Контакты</a>
             </li>
-            <li class="nav__item">
+            <li>
               <a class="nav__link" href="#">Постановления</a>
             </li>
-            <li class="nav__item">
+            <li>
               <span class="nav__link select">Разделы</span>
               <ul>
                 <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
@@ -102,7 +103,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav__item">
+            <li>
               <span class="nav__link select">О нас</span>
               <ul>
                 <li><a class="nav__link" href="./about.html">О нас</a></li>
@@ -111,6 +112,17 @@
             </li>
           </ul>
         </nav>
+
+        <div class="language">
+          <span class="nav__link select"
+            ><i class="fa-solid fa-globe"></i> Язык</span
+          >
+          <ul>
+            <li><a class="nav__link" href="#">Кыргызча</a></li>
+            <li><a class="nav__link" href="#">Русский</a></li>
+          </ul>
+        </div>
+
         <div class="eye eye-burger">
           <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
           <a class="eye__title" href="#">Версия для слабовидящих</a>
@@ -141,31 +153,31 @@
               </li>
               <li class="burger__item">
                 <span class="burger__link select">Разделы</span>
-                <ul>
+                <ul class="toggle">
                   <li>
-                    <a class="nav__link" href="./vacancy.html">Вакансии</a>
+                    <a class="burger__link" href="./vacancy.html">Вакансии</a>
                   </li>
-                  <li><a class="nav__link" href="#">Инфографика</a></li>
+                  <li><a class="burger__link" href="#">Инфографика</a></li>
                   <li>
-                    <a class="nav__link" href="./gallery.html">Фотогалерея</a>
+                    <a class="burger__link" href="./gallery.html">Фотогалерея</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="./sotrudniki.html">Сотрудники</a>
+                    <a class="burger__link" href="./sotrudniki.html">Сотрудники</a>
                   </li>
-                  <li><a class="nav__link" href="#">Интернет приемная</a></li>
+                  <li><a class="burger__link" href="#">Интернет приемная</a></li>
                   <li>
-                    <a class="nav__link" href="#"
+                    <a class="burger__link" href="#"
                       >Перечень реализуемых проектов</a
                     >
                   </li>
                 </ul>
               </li>
               <li class="burger__item">
-                <span class="nav__link select">О нас</span>
-                <ul>
-                  <li><a class="nav__link" href="./about.html">О нас</a></li>
+                <span class="burger__link select">О нас</span>
+                <ul class="toggle">
+                  <li><a class="burger__link" href="./about.html">О нас</a></li>
                   <li>
-                    <a class="nav__link" href="#">Глава сельской управы</a>
+                    <a class="burger__link" href="#">Глава сельской управы</a>
                   </li>
                 </ul>
               </li>
@@ -1363,11 +1375,39 @@
     </section>
     <!-- Последние новости/Cлайдер -->
 
+    <!-- Последние документы -->
+    <h1 class="title">Последние документы</h1>
+    <section class="documentation">
+      <ul class="documentation__list">
+        <li>
+          <i class="fa-solid fa-file"></i> Lorem
+          ipsum dolor sit amet.
+        </li>
+        <li>
+          <i class="fa-solid fa-file"></i> Lorem
+          ipsum dolor sit amet.
+        </li>
+        <li>
+          <i class="fa-solid fa-file"></i> Lorem
+          ipsum dolor sit amet.
+        </li>
+        <li>
+          <i class="fa-solid fa-file"></i> Lorem
+          ipsum dolor sit amet.
+        </li>
+        <li>
+          <i class="fa-solid fa-file"></i> Lorem
+          ipsum dolor sit amet.
+        </li>
+      </ul>
+    </section>
+    <!-- Последние документы -->
+
     <div class="container">
       <!-- Ссылки на государственные сайты -->
       <h1 class="title">Сcылки на государственные сайты</h1>
       <div class="links">
-        <ul class="links__item">
+        <ul class="links__list">
           <li>
             <a href="http://www.kattar.kg/" target="_blank"
               ><span>&raquo;</span> Портал электронных обращений граждан в
@@ -1391,7 +1431,7 @@
           </li>
         </ul>
 
-        <ul class="links__item">
+        <ul class="links__list">
           <li>
             <a href="http://www.president.kg/" target="_blank"
               ><span>&raquo;</span> Президент Кыргызской Республики</a
@@ -1414,7 +1454,7 @@
           </li>
         </ul>
 
-        <ul class="links__item">
+        <ul class="links__list">
           <li>
             <a href="http://www.minculture.gov.kg/" target="_blank"
               ><span>&raquo;</span> Министерство культуры</a
