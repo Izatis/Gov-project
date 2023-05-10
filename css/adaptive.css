@@ -108,6 +108,13 @@
   );
   }
   /* Контакты */
+  /* Вакансии подробнее */
+  .vacancy-more__list li {
+    font-size: calc(
+    12px + 6 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Вакансии подробнее */
   /* Сотрудники */
   .employees__item .job-title {
     font-size: calc(
@@ -115,6 +122,13 @@
   );
   }
   /* Сотрудники */
+  /* О нас */
+  .about__list li {
+    font-size: calc(
+    12px + 6 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* О нас */
   /* Часто задаваемые вопросы */
   .faq__content_question {
     font-size: calc(

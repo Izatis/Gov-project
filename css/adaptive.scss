@@ -101,11 +101,23 @@ $maxWidth: 1440;
   }
   /* Контакты */
 
+  /* Вакансии подробнее */
+  .vacancy-more__list li {
+    @include adaptiv-font(18, 12);
+  }
+  /* Вакансии подробнее */
+
   /* Сотрудники */
   .employees__item .job-title {
     @include adaptiv-font(20, 15);
   }
   /* Сотрудники */
+
+  /* О нас */
+  .about__list li {
+    @include adaptiv-font(18, 12);
+  }
+  /* О нас */
 
   /* Часто задаваемые вопросы */
   .faq__content_question {

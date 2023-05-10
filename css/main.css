@@ -330,7 +330,7 @@
 }
 
 .eye__title:hover {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
 }
 
@@ -361,7 +361,7 @@
 }
 
 .nav__link:hover {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
 }
 
@@ -394,7 +394,7 @@
 }
 
 .nav .nav__list .nav__item ul li a:hover {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
 }
 /* Header */
@@ -454,7 +454,7 @@
 }
 
 .main__button:hover {
-  background: #bcb7b7;
+  background: #a7b0c2;
   color: #ffffff;
   transition: 0.3s;
 }
@@ -485,7 +485,7 @@
 }
 
 .links__item li:hover a {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
 }
 /* Ссылки на государственные сайты */
@@ -526,7 +526,7 @@
 }
 
 .footer__link_quetion:hover {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -676,7 +676,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  border: 1px solid #bcb7b7;
+  border: 1px solid #a7b0c2;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -722,13 +722,38 @@
 /* Вакансии */
 
 /* Вакансии подробнее */
-.vacancy-more{
+.vacancy-more {
   padding: 0 5%;
   box-sizing: border-box;
 }
 
-.wage{
-  
+.label {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #a7b0c2;
+}
+
+.wage {
+  font-weight: 700;
+  color: #191970;
+  margin: 0 0 20px;
+}
+
+.vacancy-more__content {
+  border: 1px solid #a7b0c2;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.vacancy-more__list li {
+  list-style: initial;
+  padding: 0 0 0 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0 20px;
 }
 /* Вакансии подробнее */
 
@@ -815,7 +840,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid #bcb7b7;
+  border: 1px solid #a7b0c2;
   border-radius: 20px;
   font-style: normal;
   font-weight: 400;
@@ -886,7 +911,7 @@
 }
 
 .site-map__list li:hover a {
-  color: #bcb7b7;
+  color: #a7b0c2;
   transition: 0.3s;
 }
 /* Карта сайта */
