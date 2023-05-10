@@ -47,7 +47,7 @@
   /* Header */
   .nav__link {
     font-size: calc(
-    2px + 15 * ((100vw - 320px) / 1120)
+    2px + 16 * ((100vw - 320px) / 1120)
   );
   }
   .language span {
@@ -240,29 +240,45 @@
   }
   /* Слайдер подолбнее*/
   /* Общие стили */
-  /* Модалка */
-  .modal {
-    width: 100%;
-  }
-  #menu-state:checked ~ .modal .modal__content {
-    height: 50vh;
-  }
-  /* Модалка */
   /* Версия для слабовидящих */
   .access-header__buttons {
     flex-direction: column;
   }
   /* Версия для слабовидящих */
   /* Header */
+  .header__content {
+    padding: 10px 70px 10px 5%;
+  }
   .nav {
     display: none;
+  }
+  .nav__link {
+    padding: 5px;
   }
   .language ul {
     width: 80px;
   }
   .eye {
-    margin: 0 5px 0 0;
+    width: auto;
+    padding: 5px;
   }
+  /* Бургер меню */
+  .burger {
+    display: block !important;
+  }
+  .burger__title {
+    font-size: calc(
+    20px + 20 * ((100vw - 320px) / 1120)
+  );
+  }
+  .burger__list li a,
+  .burger__list li span,
+  .burger__list li ul li a {
+    font-size: calc(
+    12px + 18 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Бургер меню */
   /* Header */
   /* Главная */
   .background {
@@ -320,18 +336,12 @@
   }
   /* Слайдер подолбнее*/
   /* Общие стили */
-  /* Модалка */
-  #menu-state:checked ~ .modal .modal__content {
-    height: 100vh;
-  }
-  /* Модалка */
   /* Header */
+  .header__content {
+    padding: 10px 54px 10px 5%;
+  }
   .header__logo img {
     width: 50px;
-  }
-  .eye {
-    width: 100px;
-    margin: 0 17px 0 0;
   }
   /* Header */
   /* Главная */

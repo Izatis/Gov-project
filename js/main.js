@@ -1,5 +1,5 @@
 // Открывает версию для слабовидящих
-const eyeBurger = document.querySelector(".eye-burger");
+const eyeBurger = document.querySelector(".eye");
 const accessibilityHeader = document.querySelector(".access-header");
 
 const toggleAccessibilityHeader = function () {
@@ -105,31 +105,38 @@ resetStylesBtn.addEventListener("click", () => {
 });
 // Открывает версию для слабовидящих
 
-//Для подсписков
-const menuToggle = document.getElementById("menu-toggle");
-const aboutLink = document.querySelector(".select[href='#']");
-const sectionsLink = document.querySelectorAll(".select[href='#']");
-const submenus = document.querySelectorAll(".burger__item > ul");
+// Для зарпрета полосы прокрутки когда бургер меню открыта
+const menuToggle = document.getElementById("menu-toggle"); // получаем ссылку на input
+const body = document.querySelector("body"); // получаем ссылку на элемент body
 
-// Функция, которая открывает/закрывает подменю при клике на ссылку "О нас" или "Разделы"
-function toggleSubmenu(event) {
-  event.preventDefault();
-  const submenu = this.nextElementSibling;
-  submenu.classList.toggle("open");
-}
-
-// Функция, которая закрывает меню при клике на любое место вне меню
-function closeMenu(event) {
-  if (!event.target.closest(".burger")) {
-    menuToggle.checked = false;
-    submenus.forEach((submenu) => submenu.classList.remove("open"));
+menuToggle.addEventListener("change", function () {
+  // добавляем обработчик события change на input
+  if (this.checked) {
+    // если input checked, то добавляем стиль "overflow: hidden;" к элементу body
+    body.style.overflow = "hidden";
+  } else {
+    // иначе удаляем стиль "overflow: hidden;" из элемента body
+    body.style.overflow = "";
   }
-}
+});
+// Для зарпрета полосы прокрутки когда бургер меню открыта
 
-// Назначаем обработчики событий на ссылки и на документ
-aboutLink.addEventListener("click", toggleSubmenu);
-sectionsLink.forEach((link) => link.addEventListener("click", toggleSubmenu));
-document.addEventListener("click", closeMenu);
+// Для анимации бургер меню
+// получаем все элементы с классом "select"
+const selectElements = document.querySelectorAll('.burger__select');
+
+// добавляем обработчик события на каждый элемент
+selectElements.forEach(selectElement => {
+  selectElement.addEventListener('click', () => {
+    // получаем следующий элемент после "span"
+    const ulElement = selectElement.nextElementSibling;
+
+    // добавляем/удаляем класс "active", чтобы показать/скрыть список
+    selectElement.classList.toggle('burger__select_active');
+    ulElement.classList.toggle('burger__list_active');
+  });
+});
+// Для анимации бургер меню
 
 // Карточки свайпера
 // const slides = [
@@ -278,7 +285,7 @@ document.addEventListener("click", closeMenu);
 //   const html = `
 //     <input type="checkbox" id="menu-state"/>
 //     <div class="overlay-background"></div>
-    
+
 //     <div class="modal">
 //       <div class="modal__content">
 //         <div class="modal__body">

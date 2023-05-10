@@ -301,7 +301,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 5%;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -332,7 +332,7 @@
   transition: 0.3s;
 }
 
-.nav .nav__list li ul {
+.nav__list li ul {
   width: 200px;
   position: absolute;
   left: 0;
@@ -342,17 +342,17 @@
   border-radius: 2px;
 }
 
-.nav .nav__list li:hover ul {
+.nav__list li:hover ul {
   display: initial;
   z-index: 100;
 }
 
-.nav .nav__list li ul li {
+.nav__list li ul li {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav .nav__list li ul li a {
+.nav__list li ul li a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -360,7 +360,7 @@
   transition: 0.3s;
 }
 
-.nav .nav__list li ul li a:hover {
+.nav__list li ul li a:hover {
   color: #a7b0c2;
   transition: 0.3s;
 }
@@ -414,6 +414,7 @@
 }
 
 .eye {
+  width: 100px;
   display: flex;
   align-items: center;
   gap: 10px;
