@@ -29,6 +29,10 @@ $maxWidth: 1440;
   .date {
     @include adaptiv-font(20, 8);
   }
+
+  .blackout span {
+    @include adaptiv-font(20, 8);
+  }
   /* Общие стили */
 
   /* Модалка */
@@ -90,7 +94,7 @@ $maxWidth: 1440;
   /* Ссылки на государственные сайты */
 
   /* Пагинация */
-  .pagination > li > a {
+  .pagination li a {
     @include adaptiv-font(15, 10);
   }
   /* Пагинация */
@@ -130,6 +134,16 @@ $maxWidth: 1440;
     @include adaptiv-font(18, 12);
   }
   /* Вакансии подробнее */
+
+  /* Инфографика */
+  .infographic__item span {
+    @include adaptiv-font(15, 8);
+  }
+
+  .infographic__item p {
+    @include adaptiv-font(20, 10);
+  }
+  /* Инфографика */
 
   /* Сотрудники */
   .employees__item .job-title {
@@ -227,13 +241,13 @@ $maxWidth: 1440;
   /* Фото Галерея */
 
   /* Обратная связь */
-  .feedback__item{
+  .feedback__item {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
   }
 
-  .feedback__item input{
+  .feedback__item input {
     height: 30px;
   }
   /* Обратная связь */
