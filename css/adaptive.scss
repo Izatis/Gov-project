@@ -74,7 +74,7 @@ $maxWidth: 1440;
   /* Главная */
 
   /* Последние документы */
-  .documentation__subtitle{
+  .documentation__subtitle {
     @include adaptiv-font(22, 10);
   }
 
@@ -136,6 +136,24 @@ $maxWidth: 1440;
     @include adaptiv-font(20, 15);
   }
   /* Сотрудники */
+
+  /* Обратная связь */
+  .feedback p {
+    @include adaptiv-font(15, 8);
+  }
+
+  .feedback__item label {
+    @include adaptiv-font(15, 10);
+  }
+
+  .feedback__input {
+    @include adaptiv-font(15, 8);
+  }
+
+  .feedback__item textarea {
+    @include adaptiv-font(15, 8);
+  }
+  /* Обратная связь */
 
   /* О нас */
   .about__list li {
@@ -207,6 +225,18 @@ $maxWidth: 1440;
     height: 50vh;
   }
   /* Фото Галерея */
+
+  /* Обратная связь */
+  .feedback__item{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feedback__item input{
+    height: 30px;
+  }
+  /* Обратная связь */
 
   /* Часто задаваемые вопросы */
   .faq__content_question {

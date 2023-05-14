@@ -151,6 +151,28 @@
   );
   }
   /* Сотрудники */
+  /* Обратная связь */
+  .feedback p {
+    font-size: calc(
+    8px + 7 * ((100vw - 320px) / 1120)
+  );
+  }
+  .feedback__item label {
+    font-size: calc(
+    10px + 5 * ((100vw - 320px) / 1120)
+  );
+  }
+  .feedback__input {
+    font-size: calc(
+    8px + 7 * ((100vw - 320px) / 1120)
+  );
+  }
+  .feedback__item textarea {
+    font-size: calc(
+    8px + 7 * ((100vw - 320px) / 1120)
+  );
+  }
+  /* Обратная связь */
   /* О нас */
   .about__list li {
     font-size: calc(
@@ -218,6 +240,16 @@
     height: 50vh;
   }
   /* Фото Галерея */
+  /* Обратная связь */
+  .feedback__item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .feedback__item input {
+    height: 30px;
+  }
+  /* Обратная связь */
   /* Часто задаваемые вопросы */
   .faq__content_question {
     padding: 25px 30px 25px 0;

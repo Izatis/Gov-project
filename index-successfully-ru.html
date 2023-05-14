@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feedback</title>
+    <title>Map</title>
 
     <!-- Иконка для владки -->
     <link rel="shortcut icon" href="./images/logo.png" />
@@ -190,87 +190,16 @@
     </header>
     <!-- Header -->
 
-    <!-- Обратная связь -->
-    <h1 class="page-title feedback__title">Обратная связь</h1>
-    <section class="feedback">
-      <p>
-        Заполните форму и отправьте ее. Поля отмеченные * являются обязательными
-        для заполнения.
-      </p>
-      <form class="feedback__form" action="./index-successfully-ru.html">
-        <div class="feedback__item">
-          <label>* Ваше имя</label>
-          <input
-            class="feedback__input"
-            minlength="3"
-            maxlength="20"
-            type="text"
-            name="name"
-            placeholder="Асанов Үсөн Асанович"
-            required
-          />
-        </div>
-
-        <div class="feedback__item">
-          <label>* Номер телефона</label>
-          <input
-            class="feedback__input"
-            minlength="9"
-            maxlength="20"
-            type="tel"
-            name="phone"
-            placeholder="+996 *** *** **"
-            required
-          />
-        </div>
-
-        <div class="feedback__item">
-          <label>* Электронная почта</label>
-          <input
-            class="feedback__input"
-            minlength="3"
-            maxlength="20"
-            type="email"
-            name="email"
-            placeholder="example@gmail.com"
-            required
-          />
-        </div>
-
-        <div class="feedback__item">
-          <label>* Сообщение</label>
-          <textarea
-            rows="7"
-            minlength="10"
-            maxlength="100"
-            placeholder="Текст сообщения"
-            required
-          ></textarea>
-        </div>
-
-        <div class="feedback__item">
-          <label>Выберите файл</label>
-          <input type="file" name="userfile[]" multiple="multiple" />
-        </div>
-
-        <div class="feedback__item">
-          <label></label>
-          <div
-            class="g-recaptcha"
-            data-sitekey="6LeKaREUAAAAALB6Sgjp5XqHq0Kb_aLEn_KORz6u"
-          ></div>
-        </div>
-
-        <div class="feedback__item">
-          <label></label>
-          <button class="feedback__button">
-            <span>Отправить</span>
-          </button>
-        </div>
-      </form>
-    </section>
-
-    <!-- Обратная связь -->
+    <!-- Уведомления -->
+    <h1 data-shadow="Ваш ответ успешно записан! Мы вам перезвоним!">
+      Ваш ответ успешно записан! Мы вам перезвоним!
+    </h1>
+    <a href="./index.html"
+      ><button class="custom-btn btn-3">
+        <span>Вернуться на главную</span>
+      </button></a
+    >
+    <!-- Уведомления -->
 
     <!-- Пагинация -->
     <ul class="pagination">
@@ -348,7 +277,5 @@
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
