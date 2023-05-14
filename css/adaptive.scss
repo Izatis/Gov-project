@@ -74,8 +74,12 @@ $maxWidth: 1440;
   /* Главная */
 
   /* Последние документы */
+  .documentation__subtitle{
+    @include adaptiv-font(22, 10);
+  }
+
   .documentation__list li {
-    @include adaptiv-font(15, 12);
+    @include adaptiv-font(15, 8);
   }
   /* Последние документы */
 
@@ -138,6 +142,12 @@ $maxWidth: 1440;
     @include adaptiv-font(18, 12);
   }
   /* О нас */
+
+  /* Карта сайта */
+  .site-map__list li a {
+    @include adaptiv-font(15, 10);
+  }
+  /* Карта сайта */
 
   /* Часто задаваемые вопросы */
   .faq__content_question {
@@ -323,6 +333,18 @@ $maxWidth: 1440;
     }
   }
   /* Ссылки на государственные сайты */
+
+  /* Карта сайта */
+  .site-map {
+    display: block;
+  }
+
+  .site-map__line {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+  }
+  /* Карта сайта */
 
   /* Часто задаваемые вопросы */
   .faq__content_question::after {
