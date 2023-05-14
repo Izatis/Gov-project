@@ -36,7 +36,7 @@
   padding: 10px 5%;
 }
 
-.burger__lists{
+.burger__lists {
   display: flex;
   gap: 40px;
   padding: 0 10%;
@@ -64,19 +64,19 @@
   display: none;
 }
 
-.burger__list li ul li{
+.burger__list li ul li {
   transition: 0.3s;
 }
 
-.burger__list li ul li a{
-  color: #1752AA;
+.burger__list li ul li a {
+  color: #1752aa;
 }
 
-.burger__list li .burger__list_active{
+.burger__list li .burger__list_active {
   display: initial;
 }
 
-.burger__list li:hover ul li{
+.burger__list li:hover ul li {
   padding: 0 0 0 40px;
   transition: 0.3s;
 }
@@ -91,7 +91,6 @@
 .burger__list li .burger__select_active:after {
   content: "\f077";
 }
-
 
 /* Когда инпут checked*/
 #menu-toggle:checked + #trigger + #burger + .burger__animated {
@@ -185,3 +184,41 @@
 }
 /* Анимация бургер меню */
 /* Бургер меню */
+
+@media screen and (max-width: 768px) {
+  /* Бургер меню */
+  .burger {
+    display: block;
+  }
+  /* Бургер меню */
+}
+
+@media screen and (max-width: 425px) {
+  /* Бургер меню */
+  .burger__animated {
+    width: 60px;
+    height: 60px;
+  }
+
+  #trigger,
+  #burger,
+  #burger:before,
+  #burger:after {
+    height: 4px;
+    top: 15px;
+    right: 10px;
+  }
+
+  #trigger {
+    height: 30px;
+  }
+
+  #burger:before {
+    top: 9px;
+  }
+
+  #burger:after {
+    top: 17.8px;
+  }
+  /* Бургер меню */
+}

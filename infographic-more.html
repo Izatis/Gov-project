@@ -300,7 +300,7 @@
       // draws it.
       function drawChart() {
         // Create the data table.
-        var data = new google.visualization.DataTable();
+        const data = new google.visualization.DataTable();
         data.addColumn("string", "Topping");
         data.addColumn("number", "Slices");
         data.addRows([
@@ -311,15 +311,23 @@
         ]);
 
         // Set chart options
-        var options = {
+        let options = {
           title: "Айыл аймактагы эркектердин жаш курагы боюнча  жалпы саны",
           width: 800,
           height: 600,
         };
-        /*var options = {'title':'Айыл аймактагы эркектердин жаш курагы боюнча  жалпы саны'};*/
+
+        if (window.innerWidth <= 768) {
+          options.width = 400;
+          options.height = 300;
+        }
+        if (window.innerWidth <= 425) {
+          options.width = 300;
+          options.height = 300;
+        }
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(
+        const chart = new google.visualization.PieChart(
           document.getElementById("diagram")
         );
         chart.draw(data, options);

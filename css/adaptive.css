@@ -324,9 +324,6 @@
     padding: 5px;
   }
   /* Бургер меню */
-  .burger {
-    display: block !important;
-  }
   .burger__title {
     font-size: calc(
     20px + 20 * ((100vw - 320px) / 1120)

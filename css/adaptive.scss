@@ -323,10 +323,6 @@ $maxWidth: 1440;
   }
 
   /* Бургер меню */
-  .burger {
-    display: block !important;
-  }
-
   .burger__title {
     @include adaptiv-font(40, 20);
   }
