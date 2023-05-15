@@ -18,7 +18,7 @@
     <!-- Бургер css -->
     <link rel="stylesheet" href="./css/burgerMenu.css" />
   </head>
-  <body class="my-image container">
+  <body class="my-image">
     <!-- Версия для слабовидящих -->
     <div class="access-header">
       <div class="access-header__content">
@@ -79,7 +79,7 @@
               <a class="nav__link" href="./contacts.html">Контакты</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Постановления</a>
+              <a class="nav__link" href="./documents.html">Постановления</a>
             </li>
             <li>
               <span class="nav__link select">Разделы</span>
@@ -154,7 +154,7 @@
                     <a href="./contacts.html">Контакты</a>
                   </li>
                   <li>
-                    <a href="#">Постановления</a>
+                    <a href="./documents.html">Постановления</a>
                   </li>
                 </ul>
 
@@ -196,23 +196,68 @@
     </header>
     <!-- Header -->
 
-     <!-- Документы подробнее -->
-     <section class="documents-more"></section>
-     <!-- Документы подробнее -->
+    <!-- Документы подробнее -->
+    <h1 class="page-title">
+      Кыргыз Республикасынын "Мектепке чейинки билим берүү жана балдарды багуу"
+      мамлекеттик билим берүү стандарты
+    </h1>
+    <section class="documents-more container">
+      <div class="documents-more__info">
+        <span>Дата публикации: 18.04.2023</span>
+        <span>Дата принятия: 21.08.2020</span>
+        <span>Место принятия: Бишкек</span>
+        <span>Скопировать ссылку на документ</span>
+        <input
+          id="foo_0"
+          value="https://docs.google.com/viewerng/viewer?url=https://logvinenko-ao.gos.kg/file/document/8110_4209.docx"
+          type="hidden"
+        />
+        <button
+          class="clipboard"
+          data-clipboard-target="#foo_0"
+          onmouseup="showTooltip(event)"
+        >
+          <img
+            src="https://logvinenko-ao.gos.kg/view/themes/37/img/clippy.svg"
+            alt="Documents more image"
+            width="13"
+          />
+        </button>
+      </div>
+
+      <iframe
+        src="https://docs.google.com/viewer?url=https://logvinenko-ao.gos.kg/file/document/8110_ru_ru6894_4209.docx&amp;embedded=true"
+        frameborder="0"
+        width="100%"
+        height="1000"
+      ></iframe>
+
+      <a
+        href="https://logvinenko-ao.gos.kg/file/document/8110_ru_ru6894_4209.docx"
+      >
+        <button class="custom__button documents-more__button">
+          <span>Скачать документы</span>
+        </button>
+      </a>
+    </section>
+    <!-- Документы подробнее -->
 
     <!-- Пагинация -->
     <ul class="pagination">
-      <li><a href="./about.html">«</a></li>
+      <li><a href="./documents.html">«</a></li>
       <li><a href="./index.html">1</a></li>
       <li><a href="./news.html">2</a></li>
-      <li><a href="./news-more.html">3</a></li>
-      <li><a href="./contacts.html">4</a></li>
+      <li><a href="./contacts.html">3</a></li>
+      <li class="pagination-active"><a href="./documents.html">4</a></li>
       <li><a href="./vacancy.html">5</a></li>
-      <li><a href="./vacancy-more.html">6</a></li>
+      <li><a href="./infographic.html">6</a></li>
       <li><a href="./gallery.html">7</a></li>
       <li><a href="./employees.html">8</a></li>
-      <li><a href="./about.html">9</a></li>
-      <li><a href="./news.html">»</a></li>
+      <li><a href="./feedback.html">9</a></li>
+      <li><a href="./about.html">10</a></li>
+      <li><a href="./site-map.html">11</a></li>
+      <li><a href="./faq.html">12</a></li>
+      <li><a href="./vacancy.html">»</a></li>
     </ul>
     <!-- Пагинация -->
 
@@ -268,13 +313,34 @@
     </footer>
     <!-- Footer -->
 
-    <!-- Главный JS -->
+    <!-- JS - Главный -->
     <script src="./js/main.js"></script>
 
-    <!-- Иконка JS-->
+    <!-- JS - Иконка -->
     <script
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS - для копирования ссылки -->
+    <script>
+      const clipboardButton = document.querySelector(".clipboard");
+      clipboardButton.addEventListener("click", () => {
+        const inputElementId = clipboardButton.getAttribute(
+          "data-clipboard-target"
+        );
+        const inputElement = document.querySelector(inputElementId);
+        const url = inputElement.value;
+
+        navigator.clipboard
+          .writeText(url)
+          .then(() => {
+            console.log("URL copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Failed to copy URL to clipboard:", error);
+          });
+      });
+    </script>
   </body>
 </html>

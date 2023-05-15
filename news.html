@@ -21,7 +21,7 @@
     <!-- Бургер css -->
     <link rel="stylesheet" href="./css/burgerMenu.css" />
   </head>
-  <body class="my-image container">
+  <body class="my-image">
     <!-- Версия для слабовидящих -->
     <div class="access-header">
       <div class="access-header__content">
@@ -63,372 +63,382 @@
     </div>
     <!-- Версия для слабовидящих -->
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo">
-        <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
-      </div>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
+        </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li>
-            <a class="nav__link" href="./index.html">Главная</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./news.html">Новости</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./contacts.html">Контакты</a>
-          </li>
-          <li>
-            <a class="nav__link" href="#">Постановления</a>
-          </li>
-          <li>
-            <span class="nav__link select">Разделы</span>
-            <ul>
-              <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
-              <li><a class="nav__link" href="./infographic.html">Инфографика</a></li>
-              <li>
-                <a class="nav__link" href="./gallery.html">Фотогалерея</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./sotrudniki.html">Сотрудники</a>
-              </li>
-              <li><a class="nav__link" href="./feedback.html">Интернет приемная</a></li>
-              <li>
-                <a class="nav__link" href="#"
-                  >Перечень реализуемых проектов</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <span class="nav__link select">О нас</span>
-            <ul>
-              <li><a class="nav__link" href="./about.html">О нас</a></li>
-              <li><a class="nav__link" href="#">Глава сельской управы</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="language">
-        <span class="nav__link select"
-          ><i class="fa-solid fa-globe"></i> Язык</span
-        >
-        <ul>
-          <li><a class="nav__link" href="#">Кыргызча</a></li>
-          <li><a class="nav__link" href="#">Русский</a></li>
-        </ul>
-      </div>
-
-      <div class="eye">
-        <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
-        <a class="eye__title" href="#">Версия для слабовидящих</a>
-      </div>
-
-      <!-- Бургер меню -->
-      <div class="burger">
-        <input type="checkbox" id="menu-toggle" />
-        <label id="trigger" for="menu-toggle"></label>
-        <label id="burger" for="menu-toggle"></label>
-        <div class="burger__animated">
-          <div class="burger__content">
-            <div class="burger__header">
-              <h1><a class="burger__title" href="./index.html">Menu</a></h1>
-            </div>
-
-            <div class="burger__lists">
-              <ul class="burger__list">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./news.html">Новости</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./contacts.html">Контакты</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./documents.html">Постановления</a>
+            </li>
+            <li>
+              <span class="nav__link select">Разделы</span>
+              <ul>
+                <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
                 <li>
-                  <a href="./index.html">Главная</a>
+                  <a class="nav__link" href="./infographic.html">Инфографика</a>
                 </li>
                 <li>
-                  <a href="./news.html">Новости</a>
+                  <a class="nav__link" href="./gallery.html">Фотогалерея</a>
                 </li>
                 <li>
-                  <a href="./contacts.html">Контакты</a>
+                  <a class="nav__link" href="./employees.html">Сотрудники</a>
                 </li>
                 <li>
-                  <a href="#">Постановления</a>
+                  <a class="nav__link" href="./feedback.html"
+                    >Интернет приемная</a
+                  >
+                </li>
+                <li>
+                  <a class="nav__link" href="#"
+                    >Перечень реализуемых проектов</a
+                  >
                 </li>
               </ul>
-
-              <ul class="burger__list">
-                <li>
-                  <span class="burger__select">Разделы</span>
-
-                  <ul>
-                    <li><a href="./vacancy.html">Вакансии</a></li>
-                    <li><a href="./infographic.html">Инфографика</a></li>
-                    <li>
-                      <a href="./gallery.html">Фотогалерея</a>
-                    </li>
-                    <li>
-                      <a href="./sotrudniki.html">Сотрудники</a>
-                    </li>
-                    <li><a href="./feedback.html">Интернет приемная</a></li>
-                    <li>
-                      <a href="#">Перечень реализуемых проектов</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  <span class="burger__select">О нас</span>
-
-                  <ul>
-                    <li><a href="./about.html">О нас</a></li>
-                    <li><a href="#">Глава сельской управы</a></li>
-                  </ul>
-                </li>
+            </li>
+            <li>
+              <span class="nav__link select">О нас</span>
+              <ul>
+                <li><a class="nav__link" href="./about.html">О нас</a></li>
+                <li><a class="nav__link" href="#">Глава сельской управы</a></li>
               </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="language">
+          <span class="nav__link select"
+            ><i class="fa-solid fa-globe"></i> Язык</span
+          >
+          <ul>
+            <li><a class="nav__link" href="#">Кыргызча</a></li>
+            <li><a class="nav__link" href="#">Русский</a></li>
+          </ul>
+        </div>
+
+        <div class="eye">
+          <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
+          <a class="eye__title" href="#">Версия для слабовидящих</a>
+        </div>
+
+        <!-- Бургер меню -->
+        <div class="burger">
+          <input type="checkbox" id="menu-toggle" />
+          <label id="trigger" for="menu-toggle"></label>
+          <label id="burger" for="menu-toggle"></label>
+          <div class="burger__animated">
+            <div class="burger__content">
+              <div class="burger__header">
+                <h1><a class="burger__title" href="./index.html">Menu</a></h1>
+              </div>
+
+              <div class="burger__lists">
+                <ul class="burger__list">
+                  <li>
+                    <a href="./index.html">Главная</a>
+                  </li>
+                  <li>
+                    <a href="./news.html">Новости</a>
+                  </li>
+                  <li>
+                    <a href="./contacts.html">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="./documents.html">Постановления</a>
+                  </li>
+                </ul>
+
+                <ul class="burger__list">
+                  <li>
+                    <span class="burger__select">Разделы</span>
+
+                    <ul>
+                      <li><a href="./vacancy.html">Вакансии</a></li>
+                      <li><a href="./infographic.html">Инфографика</a></li>
+                      <li>
+                        <a href="./gallery.html">Фотогалерея</a>
+                      </li>
+                      <li>
+                        <a href="./employees.html">Сотрудники</a>
+                      </li>
+                      <li><a href="./feedback.html">Интернет приемная</a></li>
+                      <li>
+                        <a href="#">Перечень реализуемых проектов</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="burger__select">О нас</span>
+
+                    <ul>
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="#">Глава сельской управы</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Бургер меню -->
       </div>
-      <!-- Бургер меню -->
-    </div>
-  </header>
-  <!-- Header -->
+    </header>
+    <!-- Header -->
 
-    <!-- Последние новости/Cлайдер -->
-    <h1 class="page-title">Последние новости</h1>
-    <section class="swiper">
-      <div class="swiper-wrapper">
-        <a class="slide swiper-slide" href="./news-more.html">
-          <div class="slide__image">
+    <!-- Новости -->
+    <section class="container">
+      <!-- Последние новости/Cлайдер -->
+      <h1 class="page-title">Последние новости</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <a class="slide swiper-slide" href="./news-more.html">
+            <div class="slide__image">
+              <img
+                src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+                alt="random"
+              />
+            </div>
+            <div class="slide__info">
+              <h2 class="text">
+                До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+                Кыргызстане планирует создать кабмин
+              </h2>
+              <span class="date"></span>
+            </div>
+          </a>
+
+          <a class="slide swiper-slide" href="./news-more.html">
+            <div class="slide__image">
+              <img src="./images/random.jpg" alt="random" />
+            </div>
+            <div class="slide__info">
+              <h2 class="text">
+                До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+                Кыргызстане планирует создать кабмин
+              </h2>
+              <span class="date"></span>
+            </div>
+          </a>
+
+          <a class="slide swiper-slide" href="./news-more.html">
+            <div class="slide__image">
+              <img
+                src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+                alt="random"
+              />
+            </div>
+            <div class="slide__info">
+              <h2 class="text">
+                До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+                Кыргызстане планирует создать кабмин
+              </h2>
+              <span class="date"></span>
+            </div>
+          </a>
+
+          <a class="slide swiper-slide" href="./news-more.html">
+            <div class="slide__image">
+              <img
+                src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+                alt="random"
+              />
+            </div>
+            <div class="slide__info">
+              <h2 class="text">
+                До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+                Кыргызстане планирует создать кабмин
+              </h2>
+              <span class="date"></span>
+            </div>
+          </a>
+
+          <a class="slide swiper-slide" href="./news-more.html">
+            <div class="slide__image">
+              <img
+                src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+                alt="random"
+              />
+            </div>
+            <div class="slide__info">
+              <h2 class="text">
+                До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
+                Кыргызстане планирует создать кабмин
+              </h2>
+              <span class="date"></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="slide__button swiper-button-next"></div>
+        <div class="slide__button swiper-button-prev"></div>
+      </div>
+      <!-- Последние новости/Cлайдер -->
+
+      <!-- Список последних новостей/Карточки -->
+      <h1 class="title">Список последних новостей</h1>
+      <div class="news-list">
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
             <img
               src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
-              alt="random"
+              alt="card-image"
             />
           </div>
-          <div class="slide__info">
-            <h2 class="text">
-              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
-              Кыргызстане планирует создать кабмин
-            </h2>
-            <span class="date"></span>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
           </div>
         </a>
 
-        <a class="slide swiper-slide" href="./news-more.html">
-          <div class="slide__image">
-            <img src="./images/random.jpg" alt="random" />
-          </div>
-          <div class="slide__info">
-            <h2 class="text">
-              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
-              Кыргызстане планирует создать кабмин
-            </h2>
-            <span class="date"></span>
-          </div>
-        </a>
-
-        <a class="slide swiper-slide" href="./news-more.html">
-          <div class="slide__image">
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
             <img
               src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
-              alt="random"
+              alt="card-image"
             />
           </div>
-          <div class="slide__info">
-            <h2 class="text">
-              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
-              Кыргызстане планирует создать кабмин
-            </h2>
-            <span class="date"></span>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
           </div>
         </a>
 
-        <a class="slide swiper-slide" href="./news-more.html">
-          <div class="slide__image">
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
             <img
               src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
-              alt="random"
+              alt="card-image"
             />
           </div>
-          <div class="slide__info">
-            <h2 class="text">
-              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
-              Кыргызстане планирует создать кабмин
-            </h2>
-            <span class="date"></span>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
           </div>
         </a>
 
-        <a class="slide swiper-slide" href="./news-more.html">
-          <div class="slide__image">
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
             <img
               src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
-              alt="random"
+              alt="card-image"
             />
           </div>
-          <div class="slide__info">
-            <h2 class="text">
-              До 2026 года 300 тысяч высокооплачиваемых рабочих мест в
-              Кыргызстане планирует создать кабмин
-            </h2>
-            <span class="date"></span>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
+          </div>
+        </a>
+
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
+            <img src="./images/flagFirst.jpg" alt="card-image" />
+          </div>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
+          </div>
+        </a>
+
+        <a class="news-list__card" href="./news-more.html">
+          <div class="news-list__image">
+            <div class="news-list__blackout">Нажмите подробнее</div>
+            <img src="./images/flagSecond.jpg" alt="card-image" />
+          </div>
+          <div class="news-list__text">
+            <p>
+              Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения
+              на экспорт
+            </p>
+          </div>
+          <div class="news-list__data-eye">
+            <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+            ><span class="date"></span>
+            <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+            <span class="views">0</span>
           </div>
         </a>
       </div>
-
-      <div class="swiper-pagination"></div>
-
-      <div class="slide__button swiper-button-next"></div>
-      <div class="slide__button swiper-button-prev"></div>
+      <!-- Список последних новостей/Карточки -->
     </section>
-    <!-- Последние новости/Cлайдер -->
-
-    <!-- Список последних новостей/Карточки -->
-    <h1 class="title">Список последних новостей</h1>
-    <section class="news-list">
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img
-            src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
-            alt="card-image"
-          />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img
-            src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
-            alt="card-image"
-          />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img
-            src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
-            alt="card-image"
-          />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img
-            src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
-            alt="card-image"
-          />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img src="./images/flagFirst.jpg" alt="card-image" />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-
-      <a class="news-list__card" href="./news-more.html">
-        <div class="news-list__image">
-          <div class="news-list__blackout">Нажмите подробнее</div>
-          <img src="./images/flagSecond.jpg" alt="card-image" />
-        </div>
-        <div class="news-list__text">
-          <p>
-            Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
-            экспорт
-          </p>
-        </div>
-        <div class="news-list__data-eye">
-          <i class="fa-solid fa-clock" style="color: #1f3b99"></i
-          ><span class="date"></span>
-          <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
-          <span class="views">0</span>
-        </div>
-      </a>
-    </section>
-    <!-- Список последних новостей/Карточки -->
+    <!-- Новости -->
 
     <!-- Пагинация -->
     <ul class="pagination">
       <li><a href="./index.html">«</a></li>
       <li><a href="./index.html">1</a></li>
       <li class="pagination-active"><a href="./news.html">2</a></li>
-      <li><a href="./news-more.html">3</a></li>
-      <li><a href="./contacts.html">4</a></li>
+      <li><a href="./contacts.html">3</a></li>
+      <li><a href="./documents.html">4</a></li>
       <li><a href="./vacancy.html">5</a></li>
-      <li><a href="./vacancy-more.html">6</a></li>
-      <li><a href="./infographic.html">7</a></li>
-      <li><a href="./infographic-more.html">8</a></li>
-      <li><a href="./gallery.html">9</a></li>
-      <li><a href="./sotrudniki.html">10</a></li>
-      <li><a href="./feedback.html">11</a></li>
-      <li><a href="./about.html">12</a></li>
-      <li><a href="./news-more.html">»</a></li>
+      <li><a href="./infographic.html">6</a></li>
+      <li><a href="./gallery.html">7</a></li>
+      <li><a href="./employees.html">8</a></li>
+      <li><a href="./feedback.html">9</a></li>
+      <li><a href="./about.html">10</a></li>
+      <li><a href="./site-map.html">11</a></li>
+      <li><a href="./faq.html">12</a></li>
+      <li><a href="./contacts.html">»</a></li>
     </ul>
     <!-- Пагинация -->
 
@@ -484,10 +494,10 @@
     </footer>
     <!-- Footer -->
 
-    <!-- Главный JS -->
+    <!-- JS - Главный -->
     <script src="./js/main.js"></script>
 
-    <!-- Иконка JS-->
+    <!-- JS - Иконка -->
     <script
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"

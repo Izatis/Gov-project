@@ -45,7 +45,6 @@
 .burger__list li a,
 .burger__list li span,
 .burger__list li ul li a {
-  cursor: pointer;
   font-style: normal;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
