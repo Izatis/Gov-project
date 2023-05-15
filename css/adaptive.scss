@@ -11,7 +11,7 @@ $maxWidth: 1440;
 @media screen and (max-width: 1440px) {
   /* Общие стили */
   .title {
-    @include adaptiv-font(40, 15);
+    @include adaptiv-font(35, 15);
   }
 
   .page-title {
@@ -78,11 +78,11 @@ $maxWidth: 1440;
   /* Главная */
 
   /* Последние документы */
-  .documentation__subtitle {
-    @include adaptiv-font(22, 10);
+  th{
+    @include adaptiv-font(20, 10);
   }
 
-  .documentation__list li {
+  td{
     @include adaptiv-font(15, 8);
   }
   /* Последние документы */

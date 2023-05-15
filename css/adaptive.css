@@ -3,7 +3,7 @@
   /* Общие стили */
   .title {
     font-size: calc(
-    15px + 25 * ((100vw - 320px) / 1120)
+    15px + 20 * ((100vw - 320px) / 1120)
   );
   }
   .page-title {
@@ -84,12 +84,12 @@
   }
   /* Главная */
   /* Последние документы */
-  .documentation__subtitle {
+  th {
     font-size: calc(
-    10px + 12 * ((100vw - 320px) / 1120)
+    10px + 10 * ((100vw - 320px) / 1120)
   );
   }
-  .documentation__list li {
+  td {
     font-size: calc(
     8px + 7 * ((100vw - 320px) / 1120)
   );

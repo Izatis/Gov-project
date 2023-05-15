@@ -135,8 +135,8 @@
 }
 
 .slide__button {
-  height: 45px;
   width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: #191970;
 }
@@ -530,30 +530,47 @@
 }
 /* Главная */
 
+/* Главная слайдер */
+.swiper {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+/* Главная слайдер */
+
 /* Последние документы */
-.documentation {
-  display: flex;
-  justify-content: space-between;
+.main-documents {
   padding: 0 5%;
   box-sizing: border-box;
 }
 
-.documentation__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+table {
+  width: 100%;
 }
 
-.documentation__list li {
+th {
+  text-align: start;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #191970;
+}
+
+td,
+td a {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
   color: #1752aa;
+  transition: 0.3s;
+  padding: 5px 0;
+  box-sizing: border-box;
 }
 
-.document {
-  cursor: pointer;
+td:hover a {
+  color: #a7b0c2;
+  transition: 0.3s;
 }
+
 /* Последние документы */
 
 /* Ссылки на государственные сайты */
@@ -577,7 +594,6 @@
   line-height: 130%;
   color: #1752aa;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .links__list li:hover a {
