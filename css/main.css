@@ -107,6 +107,11 @@
 /* Тень анимация */
 
 /* Слайдер */
+.swiper {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
 .slide {
   display: flex;
   align-items: center;
@@ -135,8 +140,8 @@
 }
 
 .slide__button {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: #191970;
 }
@@ -160,6 +165,14 @@
 .swiper-button-prev {
   position: absolute;
   left: 20px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #191970;
 }
 /* Слайдер */
 
@@ -405,7 +418,7 @@ td a:hover {
 
 .nav__list li:hover ul {
   display: initial;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav__list li ul li {
@@ -453,7 +466,7 @@ td a:hover {
 
 .language:hover ul {
   display: initial;
-  z-index: 100;
+  z-index: 10;
 }
 
 .language ul li {
@@ -560,13 +573,6 @@ td a:hover {
 }
 /* Главная */
 
-/* Последние новости/Cлайдер */
-.swiper {
-  padding: 0 5%;
-  box-sizing: border-box;
-}
-/* Последние новости/Cлайдер */
-
 /* Последние документы */
 .main-documents {
   padding: 0 5%;
@@ -651,7 +657,6 @@ td a:hover {
   padding: 4px 8px;
   font-size: 14px;
   border-radius: 4px;
-  z-index: 9999;
 }
 /* Tooltip */
 
@@ -848,6 +853,7 @@ button.clipboard:hover {
   line-height: 130%;
   color: #191970;
 }
+
 .vacancy__image {
   max-width: 400px;
 }
@@ -1008,7 +1014,6 @@ button.clipboard:hover {
   min-width: 60px;
   width: 6vw;
   position: absolute;
-  z-index: 100;
   top: 10px;
   right: 20px;
   background: #191970;
@@ -1126,11 +1131,6 @@ button.clipboard:hover {
   max-width: 400px;
 }
 
-.vacancy-more__image img {
-  width: 100%;
-  border-radius: 50%;
-}
-
 .employees-more p {
   font-style: normal;
   font-weight: 400;
@@ -1241,10 +1241,9 @@ button.clipboard:hover {
 }
 
 .site-map__list {
-  max-width: 1000px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 400px auto;
+  margin: 0 auto 20% auto;
 }
 
 .site-map__list li {
@@ -1261,6 +1260,7 @@ button.clipboard:hover {
   color: #1752aa;
   transition: 0.3s;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .site-map__link:hover {
@@ -1270,22 +1270,15 @@ button.clipboard:hover {
 
 .selects {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .select__item ul {
-  width: 200px;
-  position: absolute;
-  left: 0;
-  display: none;
-  background: #ffffff;
+  max-width: 200px;
+  min-width: 150px;
+  height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-}
-
-.site-map__list div:hover ul {
-  display: initial;
-  z-index: 100;
 }
 
 .select__item ul li {

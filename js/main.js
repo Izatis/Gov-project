@@ -306,7 +306,7 @@ selectElements.forEach(selectElement => {
 //         <span class="price">${item.price}</span>
 //         <p>${item.text}</p>
 //         <label for="menu-state">
-//         <div class="vacancy__button"><span>Read More</span></div>
+//         <div class="vacancy__button"><span>Подробнее</span></div>
 //         </label>
 
 //       </div>

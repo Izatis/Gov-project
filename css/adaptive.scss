@@ -1,220 +1,230 @@
 $maxWidth: 1440;
 
-@mixin adaptiv-font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 320;
-  font-size: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
-  );
+@mixin adaptive-value($property, $startSize, $minSize) {
+  $addSize: $startSize - $minSize;
+  #{$property}: $startSize + px;
+  @media (max-width: #{$maxWidth + px}) {
+    #{$property}: calc(
+      #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+    );
+  }
 }
 
-@media screen and (max-width: 1440px) {
-  /* Общие стили */
-  .title {
-    @include adaptiv-font(35, 15);
-  }
-
-  .page-title {
-    @include adaptiv-font(40, 20);
-  }
-
-  .subtitle {
-    @include adaptiv-font(25, 15);
-  }
-
-  .text {
-    @include adaptiv-font(35, 10);
-  }
-
-  .date {
-    @include adaptiv-font(20, 8);
-  }
-
-  .blackout span {
-    @include adaptiv-font(20, 8);
-  }
-  /* Общие стили */
-
-  /* Модалка */
-  .modal__title h1 {
-    @include adaptiv-font(35, 20);
-  }
-
-  .modal__title .price {
-    @include adaptiv-font(30, 15);
-  }
-
-  .modal__body p {
-    @include adaptiv-font(25, 10);
-  }
-  /* Модалка */
-
-  /* Header */
-  .nav__link {
-    @include adaptiv-font(18, 2);
-  }
-
-  .language span {
-    @include adaptiv-font(15, 8);
-  }
-
-  .language ul li a {
-    @include adaptiv-font(15, 8);
-  }
-
-  .eye__title {
-    @include adaptiv-font(15, 8);
-  }
-  /* Header */
-
-  /* Главная */
-  .main__title p {
-    @include adaptiv-font(20, 11);
-  }
-
-  .main__title h1 {
-    @include adaptiv-font(32, 22);
-  }
-  /* Главная */
-
-  /* Последние документы */
-  th {
-    @include adaptiv-font(20, 10);
-  }
-
-  td {
-    @include adaptiv-font(15, 8);
-  }
-  /* Последние документы */
-
-  /* Ссылки на государственные сайты */
-  .links__list li a {
-    @include adaptiv-font(15, 10);
-  }
-  /* Ссылки на государственные сайты */
-
-  /* Пагинация */
-  .pagination li a {
-    @include adaptiv-font(15, 10);
-  }
-  /* Пагинация */
-
-  /* Footer */
-  .footer__list li {
-    @include adaptiv-font(15, 8);
-  }
-  /* Footer */
-
-  /* Последние новости/Cлайдер */
-  .slide__info h2 {
-    max-width: 450px;
-  }
-  /* Последние новости/Cлайдер */
-
-  /* Список последних новостей/Карточки */
-  .news-list__text p {
-    @include adaptiv-font(20, 15);
-  }
-  /* Список последних новостей/Карточки */
-
-  /* Новости поднобнее */
-  .news-more p {
-    @include adaptiv-font(18, 12);
-  }
-  /* Новости поднобнее */
-
-  /* Контакты */
-  .contacts__list li {
-    @include adaptiv-font(18, 12);
-  }
-  /* Контакты */
-
-  /* Вакансии подробнее */
-  .vacancy-more__list li {
-    @include adaptiv-font(18, 12);
-  }
-  /* Вакансии подробнее */
-
-  /* Инфографика */
-  .infographic__item span {
-    @include adaptiv-font(15, 8);
-  }
-
-  .infographic__item p {
-    @include adaptiv-font(20, 10);
-  }
-  /* Инфографика */
-
-  /* Сотрудники */
-  .employees__item h2 {
-    @include adaptiv-font(20, 15);
-  }
-  /* Сотрудники */
-
-  /* Сотрудники подробнее */
-  .employees-more__info h1 {
-    @include adaptiv-font(35, 22);
-  }
-
-  .employees-more__info h2 {
-    @include adaptiv-font(22, 14);
-  }
-
-  .employees-more__info span {
-    @include adaptiv-font(18, 12);
-  }
-
-  .employees-more p {
-    @include adaptiv-font(18, 12);
-  }
-  /* Сотрудники подробнее */
-
-  /* Обратная связь */
-  .feedback p {
-    @include adaptiv-font(15, 8);
-  }
-
-  .feedback__item label {
-    @include adaptiv-font(15, 10);
-  }
-
-  .feedback__input {
-    @include adaptiv-font(15, 8);
-  }
-
-  .feedback__item textarea {
-    @include adaptiv-font(15, 8);
-  }
-  /* Обратная связь */
-
-  /* О нас */
-  .about__list li {
-    @include adaptiv-font(18, 12);
-  }
-  /* О нас */
-
-  /* Карта сайта */
-  .site-map__link {
-    @include adaptiv-font(15, 10);
-  }
-  /* Карта сайта */
-
-  /* Часто задаваемые вопросы */
-  .faq__content_question {
-    @include adaptiv-font(20, 10);
-  }
-
-  .faq__answer {
-    @include adaptiv-font(18, 8);
-  }
-  /* Часто задаваемые вопросы */
+/* Общие стили */
+.title {
+  @include adaptive-value("font-size", 35, 15);
 }
+
+.page-title {
+  @include adaptive-value("font-size", 40, 20);
+}
+
+.subtitle {
+  @include adaptive-value("font-size", 25, 15);
+}
+
+.text {
+  @include adaptive-value("font-size", 35, 10);
+}
+
+.date {
+  @include adaptive-value("font-size", 20, 8);
+}
+
+.blackout span {
+  @include adaptive-value("font-size", 20, 8);
+}
+/* Общие стили */
+
+/* Модалка */
+.modal__title h1 {
+  @include adaptive-value("font-size", 35, 20);
+}
+
+.modal__title .price {
+  @include adaptive-value("font-size", 30, 15);
+}
+
+.modal__body p {
+  @include adaptive-value("font-size", 25, 10);
+}
+/* Модалка */
+
+/* Header */
+.nav__link {
+  @include adaptive-value("font-size", 18, 2);
+}
+
+.language span {
+  @include adaptive-value("font-size", 15, 8);
+}
+
+.language ul li a {
+  @include adaptive-value("font-size", 15, 8);
+}
+
+.eye__title {
+  @include adaptive-value("font-size", 15, 8);
+}
+/* Header */
+
+/* Главная */
+.main__title p {
+  @include adaptive-value("font-size", 20, 11);
+}
+
+.main__title h1 {
+  @include adaptive-value("font-size", 32, 22);
+}
+/* Главная */
+
+/* Последние документы */
+th {
+  @include adaptive-value("font-size", 20, 10);
+}
+
+td {
+  @include adaptive-value("font-size", 15, 8);
+}
+/* Последние документы */
+
+/* Ссылки на государственные сайты */
+.links__list li a {
+  @include adaptive-value("font-size", 15, 10);
+}
+/* Ссылки на государственные сайты */
+
+/* Пагинация */
+.pagination li a {
+  @include adaptive-value("font-size", 15, 10);
+}
+/* Пагинация */
+
+/* Footer */
+.footer__list li {
+  @include adaptive-value("font-size", 15, 8);
+}
+/* Footer */
+
+/* Последние новости/Cлайдер */
+.slide__info h2 {
+  max-width: 450px;
+}
+/* Последние новости/Cлайдер */
+
+/* Список последних новостей/Карточки */
+.news-list__text p {
+  @include adaptive-value("font-size", 20, 15);
+}
+/* Список последних новостей/Карточки */
+
+/* Новости поднобнее */
+.news-more p {
+  @include adaptive-value("font-size", 18, 12);
+}
+/* Новости поднобнее */
+
+/* Контакты */
+.contacts__list li {
+  @include adaptive-value("font-size", 18, 12);
+}
+/* Контакты */
+
+/* Вакансии подробнее */
+.vacancy-more__list li {
+  @include adaptive-value("font-size", 18, 12);
+}
+/* Вакансии подробнее */
+
+/* Инфографика */
+.infographic__item span {
+  @include adaptive-value("font-size", 15, 8);
+}
+
+.infographic__item p {
+  @include adaptive-value("font-size", 20, 10);
+}
+/* Инфографика */
+
+/* Сотрудники */
+.employees__item h2 {
+  @include adaptive-value("font-size", 20, 15);
+}
+/* Сотрудники */
+
+/* Сотрудники подробнее */
+.employees-more__info h1 {
+  @include adaptive-value("font-size", 35, 22);
+}
+
+.employees-more__info h2 {
+  @include adaptive-value("font-size", 22, 14);
+}
+
+.employees-more__info span {
+  @include adaptive-value("font-size", 18, 12);
+}
+
+.employees-more p {
+  @include adaptive-value("font-size", 18, 12);
+}
+/* Сотрудники подробнее */
+
+/* Обратная связь */
+.feedback p {
+  @include adaptive-value("font-size", 15, 8);
+}
+
+.feedback__item label {
+  @include adaptive-value("font-size", 15, 10);
+}
+
+.feedback__input {
+  @include adaptive-value("font-size", 15, 8);
+}
+
+.feedback__item textarea {
+  @include adaptive-value("font-size", 15, 8);
+}
+/* Обратная связь */
+
+/* О нас */
+.about__list li {
+  @include adaptive-value("font-size", 18, 12);
+}
+/* О нас */
+
+/* Карта сайта */
+.site-map__link {
+  @include adaptive-value("font-size", 15, 10);
+}
+/* Карта сайта */
+
+/* Часто задаваемые вопросы */
+.faq__content_question {
+  @include adaptive-value("font-size", 20, 10);
+}
+
+.faq__answer {
+  @include adaptive-value("font-size", 18, 8);
+}
+/* Часто задаваемые вопросы */
 
 @media screen and (max-width: 1024px) {
   /* Общие стили */
   /* Cлайдер */
   .slide__info h2 {
     max-width: 350px;
+  }
+
+  .slide__button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slide__button::before,
+  .slide__button::after {
+    font-size: 12px;
   }
   /* Cлайдер */
 
@@ -246,9 +256,10 @@ $maxWidth: 1440;
   .footer__content {
     align-items: flex-start;
     flex-direction: column;
-    .location-map {
-      width: 100%;
-    }
+  }
+
+  .location-map {
+    width: 100%;
   }
   /* Footer */
 
@@ -269,6 +280,12 @@ $maxWidth: 1440;
     height: 30px;
   }
   /* Обратная связь */
+
+  /* Карта сайта */
+  .site-map__list {
+    flex-direction: column;
+  }
+  /* Карта сайта */
 
   /* Часто задаваемые вопросы */
   .faq__content_question {
@@ -294,7 +311,13 @@ $maxWidth: 1440;
   }
 
   .slide__button {
-    display: none;
+    width: 30px;
+    height: 30px;
+  }
+
+  .slide__button::before,
+  .slide__button::after {
+    font-size: 10px;
   }
   /* Cлайдер */
 
@@ -342,13 +365,13 @@ $maxWidth: 1440;
 
   /* Бургер меню */
   .burger__title {
-    @include adaptiv-font(40, 20);
+    @include adaptive-value("font-size", 40, 20);
   }
 
   .burger__list li a,
   .burger__list li span,
   .burger__list li ul li a {
-    @include adaptiv-font(30, 12);
+    @include adaptive-value("font-size", 30, 12);
   }
   /* Бургер меню */
   /* Header */
@@ -369,7 +392,7 @@ $maxWidth: 1440;
   /* Главная */
 
   /* Пагинация */
-  .pagination > li > a {
+  .pagination li a {
     padding: 4px 8px;
   }
 
@@ -386,15 +409,22 @@ $maxWidth: 1440;
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    .links__list {
-      display: block;
-    }
+  }
+
+  .links__list {
+    display: block;
   }
   /* Ссылки на государственные сайты */
 
   /* Карта сайта */
-  .site-map__list {
+  .site-map__link {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .selects {
     flex-direction: column;
+    gap: 20px;
   }
   /* Карта сайта */
 
@@ -407,10 +437,28 @@ $maxWidth: 1440;
 
 @media screen and (max-width: 425px) {
   /* Общие стили */
+  .custom__button {
+    height: 30px;
+  }
 
   /* Cлайдер */
   .slide__info h2 {
     max-width: 150px;
+  }
+
+  .slide__button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slide__button::before,
+  .slide__button::after {
+    font-size: 8px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
   }
   /* Cлайдер */
 
