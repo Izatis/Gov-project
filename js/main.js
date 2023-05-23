@@ -105,6 +105,8 @@ resetStylesBtn.addEventListener("click", () => {
 });
 // Открывает версию для слабовидящих
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // Для зарпрета полосы прокрутки когда бургер меню открыта
 const menuToggle = document.getElementById("menu-toggle"); // получаем ссылку на input
 const body = document.querySelector("body"); // получаем ссылку на элемент body
@@ -121,22 +123,26 @@ menuToggle.addEventListener("change", function () {
 });
 // Для зарпрета полосы прокрутки когда бургер меню открыта
 
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // Для анимации бургер меню
 // получаем все элементы с классом "select"
-const selectElements = document.querySelectorAll('.burger__select');
+const selectElements = document.querySelectorAll(".burger__select");
 
 // добавляем обработчик события на каждый элемент
-selectElements.forEach(selectElement => {
-  selectElement.addEventListener('click', () => {
+selectElements.forEach((selectElement) => {
+  selectElement.addEventListener("click", () => {
     // получаем следующий элемент после "span"
     const ulElement = selectElement.nextElementSibling;
 
     // добавляем/удаляем класс "active", чтобы показать/скрыть список
-    selectElement.classList.toggle('burger__select_active');
-    ulElement.classList.toggle('burger__list_active');
+    selectElement.classList.toggle("burger__select_active");
+    ulElement.classList.toggle("burger__list_active");
   });
 });
 // Для анимации бургер меню
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Карточки свайпера
 // const slides = [
@@ -185,6 +191,8 @@ selectElements.forEach(selectElement => {
 
 // document.querySelector(".swiper-wrapper").innerHTML = slidesHtml;
 // Карточки свайпера
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Каточки новостей
 // const news = [
@@ -245,6 +253,8 @@ selectElements.forEach(selectElement => {
 
 // document.querySelector(".news-list").innerHTML = newsHtml;
 // Каточки новостей
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 //Карточки вакансий
 // const data = [
@@ -314,6 +324,8 @@ selectElements.forEach(selectElement => {
 //   vacancyContainer.insertAdjacentHTML("beforeend", html);
 // });
 //Карточки вакансий
+
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // Footer/Туултип
 function showTooltip(event) {

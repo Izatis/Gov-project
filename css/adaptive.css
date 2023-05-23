@@ -68,11 +68,11 @@
 
 /* Общие стили */
 /* Модалка */
-.modal__title h1 {
+.modal__title h2 {
   font-size: 35px;
 }
 @media (max-width: 1440px) {
-  .modal__title h1 {
+  .modal__title h2 {
     font-size: calc(
       20px + 15 * ((100vw - 320px) / 1120)
     );
@@ -160,11 +160,11 @@
   }
 }
 
-.main__title h1 {
+.main__title h2 {
   font-size: 32px;
 }
 @media (max-width: 1440px) {
-  .main__title h1 {
+  .main__title h2 {
     font-size: calc(
       22px + 10 * ((100vw - 320px) / 1120)
     );
@@ -331,11 +331,11 @@ td {
 
 /* Сотрудники */
 /* Сотрудники подробнее */
-.employees-more__info h1 {
+.employees-more__info h2 {
   font-size: 35px;
 }
 @media (max-width: 1440px) {
-  .employees-more__info h1 {
+  .employees-more__info h2 {
     font-size: calc(
       22px + 13 * ((100vw - 320px) / 1120)
     );
