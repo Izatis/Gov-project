@@ -385,10 +385,10 @@
       faq.forEach((button) => {
         button.addEventListener("click", (event) => {
           const targetQuestion = event.target;
-          if (targetQuestion.classList.contains("faq-show")) {
-            targetQuestion.classList.remove("faq-show");
+          if (targetQuestion.classList.contains("faq-reveal")) {
+            targetQuestion.classList.remove("faq-reveal");
           } else {
-            targetQuestion.classList.add("faq-show");
+            targetQuestion.classList.add("faq-reveal");
           }
         });
       });

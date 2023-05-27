@@ -312,19 +312,5 @@
       src="https://kit.fontawesome.com/1f5bacc93d.js"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // Устанавливаем обновляемую дату
-      function updateDate() {
-        const now = new Date();
-        const dateElements = document.querySelectorAll(".date");
-        const options = { year: "numeric", month: "long", day: "numeric" };
-        dateElements.forEach(function (dateElement) {
-          dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
-        });
-      }
-      setInterval(updateDate, 100);
-      // Устанавливаем обновляемую дату
-    </script>
   </body>
 </html>

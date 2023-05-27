@@ -562,18 +562,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
     <script>
-      // Устанавливаем обновляемую дату
-      function updateDate() {
-        const now = new Date();
-        const dateElements = document.querySelectorAll(".date");
-        const options = { year: "numeric", month: "long", day: "numeric" };
-        dateElements.forEach(function (dateElement) {
-          dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
-        });
-      }
-      setInterval(updateDate, 100);
-      // Устанавливаем обновляемую дату
-
       // Слайдер JS
       const mySwiper = new Swiper(".swiper", {
         slidesPerView: 1,

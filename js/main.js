@@ -144,6 +144,20 @@ selectElements.forEach((selectElement) => {
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
+// Устанавливаем обновляемую дату
+//  function updateDate() {
+//   const now = new Date();
+//   const dateElements = document.querySelectorAll(".date");
+//   const options = { year: "numeric", month: "long", day: "numeric" };
+//   dateElements.forEach(function (dateElement) {
+//     dateElement.innerHTML = now.toLocaleDateString("ru-RU", options);
+//   });
+// }
+// setInterval(updateDate, 100);
+// Устанавливаем обновляемую дату
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 // Карточки свайпера
 // const slides = [
 //   {
