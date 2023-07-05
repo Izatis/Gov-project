@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/adaptive.css" />
 
     <!-- Бургер css -->
-    <link rel="stylesheet" href="./css/burgerMenu.css" />
+    <link rel="stylesheet" href="./css/burger-menu.css" />
   </head>
   <body class="my-image">
     <!-- Версия для слабовидящих -->
@@ -132,18 +132,18 @@
         </div>
 
         <!-- Бургер меню -->
-        <div class="burger">
+        <div class="burger-menu">
           <input type="checkbox" id="menu-toggle" />
           <label id="trigger" for="menu-toggle"></label>
-          <label id="burger" for="menu-toggle"></label>
-          <div class="burger__animated">
-            <div class="burger__content">
-              <div class="burger__header">
-                <h2><a class="burger__title" href="./index.html">Menu</a></h2>
+          <label id="burger-menu" for="menu-toggle"></label>
+          <div class="side-bar__animated">
+            <div class="side-bar__content">
+              <div class="side-bar__header">
+                <h2><a class="side-bar__title" href="./index.html">Menu</a></h2>
               </div>
 
-              <div class="burger__lists">
-                <ul class="burger__list">
+              <div class="side-bar__lists">
+                <ul class="side-bar__list">
                   <li>
                     <a href="./index.html">Главная</a>
                   </li>
@@ -158,9 +158,9 @@
                   </li>
                 </ul>
 
-                <ul class="burger__list">
+                <ul class="side-bar__list">
                   <li>
-                    <span class="burger__select">Разделы</span>
+                    <span class="side-bar__select">Разделы</span>
 
                     <ul>
                       <li><a href="./vacancy.html">Вакансии</a></li>
@@ -179,7 +179,7 @@
                   </li>
 
                   <li>
-                    <span class="burger__select">О нас</span>
+                    <span class="side-bar__select">О нас</span>
 
                     <ul>
                       <li><a href="./about.html">О нас</a></li>
@@ -199,29 +199,66 @@
     <!-- Документы подробнее -->
     <section class="documents-more container">
       <h2 class="page-title">
-        Кыргыз Республикасынын "Мектепке чейинки билим берүү жана балдарды багуу"
-        мамлекеттик билим берүү стандарты
+        Кыргыз Республикасынын "Мектепке чейинки билим берүү жана балдарды
+        багуу" мамлекеттик билим берүү стандарты
       </h2>
       <div class="documents-more__info">
         <span>Дата публикации: 18.04.2023</span>
         <span>Дата принятия: 21.08.2020</span>
         <span>Место принятия: Бишкек</span>
         <span>Скопировать ссылку на документ</span>
-        <input
-          id="foo_0"
-          value="https://docs.google.com/viewerng/viewer?url=https://logvinenko-ao.gos.kg/file/document/8110_4209.docx"
-          type="hidden"
-        />
+        <input id="foo_0" value="testFirst" type="hidden" />
         <button
-          class="clipboard"
+          class="clipboard clipboardFirst"
           data-clipboard-target="#foo_0"
           onmouseup="showTooltip(event)"
         >
-          <img
-            src="https://logvinenko-ao.gos.kg/view/themes/37/img/clippy.svg"
-            alt="Documents more image"
-            width="13"
-          />
+          <svg
+            fill="#191970"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M272 0H396.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128H192v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+            />
+          </svg>
+        </button>
+
+        <input id="foo_1" value="testSecond" type="hidden" />
+        <button
+          class="clipboard clipboardSecond"
+          data-clipboard-target="#foo_1"
+          onmouseup="showTooltip(event)"
+        >
+          <svg
+            fill="#191970"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M272 0H396.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128H192v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+            />
+          </svg>
+        </button>
+
+        <input id="foo_2" value="testThree" type="hidden" />
+        <button
+          class="clipboard clipboardThree"
+          data-clipboard-target="#foo_2"
+          onmouseup="showTooltip(event)"
+        >
+          <svg
+            fill="#191970"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M272 0H396.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128H192v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z"
+            />
+          </svg>
         </button>
       </div>
 
@@ -324,9 +361,49 @@
 
     <!-- JS - для копирования ссылки -->
     <script>
-      const clipboardButton = document.querySelector(".clipboard");
-      clipboardButton.addEventListener("click", () => {
-        const inputElementId = clipboardButton.getAttribute(
+      const clipboardButtonFirst = document.querySelector(".clipboardFirst");
+      clipboardButtonFirst.addEventListener("click", () => {
+        const inputElementId = clipboardButtonFirst.getAttribute(
+          "data-clipboard-target"
+        );
+        const inputElement = document.querySelector(inputElementId);
+        const url = inputElement.value;
+
+        navigator.clipboard
+          .writeText(url)
+          .then(() => {
+            console.log("URL copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Failed to copy URL to clipboard:", error);
+          });
+      });
+
+      // ---------------------------------------------------------------------------------------------------------------------------------
+
+      const clipboardButtonSecond = document.querySelector(".clipboardSecond");
+      clipboardButtonSecond.addEventListener("click", () => {
+        const inputElementId = clipboardButtonSecond.getAttribute(
+          "data-clipboard-target"
+        );
+        const inputElement = document.querySelector(inputElementId);
+        const url = inputElement.value;
+
+        navigator.clipboard
+          .writeText(url)
+          .then(() => {
+            console.log("URL copied to clipboard!");
+          })
+          .catch((error) => {
+            console.error("Failed to copy URL to clipboard:", error);
+          });
+      });
+
+      // ---------------------------------------------------------------------------------------------------------------------------------
+
+      const clipboardButtonThree = document.querySelector(".clipboardThree");
+      clipboardButtonThree.addEventListener("click", () => {
+        const inputElementId = clipboardButtonThree.getAttribute(
           "data-clipboard-target"
         );
         const inputElement = document.querySelector(inputElementId);

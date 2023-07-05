@@ -364,13 +364,13 @@ td {
   }
 
   /* Бургер меню */
-  .burger__title {
+  .side-bar__title {
     @include adaptive-value("font-size", 40, 20);
   }
 
-  .burger__list li a,
-  .burger__list li span,
-  .burger__list li ul li a {
+  .side-bar__list li a,
+  .side-bar__list li span,
+  .side-bar__list li ul li a {
     @include adaptive-value("font-size", 30, 12);
   }
   /* Бургер меню */

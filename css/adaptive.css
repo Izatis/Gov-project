@@ -597,7 +597,7 @@ td {
     padding: 5px;
   }
   /* Бургер меню */
-  .burger__title {
+  .side-bar__title {
     font-size: 40px;
   }
   /* Бургер меню */
@@ -616,23 +616,23 @@ td {
   /* Часто задаваемые вопросы */
 }
 @media screen and (max-width: 768px) and (max-width: 1440px) {
-  .burger__title {
+  .side-bar__title {
     font-size: calc(
       20px + 20 * ((100vw - 320px) / 1120)
     );
   }
 }
 @media screen and (max-width: 768px) {
-  .burger__list li a,
-  .burger__list li span,
-  .burger__list li ul li a {
+  .side-bar__list li a,
+  .side-bar__list li span,
+  .side-bar__list li ul li a {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 1440px) {
-  .burger__list li a,
-  .burger__list li span,
-  .burger__list li ul li a {
+  .side-bar__list li a,
+  .side-bar__list li span,
+  .side-bar__list li ul li a {
     font-size: calc(
       12px + 18 * ((100vw - 320px) / 1120)
     );
@@ -642,35 +642,53 @@ td {
   .background {
     display: none;
   }
+}
+@media screen and (max-width: 768px) {
   .main__title {
     max-width: 500px;
   }
+}
+@media screen and (max-width: 768px) {
   .main__button {
     height: 30px;
     width: 150px;
   }
+}
+@media screen and (max-width: 768px) {
   .pagination li a {
     padding: 4px 8px;
   }
+}
+@media screen and (max-width: 768px) {
   .footer__content {
     margin: 40px auto 0;
   }
+}
+@media screen and (max-width: 768px) {
   .links {
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
   }
+}
+@media screen and (max-width: 768px) {
   .links__list {
     display: block;
   }
+}
+@media screen and (max-width: 768px) {
   .site-map__link {
     padding: 15px;
     box-sizing: border-box;
   }
+}
+@media screen and (max-width: 768px) {
   .selects {
     flex-direction: column;
     gap: 20px;
   }
+}
+@media screen and (max-width: 768px) {
   .faq__content_question::after {
     font-size: 3rem;
   }
@@ -727,6 +745,4 @@ td {
     height: 40vh;
   }
   /* Фото Галерея */
-}
-
-/*# sourceMappingURL=adaptive.css.map */
+}/*# sourceMappingURL=adaptive.css.map */

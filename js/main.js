@@ -127,7 +127,7 @@ menuToggle.addEventListener("change", function () {
 
 // Для анимации бургер меню
 // получаем все элементы с классом "select"
-const selectElements = document.querySelectorAll(".burger__select");
+const selectElements = document.querySelectorAll(".side-bar__select");
 
 // добавляем обработчик события на каждый элемент
 selectElements.forEach((selectElement) => {
@@ -136,8 +136,8 @@ selectElements.forEach((selectElement) => {
     const ulElement = selectElement.nextElementSibling;
 
     // добавляем/удаляем класс "active", чтобы показать/скрыть список
-    selectElement.classList.toggle("burger__select_active");
-    ulElement.classList.toggle("burger__list_active");
+    selectElement.classList.toggle("side-bar__select_active");
+    ulElement.classList.toggle("side-bar__list_active");
   });
 });
 // Для анимации бургер меню

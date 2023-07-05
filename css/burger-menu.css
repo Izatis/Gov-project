@@ -1,9 +1,9 @@
 /* Бургер меню */
-.burger {
+.burger-menu {
   display: none;
 }
 
-.burger__animated {
+.side-bar__animated {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -16,11 +16,11 @@
   transition: all 0.3s;
 }
 
-.burger__content {
+.side-bar__content {
   display: none;
 }
 
-.burger__header {
+.side-bar__header {
   height: 60px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   padding: 10px 5%;
@@ -28,7 +28,7 @@
   margin: 0 0 10px;
 }
 
-.burger__title {
+.side-bar__title {
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -36,15 +36,15 @@
   padding: 10px 5%;
 }
 
-.burger__lists {
+.side-bar__lists {
   display: flex;
   gap: 40px;
   padding: 0 10%;
 }
 
-.burger__list li a,
-.burger__list li span,
-.burger__list li ul li a {
+.side-bar__list li a,
+.side-bar__list li span,
+.side-bar__list li ul li a {
   font-style: normal;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
@@ -53,50 +53,50 @@
   transition: all 0.3s;
 }
 
-.burger__list li a:hover,
-.burger__list li span:hover {
+.side-bar__list li a:hover,
+.side-bar__list li span:hover {
   color: #a7b0c2;
   transition: all 0.3s;
 }
 
-.burger__list li ul {
+.side-bar__list li ul {
   display: none;
 }
 
-.burger__list li ul li {
+.side-bar__list li ul li {
   transition: all 0.3s;
 }
 
-.burger__list li ul li a {
+.side-bar__list li ul li a {
   color: #1752aa;
 }
 
-.burger__list li .burger__list_active {
+.side-bar__list li .side-bar__list_active {
   display: initial;
 }
 
-.burger__list li:hover ul li {
+.side-bar__list li:hover ul li {
   padding: 0 0 0 40px;
   transition: all 0.3s;
 }
 
-.burger__list li .burger__select::after {
+.side-bar__list li .side-bar__select::after {
   content: "\f078";
   display: inline-block;
   font-family: "FontAwesome";
   margin: 0 0 0 10px;
 }
 
-.burger__list li .burger__select_active:after {
+.side-bar__list li .side-bar__select_active:after {
   content: "\f077";
 }
 
 /* Когда инпут checked*/
-#menu-toggle:checked + #trigger + #burger + .burger__animated {
+#menu-toggle:checked + #trigger + #burger-menu + .side-bar__animated {
   animation: checked-animated 1s ease both;
 }
 
-#menu-toggle:checked + #trigger ~ .burger__animated .burger__content {
+#menu-toggle:checked + #trigger ~ .side-bar__animated .side-bar__content {
   display: block;
 }
 
@@ -108,9 +108,9 @@
 
 /* Анимация линий бургер меню */
 #trigger,
-#burger,
-#burger:before,
-#burger:after {
+#burger-menu,
+#burger-menu:before,
+#burger-menu:after {
   width: 30px;
   height: 5px;
   position: absolute;
@@ -127,25 +127,25 @@
   background: none;
 }
 
-#burger:before {
+#burger-menu:before {
   content: "";
   top: 10px;
   left: 0;
 }
 
-#burger:after {
+#burger-menu:after {
   content: "";
   top: 20px;
   left: 0;
 }
 
-#menu-toggle:checked + #trigger + #burger {
+#menu-toggle:checked + #trigger + #burger-menu {
   top: 35px;
   transform: rotate(180deg);
   transition: all transform 0.3s ease;
 }
 
-#menu-toggle:checked + #trigger + #burger:before {
+#menu-toggle:checked + #trigger + #burger-menu:before {
   width: 20px;
   top: -2px;
   left: 18px;
@@ -153,7 +153,7 @@
   transition: all transform 0.3s ease;
 }
 
-#menu-toggle:checked + #trigger + #burger:after {
+#menu-toggle:checked + #trigger + #burger-menu:after {
   width: 20px;
   top: 2px;
   left: 18px;
@@ -186,7 +186,7 @@
 
 @media screen and (max-width: 768px) {
   /* Бургер меню */
-  .burger {
+  .burger-menu {
     display: block;
   }
   /* Бургер меню */
@@ -194,15 +194,15 @@
 
 @media screen and (max-width: 425px) {
   /* Бургер меню */
-  .burger__animated {
+  .side-bar__animated {
     width: 60px;
     height: 60px;
   }
 
   #trigger,
-  #burger,
-  #burger:before,
-  #burger:after {
+  #burger-menu,
+  #burger-menu:before,
+  #burger-menu:after {
     height: 4px;
     top: 15px;
     right: 10px;
@@ -212,11 +212,11 @@
     height: 30px;
   }
 
-  #burger:before {
+  #burger-menu:before {
     top: 9px;
   }
 
-  #burger:after {
+  #burger-menu:after {
     top: 17.8px;
   }
   /* Бургер меню */
