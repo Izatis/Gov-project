@@ -254,7 +254,7 @@ td {
 }
 
 /* Список последних новостей/Карточки */
-/* Новости поднобнее */
+/* Новости подробнее */
 .news-more p {
   font-size: 18px;
 }
@@ -266,7 +266,7 @@ td {
   }
 }
 
-/* Новости поднобнее */
+/* Новости подробнее */
 /* Контакты */
 .contacts__list li {
   font-size: 18px;
@@ -487,7 +487,7 @@ td {
     font-size: 12px;
   }
   /* Cлайдер */
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   .сlue-image__link {
     width: 100px;
     height: 70px;
@@ -496,7 +496,7 @@ td {
     width: 100px;
     height: 70px;
   }
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   /* Общие стили */
   /* Header */
   .header__logo img {
@@ -563,7 +563,7 @@ td {
     font-size: 10px;
   }
   /* Cлайдер */
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   .сlue-image__link {
     width: 80px;
     height: 50px;
@@ -572,7 +572,7 @@ td {
     width: 80px;
     height: 50px;
   }
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   /* Общие стили */
   /* Версия для слабовидящих */
   .access-header__buttons {
@@ -642,53 +642,35 @@ td {
   .background {
     display: none;
   }
-}
-@media screen and (max-width: 768px) {
   .main__title {
     max-width: 500px;
   }
-}
-@media screen and (max-width: 768px) {
   .main__button {
     height: 30px;
     width: 150px;
   }
-}
-@media screen and (max-width: 768px) {
   .pagination li a {
     padding: 4px 8px;
   }
-}
-@media screen and (max-width: 768px) {
   .footer__content {
     margin: 40px auto 0;
   }
-}
-@media screen and (max-width: 768px) {
   .links {
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
   }
-}
-@media screen and (max-width: 768px) {
   .links__list {
     display: block;
   }
-}
-@media screen and (max-width: 768px) {
   .site-map__link {
     padding: 15px;
     box-sizing: border-box;
   }
-}
-@media screen and (max-width: 768px) {
   .selects {
     flex-direction: column;
     gap: 20px;
   }
-}
-@media screen and (max-width: 768px) {
   .faq__content_question::after {
     font-size: 3rem;
   }
@@ -715,7 +697,7 @@ td {
     height: 5px;
   }
   /* Cлайдер */
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   .сlue-image__link {
     width: 50px;
     height: 30px;
@@ -724,7 +706,7 @@ td {
     width: 50px;
     height: 30px;
   }
-  /* Слайдер подолбнее*/
+  /* Слайдер подолбнее */
   /* Общие стили */
   /* Header */
   .header__content {
@@ -745,4 +727,6 @@ td {
     height: 40vh;
   }
   /* Фото Галерея */
-}/*# sourceMappingURL=adaptive.css.map */
+}
+
+/*# sourceMappingURL=adaptive.css.map */
